@@ -21,7 +21,7 @@ const products: Product[] = [
     price: 499,
     features: ["Guidning steg för steg", "Juridiskt korrekt", "Fast pris"],
     readMoreHref: "/framtidsfullmakt",
-    ctaHref: "https://app.fride.se/framtidsfullmakt",
+    ctaHref: "https://app.fride.se/create/framtidsfullmakt",
     ctaLabel: "Skapa framtidsfullmakt",
     imageSrc: "/images/hero-aldre.jpg",
     imageAlt: "Person som planerar sin framtid",

@@ -20,6 +20,10 @@ h1, h2, h3, h4 {
   font-family: var(--font-serif), "Noto Serif", serif;
 }
 
+h1 {
+  line-height: 1.1;
+}
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);

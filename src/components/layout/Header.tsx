@@ -6,10 +6,13 @@ import { useState } from "react";
 const navLinks = [
   {
     label: "Framtidsdokument",
+    href: "/framtidsdokument",
     children: [
       { label: "Framtidsfullmakt", href: "/framtidsfullmakt" },
       { label: "Gåvobrev", href: "/gavobrev" },
       { label: "Skuldebrev", href: "/skuldebrev" },
+      { label: "Samboavtal", href: "/samboavtal" },
+      { label: "Äktenskapsförord", href: "/aktenskapsforord" },
     ],
   },
   { label: "Om oss", href: "/om-oss" },
@@ -37,12 +40,12 @@ export function Header() {
           {navLinks.map((item) =>
             item.children ? (
               <div key={item.label} className="relative group">
-                <button className="flex items-center gap-1 text-sm text-[#fff1e6]/80 hover:text-[#fff1e6] transition-colors">
+                <Link href={item.href ?? "#"} className="flex items-center gap-1 text-sm text-[#fff1e6]/80 hover:text-[#fff1e6] transition-colors">
                   {item.label}
                   <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
-                </button>
+                </Link>
                 <div className="absolute top-full left-0 mt-2 bg-[#20293d] border border-[#fff1e6]/10 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 w-52 py-2">
                   {item.children.map((child) => (
                     <Link
@@ -94,15 +97,24 @@ export function Header() {
       {/* Mobile nav */}
       {mobileOpen && (
         <div className="md:hidden border-t border-[#fff1e6]/10 bg-[#20293d] px-6 pb-6">
-          <button
-            className="flex items-center gap-1 py-3 text-sm text-[#fff1e6]/80 w-full text-left"
-            onClick={() => setDropdownOpen(!dropdownOpen)}
-          >
-            Framtidsdokument
-            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
+          <div className="flex items-center justify-between py-3">
+            <Link
+              href="/framtidsdokument"
+              className="text-sm text-[#fff1e6]/80 hover:text-[#fff1e6]"
+              onClick={() => setMobileOpen(false)}
+            >
+              Framtidsdokument
+            </Link>
+            <button
+              className="flex items-center gap-1 text-sm text-[#fff1e6]/80 p-1"
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+              aria-label="Visa underkategorier"
+            >
+              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+          </div>
           {dropdownOpen && (
             <div className="pl-4 flex flex-col gap-3 mb-2">
               {navLinks[0].children?.map((child) => (

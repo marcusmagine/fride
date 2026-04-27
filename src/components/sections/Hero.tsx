@@ -28,8 +28,7 @@ export function Hero({
       <div className="max-w-6xl mx-auto px-6 py-16 md:py-28 grid md:grid-cols-2 gap-12 items-center">
         <FadeIn>
           <h1
-            className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-[#354042] leading-tight hyphens-auto"
-            lang="sv"
+            className="font-serif text-4xl md:text-5xl lg:text-5xl font-semibold text-[#354042] leading-tight"
           >
             {headline}
           </h1>

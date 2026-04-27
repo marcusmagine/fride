@@ -6,7 +6,7 @@ interface CTASectionProps {
 }
 
 export function CTASection({
-  ctaHref = "https://app.fride.se/framtidsfullmakt",
+  ctaHref = "https://app.fride.se/create/framtidsfullmakt",
   ctaLabel = "Skapa ditt dokument",
 }: CTASectionProps) {
   return (
