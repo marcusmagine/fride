@@ -13,6 +13,7 @@ const navLinks = [
       { label: "Skuldebrev", href: "/skuldebrev" },
       { label: "Samboavtal", href: "/samboavtal" },
       { label: "Äktenskapsförord", href: "/aktenskapsforord" },
+      { label: "Testamente", href: "/testamente" },
     ],
   },
   { label: "Om oss", href: "/om-oss" },

@@ -101,15 +101,18 @@ export default function OmOssPage() {
           <div>
             <h3 className="font-serif text-2xl font-semibold text-[#354042] mb-4">Joanna Robarth, Grundare</h3>
             <div className="space-y-4 text-[#354042] leading-relaxed">
-              <p className="italic">
-                "Idén till Fride växte fram efter att en nära vän förlorat sin sambo. Hon kämpade med att få ihop
+              <p>
+                Idén till Fride växte fram efter att en nära vän förlorat sin sambo. Hon kämpade med att få ihop
                 alla dokument, kontakta myndigheter och upprätta bouppteckningen – samtidigt som hon tog hand om
-                barnen. Det var då jag förstod att det måste gå att göra det här enklare."
+                barnen och höll vardagen igång. För mig var det tydligt: det här var en orimlig börda i en redan
+                svår tid. När min pappa gick bort 1994 såg processen i stort sett likadan ut som den gör i dag –
+                trots all teknisk utveckling. Det är orimligt.
               </p>
               <p>
                 Jag är ekonom med bakgrund inom internationell bank och fondbolag, där jag lett team, ansvarat för
                 tusentals kundrelationer och drivit automatiseringsprojekt. De senaste 13 åren har jag drivit egna
-                bolag.
+                bolag, alltid med ett tydligt fokus: att förenkla det som är komplicerat och skapa trygghet i
+                osäkra situationer.
               </p>
               <p>
                 Med Fride vill jag göra det som borde ha gjorts för länge sedan – skapa en mänsklig, digital
@@ -140,15 +143,16 @@ export default function OmOssPage() {
           <div>
             <h3 className="font-serif text-2xl font-semibold text-[#354042] mb-4">Elza Kazemi, Grundare</h3>
             <div className="space-y-4 text-[#354042] leading-relaxed">
-              <p className="italic">
-                "Med min bakgrund som civilekonom och rådgivare i banksektorn såg jag tidigt hur svår
+              <p>
+                Med min bakgrund som civilekonom och rådgivare i banksektorn såg jag tidigt hur svår
                 dödsbohanteringen kan vara – särskilt för småföretagare och anhöriga som redan har fullt upp. Det är
-                ett område där rättshjälpen ofta saknas, och det vill vi ändra på."
+                ett område där känslor möter byråkrati, och där många saknar verktyg för att orka ta sig igenom
+                processen.
               </p>
               <p>
                 Under 20 år har jag arbetat med allt från fastighetsutveckling till internationella uppdrag, alltid
                 med människan i fokus. Fride är mitt sätt att bidra till något större: en tjänst som gör det
-                enklare att ta hand om varandra – och sig själv.
+                enklare att vara människa när livet är som svårast.
               </p>
             </div>
             <Link
@@ -175,14 +179,17 @@ export default function OmOssPage() {
           <div>
             <h3 className="font-serif text-2xl font-semibold text-[#354042] mb-4">Sara Gustafsson, Delägare</h3>
             <div className="space-y-4 text-[#354042] leading-relaxed">
-              <p>
-                Första gången jag träffade Joanna och Elza och hörde om deras vision förstod jag direkt – det här
+              <p className="italic">
+                "Första gången jag träffade Joanna och Elza och hörde om deras vision förstod jag direkt – det här
                 vill jag vara med och bygga. Jag hade nyss förlorat min bonuspappa. Samtidigt fick min mamma en
-                alzheimerdiagnos. Det Fride gör träffade mig personligt.
+                alzheimerdiagnos. På kort tid stod jag mitt i exakt det Fride finns till för – allt det tunga och
+                praktiska som ingen förberett sig på. Jag vet hur det känns när man önskar att någon hade tagit
+                hand om det i tid. Det är därför jag är här."
               </p>
               <p>
                 Sara är senior marknadsförare med över 25 års erfarenhet och ansvarar för Frides marknadsföring
-                samt är delägare i bolaget.
+                samt är delägare i bolaget. Med ett starkt driv arbetar hon för att fler ska hitta Fride innan
+                livet ställer dem inför beslut de inte hunnit förbereda sig på.
               </p>
             </div>
           </div>
@@ -211,7 +218,13 @@ export default function OmOssPage() {
               </p>
               <p>
                 Carlos är Fullstack Developer och CTO på Fride, och delägare i bolaget. Han ansvarar för den
-                tekniska utvecklingen av plattformen och har bred erfarenhet inom modern webbutveckling.
+                tekniska utvecklingen av plattformen och har bred erfarenhet inom modern webbutveckling med
+                teknologier som React, TypeScript, Next.js och Node.js.
+              </p>
+              <p>
+                Innan Fride arbetade han som utvecklare och konsult åt flera företag, samt undervisade blivande
+                utvecklare på ZoCom och Nackademin. Den kombinationen av att bygga produkter och dela kunskap har
+                format hur han tänker kring teknik – med fokus på lösningar som är både användarvänliga och robusta.
               </p>
             </div>
           </div>

@@ -59,12 +59,12 @@ const documents = [
     title: "Testamente",
     description:
       "Bestäm vem som ska ärva dig och hur dina tillgångar ska fördelas. Utan testamente styr lagen – med testamente styr du själv.",
-    href: null,
-    ctaHref: null,
-    ctaLabel: null,
+    href: "/testamente",
+    ctaHref: "https://app.fride.se/create/testamente",
+    ctaLabel: "Skapa testamente",
     image: "/images/product-testamente.webp",
-    price: null,
-    available: false,
+    price: 499,
+    available: true,
   },
   {
     title: "Äktenskapsförord",
