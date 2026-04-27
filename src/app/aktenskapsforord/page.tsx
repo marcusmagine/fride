@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const trustPoints = ["Fast pris 399 kr", "Juridiskt korrekt", "Guidning steg för steg"];
 
 const steps = [
-  { title: "Svara på några frågor", description: "Berätta om er situation – vad ni äger, vad ni vill ska vara enskild egendom och vad ni vill skydda. Det tar några minuter." },
+  { title: "Svara på några frågor", description: "Berätta om er situation - vad ni äger, vad ni vill ska vara enskild egendom och vad ni vill skydda. Det tar några minuter." },
   { title: "Förordet skapas", description: "Vi genererar ett juridiskt korrekt äktenskapsförord anpassat efter er situation och era svar." },
   { title: "Signera och registrera", description: "Ni skriver under förordet – det måste bevittnas av två personer och registreras hos Skatteverket för att gälla. Vi guidar er genom hela processen." },
 ];
