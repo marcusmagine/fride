@@ -54,7 +54,9 @@ export function WhyFrideSection({ ctaHref = "https://app.fride.se/create/framtid
         <div className="fade-in text-center">
           <p className="text-[#354042] mb-6">
             En trygg framtid för ett fast pris. Skapa din framtidsfullmakt digitalt för endast{" "}
-            <strong>499 kr inkl. moms</strong>. Ingen prenumeration. Inga dolda avgifter.
+            <strong>499 kr inkl. moms</strong>.<br />
+            Skapar du fler dokument hos oss får du <strong>50% rabatt</strong> på alla efterföljande.<br />
+            Ingen prenumeration. Inga dolda avgifter.
           </p>
           <Link
             href={ctaHref}

@@ -78,7 +78,7 @@ export default function TestamentePage() {
         subtext="Med ett testamente bestämmer du själv vad som händer med det du lämnar efter dig. Vi skapar ett juridiskt korrekt testamente anpassat efter din situation – så att rätt personer får rätt sak, och dina närmaste slipper onödiga konflikter."
         ctaLabel="Skapa testamente"
         ctaHref="https://app.fride.se/create/testamente"
-        imageSrc="/images/Testamente-1.webp"
+        imageSrc="/images/testamente-1-ny.webp"
         imageAlt="Person som skapar testamente"
       />
 
@@ -105,7 +105,7 @@ export default function TestamentePage() {
         steps={steps}
         price={499}
         stacked
-        imageSrc="/images/Testamente-2.webp"
+        imageSrc="/images/testamente-sa-funkar-det.webp"
         imageAlt="Testamente – så funkar det"
         ctaHref="https://app.fride.se/create/testamente"
         ctaLabel="Skapa testamente"
@@ -215,7 +215,8 @@ export default function TestamentePage() {
               "Enkelt och snabbt – du kan skapa ditt testamente på bara några minuter, utan förkunskaper.",
             ]} />
             <p className="mt-8 text-[#354042] mb-6">
-              Skapa ett testamente digitalt för endast <strong>499 kr exkl. moms</strong>.<br />
+              Skapa ett testamente digitalt för endast <strong>499 kr inkl. moms</strong>.<br />
+              Skapar du fler dokument hos oss får du <strong>50% rabatt</strong> på alla efterföljande.<br />
               Ingen prenumeration. Inga dolda avgifter.
             </p>
             <Link
@@ -226,7 +227,7 @@ export default function TestamentePage() {
             </Link>
           </div>
           <div className="fade-in fade-in-delay-1 relative h-80 md:h-[520px] rounded-2xl overflow-hidden">
-            <Image src="/images/Gavobrev-mockup.webp" alt="Testamente – Fride app-mockup" fill className="object-cover" />
+            <Image src="/images/testamente-mockup.webp" alt="Testamente – Fride app-mockup" fill className="object-cover" />
           </div>
         </div>
       </section>

@@ -1,8 +1,21 @@
 {
   "permissions": {
     "allow": [
+      "Bash(git clone *)",
+      "Bash(cp -r /tmp/fride-clone/. \"/Users/sara.gustafsson/Desktop/Skrivbord – MacBook Air som tillhör Sara/SARAI/dev/fride/\")",
+      "Bash(rm -rf /tmp/fride-clone)",
+      "Bash(npm install *)",
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/sara.gustafsson/.nvm/versions/**)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001)",
       "WebFetch(domain:www.fride.se)",
-      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-turbopack)"
+      "Bash(curl -sL \"https://cdn.prod.website-files.com/6869251ac7884d1aaf816525/698c97f31956ebec48c7d75e_pexels-ketut-subiyanto-4759730.jpg\" -o \"ff-darfor.jpg\")",
+      "Bash(curl -sL \"https://cdn.prod.website-files.com/6869251ac7884d1aaf816525/6874ebba8d1c01696a0a3aad_david-stamm-zMI12mSkZj0-unsplash.webp\" -o \"ff-ensam.webp\")",
+      "Bash(curl -sL \"https://cdn.prod.website-files.com/6869251ac7884d1aaf816525/690a688486d689a9e3d51a30_98cfd2f31ddeb91ee8c4e9d3a600cee6_Fride-Framtidsfullmakt-App.webp\" -o \"ff-app.webp\")",
+      "Bash(xargs sed *)",
+      "Bash(git config *)",
+      "Bash(gh auth *)"
     ]
   }
 }

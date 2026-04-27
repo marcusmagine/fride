@@ -10,11 +10,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Samboavtal",
   description:
-    "Skapa ett samboavtal online – juridiskt korrekt och anpassat efter er situation. Bestäm vad som gäller om ni separerar. Fast pris 399 kr.",
+    "Skapa ett samboavtal online – juridiskt korrekt och anpassat efter er situation. Bestäm vad som gäller om ni separerar. Fast pris 499 kr inkl. moms.",
   alternates: { canonical: "https://www.fride.se/samboavtal" },
 };
 
-const trustPoints = ["Fast pris 399 kr", "Juridiskt korrekt", "Inga vittnen krävs"];
+const trustPoints = ["Fast pris 499 kr inkl. moms", "Juridiskt korrekt", "Inga vittnen krävs"];
 
 const steps = [
   { title: "Svara på några frågor", description: "Berätta om er situation – vad ni äger, vad ni vill ska gälla och vad ni vill skydda. Det tar några minuter." },
@@ -102,7 +102,7 @@ export default function SamboavtalPage() {
 
       <ProcessSteps
         steps={steps}
-        price={399}
+        price={499}
         stacked
         imageSrc="/images/samboavtal-2.webp"
         imageAlt="Samboavtal – så funkar det"
@@ -214,7 +214,8 @@ export default function SamboavtalPage() {
               "Enkelt och snabbt – ni kan skapa ert samboavtal på bara några minuter, utan förkunskaper.",
             ]} />
             <p className="mt-8 text-[#354042] mb-6">
-              Skapa ett samboavtal digitalt för endast <strong>399 kr exkl. moms</strong>.<br />
+              Skapa ett samboavtal digitalt för endast <strong>499 kr inkl. moms</strong>.<br />
+              Skapar du fler dokument hos oss får du <strong>50% rabatt</strong> på alla efterföljande.<br />
               Ingen prenumeration. Inga dolda avgifter.
             </p>
             <Link
@@ -225,7 +226,7 @@ export default function SamboavtalPage() {
             </Link>
           </div>
           <div className="fade-in fade-in-delay-1 relative h-80 md:h-[520px] rounded-2xl overflow-hidden">
-            <Image src="/images/Gavobrev-mockup.webp" alt="Samboavtal – Fride app-mockup" fill className="object-cover" />
+            <Image src="/images/samboavtal-mockup.webp" alt="Samboavtal – Fride app-mockup" fill className="object-cover" />
           </div>
         </div>
       </section>

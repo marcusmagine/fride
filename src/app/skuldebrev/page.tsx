@@ -189,6 +189,7 @@ export default function SkuldebrevPage() {
             ]} />
             <p className="mt-8 text-[#354042] mb-6">
               Skapa ditt skuldebrev digitalt för endast <strong>499 kr inkl. moms</strong>.<br />
+              Skapar du fler dokument hos oss får du <strong>50% rabatt</strong> på alla efterföljande.<br />
               Ingen prenumeration. Inga dolda avgifter.
             </p>
             <Link

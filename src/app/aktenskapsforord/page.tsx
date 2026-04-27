@@ -10,11 +10,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Äktenskapsförord",
   description:
-    "Skapa ett äktenskapsförord online – juridiskt korrekt och anpassat efter er situation. Bestäm vad som ska vara enskild egendom. Fast pris 399 kr.",
+    "Skapa ett äktenskapsförord online – juridiskt korrekt och anpassat efter er situation. Bestäm vad som ska vara enskild egendom. Fast pris 499 kr inkl. moms.",
   alternates: { canonical: "https://www.fride.se/aktenskapsforord" },
 };
 
-const trustPoints = ["Fast pris 399 kr", "Juridiskt korrekt", "Guidning steg för steg"];
+const trustPoints = ["Fast pris 499 kr inkl. moms", "Juridiskt korrekt", "Guidning steg för steg"];
 
 const steps = [
   { title: "Svara på några frågor", description: "Berätta om er situation - vad ni äger, vad ni vill ska vara enskild egendom och vad ni vill skydda. Det tar några minuter." },
@@ -78,7 +78,7 @@ export default function AktenskapsforodPage() {
         subtext="Med ett äktenskapsförord bestämmer ni själva vad som ska gälla om ni separerar eller om någon av er går bort. Vi skapar ett juridiskt korrekt förord anpassat efter er situation – så att ni skyddar det som är viktigt för er båda."
         ctaLabel="Skapa äktenskapsförord"
         ctaHref="https://app.fride.se/create/aktenskapsforord"
-        imageSrc="/images/aktenskapsforord-1.webp"
+        imageSrc="/images/aktenskapsforord-2.webp"
         imageAlt="Par som skapar äktenskapsförord"
       />
 
@@ -105,9 +105,9 @@ export default function AktenskapsforodPage() {
 
       <ProcessSteps
         steps={steps}
-        price={399}
+        price={499}
         stacked
-        imageSrc="/images/aktenskapsforord-2.webp"
+        imageSrc="/images/aktenskapsforord-sa-funkar-det.webp"
         imageAlt="Äktenskapsförord – så funkar det"
         ctaHref="https://app.fride.se/create/aktenskapsforord"
         ctaLabel="Skapa äktenskapsförord"
@@ -147,7 +147,7 @@ export default function AktenskapsforodPage() {
       <section className="py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in fade-in-delay-1 relative h-80 md:h-[480px] rounded-2xl overflow-hidden">
-            <Image src="/images/aktenskapsforord-4.webp" alt="Äktenskapsförord för arv" fill className="object-cover" />
+            <Image src="/images/arv-stanna-familjen.webp" alt="Äktenskapsförord för arv" fill className="object-cover" />
           </div>
           <div className="fade-in">
             <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
@@ -212,7 +212,8 @@ export default function AktenskapsforodPage() {
               "Enkelt och snabbt – ni kan skapa ert äktenskapsförord på bara några minuter, utan förkunskaper.",
             ]} />
             <p className="mt-8 text-[#354042] mb-6">
-              Skapa ett äktenskapsförord digitalt för endast <strong>399 kr exkl. moms</strong>.<br />
+              Skapa ett äktenskapsförord digitalt för endast <strong>499 kr inkl. moms</strong>.<br />
+              Skapar du fler dokument hos oss får du <strong>50% rabatt</strong> på alla efterföljande.<br />
               Ingen prenumeration. Inga dolda avgifter.
             </p>
             <Link
@@ -223,7 +224,7 @@ export default function AktenskapsforodPage() {
             </Link>
           </div>
           <div className="fade-in fade-in-delay-1 relative h-80 md:h-[520px] rounded-2xl overflow-hidden">
-            <Image src="/images/Gavobrev-mockup.webp" alt="Äktenskapsförord – Fride app-mockup" fill className="object-cover" />
+            <Image src="/images/aktenskapsforord-mockup.webp" alt="Äktenskapsförord – Fride app-mockup" fill className="object-cover" />
           </div>
         </div>
       </section>

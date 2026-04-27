@@ -52,7 +52,7 @@ const documents = [
     ctaHref: "https://app.fride.se/create/samboavtal",
     ctaLabel: "Skapa samboavtal",
     image: "/images/product-samboavtal.webp",
-    price: 399,
+    price: 499,
     available: true,
   },
   {
@@ -74,7 +74,7 @@ const documents = [
     ctaHref: "https://app.fride.se/create/aktenskapsforord",
     ctaLabel: "Skapa äktenskapsförord",
     image: "/images/product-extra.webp",
-    price: 399,
+    price: 499,
     available: true,
   },
 ];
