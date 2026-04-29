@@ -228,7 +228,7 @@ export default function TestamentePage() {
             </Link>
           </div>
           <div className="fade-in fade-in-delay-1 relative h-80 md:h-[520px] rounded-2xl overflow-hidden">
-            <Image src="/images/testamente-mockup.webp" alt="Testamente – Fride app-mockup" fill className="object-cover" />
+            <Image src="/images/Testamente-mockup.webp" alt="Testamente – Fride app-mockup" fill className="object-cover" />
           </div>
         </div>
       </section>
