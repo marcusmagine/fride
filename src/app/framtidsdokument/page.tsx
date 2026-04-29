@@ -19,7 +19,7 @@ const documents = [
     ctaHref: "https://app.fride.se/create/framtidsfullmakt",
     ctaLabel: "Skapa framtidsfullmakt",
     image: "/images/product-ff.webp",
-    price: 699,
+    price: 499,
     available: true,
   },
   {
@@ -202,6 +202,11 @@ export default function FramtidsdokumentPage() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-8 bg-[#fff1e6] border border-[#d9c1b1] rounded-2xl px-6 py-4">
+            <p className="text-sm text-[#4a5e5f]">
+              <strong className="text-[#354042]">50% rabatt</strong> på alla efterföljande dokument när du redan köpt ett. Ju fler du skapar, desto mer sparar du.
+            </p>
           </div>
         </div>
       </section>
