@@ -78,7 +78,7 @@ export default function TestamentePage() {
         subtext="Med ett testamente bestämmer du själv vad som händer med det du lämnar efter dig. Vi skapar ett juridiskt korrekt testamente anpassat efter din situation – så att rätt personer får rätt sak, och dina närmaste slipper onödiga konflikter."
         ctaLabel="Skapa testamente"
         ctaHref="https://app.fride.se/create/testamente"
-        imageSrc="/images/testamente-1-ny.webp"
+        imageSrc="/images/testemtente-hero.webp"
         imageAlt="Person som skapar testamente"
         price={499}
       />
@@ -106,7 +106,7 @@ export default function TestamentePage() {
         steps={steps}
         price={499}
         stacked
-        imageSrc="/images/testamente-sa-funkar-det.webp"
+        imageSrc="/images/testemente-sa-funkar-det.jpg"
         imageAlt="Testamente – så funkar det"
         ctaHref="https://app.fride.se/create/testamente"
         ctaLabel="Skapa testamente"
