@@ -93,24 +93,22 @@ export default function ElzaIntervjuPage() {
             </Link>
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link
-              href="/framtidsfullmakt"
-              className="bg-[#20293d] text-[#fff1e6] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors whitespace-nowrap"
-            >
-              Framtidsfullmakt
-            </Link>
-            <Link
-              href="/gavobrev"
-              className="bg-[#20293d] text-[#fff1e6] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors whitespace-nowrap"
-            >
-              Gåvobrev
-            </Link>
-            <Link
-              href="/skuldebrev"
-              className="bg-[#20293d] text-[#fff1e6] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors whitespace-nowrap"
-            >
-              Skuldebrev
-            </Link>
+            {[
+              { label: "Framtidsfullmakt", href: "/framtidsfullmakt" },
+              { label: "Gåvobrev", href: "/gavobrev" },
+              { label: "Skuldebrev", href: "/skuldebrev" },
+              { label: "Testamente", href: "/testamente" },
+              { label: "Samboavtal", href: "/samboavtal" },
+              { label: "Äktenskapsförord", href: "/aktenskapsforord" },
+            ].map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="bg-[#20293d] text-[#fff1e6] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors whitespace-nowrap"
+              >
+                {label}
+              </Link>
+            ))}
           </div>
         </div>
       </section>

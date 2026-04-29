@@ -80,9 +80,12 @@ export function Footer() {
       </div>
 
       {/* Decorative background */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: "url('/footer-bg.svg')", backgroundSize: "cover", backgroundPosition: "center" }}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/footer-bg.svg"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
       />
     </footer>
   );
