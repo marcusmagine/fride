@@ -80,6 +80,7 @@ export default function SamboavtalPage() {
         ctaHref="https://app.fride.se/create/samboavtal"
         imageSrc="/images/samboavtal-1.webp"
         imageAlt="Par som skapar samboavtal"
+        price={499}
       />
 
       <TrustBar points={trustPoints} />

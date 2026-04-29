@@ -11,6 +11,7 @@ interface HeroProps {
   secondaryHref?: string;
   imageSrc?: string;
   imageAlt?: string;
+  price?: number;
 }
 
 export function Hero({
@@ -22,6 +23,7 @@ export function Hero({
   secondaryHref,
   imageSrc,
   imageAlt,
+  price,
 }: HeroProps) {
   return (
     <section className="bg-[#fff1e6] overflow-hidden">
@@ -33,7 +35,15 @@ export function Hero({
             {headline}
           </h1>
           <p className="mt-5 text-base md:text-lg text-[#d27957] leading-relaxed">{subtext}</p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          {price && (
+            <div className="mt-6 inline-flex items-center gap-2">
+              <span className="bg-[#354042] text-[#fff1e6] text-sm font-semibold px-4 py-1.5 rounded-full">
+                {price} kr
+              </span>
+              <span className="text-sm text-[#4a5e5f]">inkl. moms</span>
+            </div>
+          )}
+          <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href={ctaHref}
               className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"

@@ -80,6 +80,7 @@ export default function TestamentePage() {
         ctaHref="https://app.fride.se/create/testamente"
         imageSrc="/images/testamente-1-ny.webp"
         imageAlt="Person som skapar testamente"
+        price={499}
       />
 
       <TrustBar points={trustPoints} />

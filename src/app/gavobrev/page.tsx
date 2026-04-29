@@ -95,6 +95,7 @@ export default function GavobrevPage() {
         ctaHref="https://app.fride.se/create/gavobrev"
         imageSrc="/images/hero-par.webp"
         imageAlt="Par som planerar ett gåvobrev"
+        price={499}
       />
 
       <TrustBar points={trustPoints} />

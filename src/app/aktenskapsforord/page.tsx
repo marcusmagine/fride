@@ -80,6 +80,7 @@ export default function AktenskapsforodPage() {
         ctaHref="https://app.fride.se/create/aktenskapsforord"
         imageSrc="/images/aktenskapsforord-2.webp"
         imageAlt="Par som skapar äktenskapsförord"
+        price={499}
       />
 
       <TrustBar points={trustPoints} />

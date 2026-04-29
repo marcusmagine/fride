@@ -87,6 +87,7 @@ export default function FramtidsfullmaktPage() {
         ctaHref="https://app.fride.se/create/framtidsfullmakt"
         imageSrc="/images/framtidsfullmakt.webp"
         imageAlt="Person som planerar sin framtid"
+        price={499}
       />
 
       <TrustBar points={trustPoints} />

@@ -75,6 +75,7 @@ export default function SkuldebrevPage() {
         ctaHref="https://app.fride.se/create/skuldbrev"
         imageSrc="/images/Skuldebrev-hero.webp"
         imageAlt="Skapa skuldebrev online"
+        price={499}
       />
 
       <TrustBar points={trustPoints} />
