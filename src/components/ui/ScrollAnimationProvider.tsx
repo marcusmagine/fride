@@ -22,8 +22,8 @@ export function ScrollAnimationProvider() {
       });
     };
 
-    // Run immediately, then again after paint to catch all elements
-    observeAll();
+    // Defer until after React hydration is complete
+    const timer = setTimeout(observeAll, 0);
     requestAnimationFrame(() => {
       requestAnimationFrame(observeAll);
     });

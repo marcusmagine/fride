@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.fride.se/kunskap" },
 };
 
-const BASE = "https://www.fride.se";
+const BASE = "";
 
 const IMG: Record<string, string> = {
   "Framtidsfullmakt": "/images/product-ff.webp",
