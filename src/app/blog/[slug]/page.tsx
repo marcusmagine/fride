@@ -18,8 +18,13 @@ interface Article {
 }
 
 export async function generateStaticParams() {
-  const slugs = await client.fetch(allArticleSlugsQuery);
-  return slugs.map((s: { slug: string }) => ({ slug: s.slug }));
+  if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) return [];
+  try {
+    const slugs = await client.fetch(allArticleSlugsQuery);
+    return slugs.map((s: { slug: string }) => ({ slug: s.slug }));
+  } catch {
+    return [];
+  }
 }
 
 export async function generateMetadata({
@@ -28,6 +33,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) return {};
   const article: Article | null = await client.fetch(articleBySlugQuery, { slug });
   if (!article) return {};
   return {
@@ -57,6 +63,7 @@ export default async function ArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) notFound();
   const article: Article | null = await client.fetch(articleBySlugQuery, { slug });
 
   if (!article) notFound();
