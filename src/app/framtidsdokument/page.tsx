@@ -151,7 +151,13 @@ export default function FramtidsdokumentPage() {
       {/* Documents grid */}
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-10 fade-in">Våra dokument</h2>
+          <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-6 fade-in">Våra dokument</h2>
+          <div className="mb-10 bg-[#354042] text-[#fff1e6] rounded-2xl px-6 py-4 flex items-center gap-4">
+            <span className="text-2xl font-serif font-bold text-[#d27957] shrink-0">50%</span>
+            <p className="text-sm leading-snug">
+              <strong>Rabatt på alla efterföljande dokument</strong> — köper du fler än ett dokument hos oss får du 50% rabatt på alla efterföljande.
+            </p>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {documents.map((doc) => (
               <div
@@ -202,11 +208,6 @@ export default function FramtidsdokumentPage() {
                 </div>
               </div>
             ))}
-          </div>
-          <div className="mt-8 bg-[#fff1e6] border border-[#d9c1b1] rounded-2xl px-6 py-4">
-            <p className="text-sm text-[#4a5e5f]">
-              <strong className="text-[#354042]">50% rabatt</strong> på alla efterföljande dokument när du redan köpt ett. Ju fler du skapar, desto mer sparar du.
-            </p>
           </div>
         </div>
       </section>
