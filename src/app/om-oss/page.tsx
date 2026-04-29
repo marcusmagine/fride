@@ -120,7 +120,7 @@ export default function OmOssPage() {
               </p>
             </div>
             <Link
-              href="https://www.fride.se/intervju-joanna-robarth--grundare"
+              href="/intervju-joanna-robarth--grundare"
               className="inline-block mt-6 bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"
             >
               Läs intervjun med Joanna
@@ -156,7 +156,7 @@ export default function OmOssPage() {
               </p>
             </div>
             <Link
-              href="https://www.fride.se/intervju-elza-kazemi-grundare-fride"
+              href="/intervju-elza-kazemi-grundare-fride"
               className="inline-block mt-6 bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"
             >
               Läs intervjun med Elza
