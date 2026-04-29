@@ -42,6 +42,23 @@ export const article = defineType({
       of: [{ type: "block" }, { type: "image" }],
     }),
     defineField({
+      name: "category",
+      title: "Kategori",
+      type: "string",
+    }),
+    defineField({
+      name: "coverImageUrl",
+      title: "Omslagsbild URL",
+      type: "url",
+      description: "Extern bild-URL (från Webflow CDN)",
+    }),
+    defineField({
+      name: "rawHtml",
+      title: "Brödtext (HTML)",
+      type: "text",
+      description: "Artikelinnehåll i HTML-format",
+    }),
+    defineField({
       name: "seoTitle",
       title: "SEO-titel",
       type: "string",
