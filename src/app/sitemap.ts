@@ -23,13 +23,20 @@ const staticRoutes: MetadataRoute.Sitemap = [
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const slugs: { slug: string }[] = await client.fetch(allArticleSlugsQuery);
+  let blogRoutes: MetadataRoute.Sitemap = [];
 
-  const blogRoutes: MetadataRoute.Sitemap = slugs.map(({ slug }) => ({
-    url: `${BASE_URL}/blog/${slug}`,
-    changeFrequency: "yearly",
-    priority: 0.6,
-  }));
+  if (process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
+    try {
+      const slugs: { slug: string }[] = await client.fetch(allArticleSlugsQuery);
+      blogRoutes = slugs.map(({ slug }) => ({
+        url: `${BASE_URL}/blog/${slug}`,
+        changeFrequency: "yearly",
+        priority: 0.6,
+      }));
+    } catch {
+      // Sanity not configured yet, skip blog routes
+    }
+  }
 
   return [...staticRoutes, ...blogRoutes];
 }
