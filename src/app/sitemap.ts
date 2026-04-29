@@ -16,6 +16,8 @@ const staticRoutes: MetadataRoute.Sitemap = [
   { url: `${BASE_URL}/kunskap`, changeFrequency: "weekly", priority: 0.7 },
   { url: `${BASE_URL}/om-oss`, changeFrequency: "yearly", priority: 0.6 },
   { url: `${BASE_URL}/kontakta-oss`, changeFrequency: "yearly", priority: 0.5 },
+  { url: `${BASE_URL}/intervju-joanna-robarth--grundare`, changeFrequency: "yearly", priority: 0.5 },
+  { url: `${BASE_URL}/intervju-elza-kazemi-grundare-fride`, changeFrequency: "yearly", priority: 0.5 },
   { url: `${BASE_URL}/cookies`, changeFrequency: "yearly", priority: 0.3 },
   { url: `${BASE_URL}/integritetspolicy`, changeFrequency: "yearly", priority: 0.3 },
 ];
