@@ -152,7 +152,7 @@ export default function FramtidsdokumentPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-6 fade-in">Våra dokument</h2>
-          <div className="mb-10 bg-[#354042] text-[#fff1e6] rounded-2xl px-6 py-4 flex items-center gap-4">
+          <div className="mb-10 bg-[#20293d] text-[#fff1e6] rounded-2xl px-6 py-4 flex items-center gap-4">
             <span className="text-2xl font-serif font-bold text-[#d27957] shrink-0">50%</span>
             <p className="text-sm leading-snug">
               <strong>Rabatt på alla efterföljande dokument</strong> — köper du fler än ett dokument hos oss får du 50% rabatt på alla efterföljande.
