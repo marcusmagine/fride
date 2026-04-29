@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Kontakta oss",
@@ -20,6 +21,15 @@ export default function KontaktaOssPage() {
         >
           Skicka e-post till hej@fride.se
         </a>
+      </div>
+
+      <div className="mt-12 relative w-full h-72 md:h-96 rounded-2xl overflow-hidden">
+        <Image
+          src="/images/team-fride.jpeg"
+          alt="Fride-teamet"
+          fill
+          className="object-cover"
+        />
       </div>
     </div>
   );
