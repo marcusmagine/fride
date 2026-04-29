@@ -23,7 +23,7 @@ export default function KontaktaOssPage() {
         </a>
       </div>
 
-      <div className="mt-12 relative w-full h-72 md:h-96 rounded-2xl overflow-hidden">
+      <div className="mt-12 relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
         <Image
           src="/images/team-fride.jpeg"
           alt="Fride-teamet"
