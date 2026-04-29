@@ -79,21 +79,11 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Decorative wave shape */}
-      <div className="absolute bottom-0 right-0 w-72 md:w-96 h-64 md:h-80 pointer-events-none">
-        <svg viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-          <path
-            d="M400 320 C300 320 180 260 160 180 C140 100 220 40 300 20 C360 5 400 30 400 30 Z"
-            fill="#c06a44"
-            opacity="0.6"
-          />
-          <path
-            d="M400 320 C320 320 220 280 200 210 C180 140 250 80 340 60 C380 50 400 70 400 70 Z"
-            fill="#d27957"
-            opacity="0.5"
-          />
-        </svg>
-      </div>
+      {/* Decorative background */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ backgroundImage: "url('/footer-bg.svg')", backgroundSize: "cover", backgroundPosition: "center" }}
+      />
     </footer>
   );
 }
