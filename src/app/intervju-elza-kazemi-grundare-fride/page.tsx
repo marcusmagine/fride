@@ -59,7 +59,7 @@ export default function ElzaIntervjuPage() {
 
       {/* Cover image */}
       <div className="max-w-3xl mx-auto px-6 mb-10">
-        <div className="relative h-64 md:h-96 w-full rounded-2xl overflow-hidden">
+        <div className="relative h-96 md:h-[576px] w-full rounded-2xl overflow-hidden">
           <Image
             src="/images/team-joanna-elza.webp"
             alt="Elza Kazemi, grundare av Fride"
