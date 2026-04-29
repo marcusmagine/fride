@@ -11,15 +11,15 @@ export const metadata: Metadata = {
 const qa = [
   {
     q: "Varför Fride?",
-    a: "En nära vän till mig förlorade sin sambo hastigt, och när jag såg henne hantera livet, barnen och sorgen samtidigt som bouppteckning, kändes det omänskligt. När min pappa dog för 30 år sedan gjordes bouppteckningen på mer eller mindre exakt samma sätt, trots att internet och BankId finns idag. Det känns orimligt att teknologin inte hängt med. När jag berättade för min partner Elza sa hon: "– Men det där måste vi ju lösa".",
+    a: `En nära vän till mig förlorade sin sambo hastigt, och när jag såg henne hantera livet, barnen och sorgen samtidigt som bouppteckning, kändes det omänskligt. När min pappa dog för 30 år sedan gjordes bouppteckningen på mer eller mindre exakt samma sätt, trots att internet och BankId finns idag. Det känns orimligt att teknologin inte hängt med. När jag berättade för min partner Elza sa hon: "– Men det där måste vi ju lösa".`,
   },
   {
     q: "Vilket konkret problem i dödsbohantering vill du lösa först?",
-    a: "Det vore en dröm att avlasta människor i sorg genom att automatisera inhämtningen av information till bouppteckningen. Dels för att spara tid och minska fel, men också för att det är jobbigt och smärtsamt att upprepa gång på gång: "– Min man har gått bort. Min man har gått bort." För idag är det tyvärr inte mycket man kan göra elektroniskt.",
+    a: `Det vore en dröm att avlasta människor i sorg genom att automatisera inhämtningen av information till bouppteckningen. Dels för att spara tid och minska fel, men också för att det är jobbigt och smärtsamt att upprepa gång på gång: "– Min man har gått bort. Min man har gått bort." För idag är det tyvärr inte mycket man kan göra elektroniskt.`,
   },
   {
     q: "Vad i Frides arbete känns mest meningsfullt för dig just nu?",
-    a: "När vi har fördjupat oss i vad som händer med allt det praktiska när en person går bort har vi insett hur lätt det faktiskt är att underlätta för sina närstående som blir kvar. Därför jobbar vi på att förenkla ett antal juridiska dokument som vi kallar "Framtidsdokument". Vi har lanserat en användarvänlig och tydlig vägledning för att upprätta Framtidsfullmakt som inte bara är juridiskt korrekt, utan även kommer fungera i praktiken om man skulle behöva den. Som en försäkring, ungefär. Snart kommer samma enkla vägledning med Testamente och strax därefter samboavtal, äktenskapsförord, gåvobrev och skuldbrev.",
+    a: `När vi har fördjupat oss i vad som händer med allt det praktiska när en person går bort har vi insett hur lätt det faktiskt är att underlätta för sina närstående som blir kvar. Därför jobbar vi på att förenkla ett antal juridiska dokument som vi kallar "Framtidsdokument". Vi har lanserat en användarvänlig och tydlig vägledning för att upprätta Framtidsfullmakt som inte bara är juridiskt korrekt, utan även kommer fungera i praktiken om man skulle behöva den. Som en försäkring, ungefär. Snart kommer samma enkla vägledning med Testamente och strax därefter samboavtal, äktenskapsförord, gåvobrev och skuldbrev.`,
   },
   {
     q: "Vad är du stolt över?",
