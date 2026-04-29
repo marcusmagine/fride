@@ -36,11 +36,9 @@ export function Hero({
           </h1>
           <p className="mt-5 text-base md:text-lg text-[#d27957] leading-relaxed">{subtext}</p>
           {price && (
-            <div className="mt-6 inline-flex items-center gap-2">
-              <span className="bg-[#354042] text-[#fff1e6] text-sm font-semibold px-4 py-1.5 rounded-full">
-                {price} kr
-              </span>
-              <span className="text-sm text-[#4a5e5f]">inkl. moms</span>
+            <div className="mt-6 inline-flex items-center gap-3 border border-[#d9c1b1] rounded-xl px-4 py-2.5 bg-white/50">
+              <span className="text-2xl font-serif font-semibold text-[#354042]">{price} kr</span>
+              <span className="text-xs text-[#4a5e5f] leading-tight">inkl.<br />moms</span>
             </div>
           )}
           <div className="mt-6 flex flex-wrap gap-3">
