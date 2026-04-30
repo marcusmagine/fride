@@ -14,6 +14,8 @@ const columns = [
       { label: "Framtidsfullmakt", href: "/framtidsfullmakt" },
       { label: "Gåvobrev", href: "/gavobrev" },
       { label: "Skuldebrev", href: "/skuldebrev" },
+      { label: "Testamente", href: "/testamente" },
+      { label: "Samboavtal", href: "/samboavtal" },
     ],
   },
   {
