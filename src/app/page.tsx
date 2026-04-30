@@ -20,7 +20,7 @@ export default function HomePage() {
         ctaLabel="Skapa framtidsfullmakt"
         ctaHref="https://app.fride.se/create/framtidsfullmakt"
         secondaryLabel="Utforska fler dokument"
-        secondaryHref="#dokument"
+        secondaryHref="/framtidsdokument"
         imageSrc="/images/hero-familj.webp"
         imageAlt="Familj som skrattar tillsammans"
       />
