@@ -101,6 +101,46 @@ export default function SamboavtalPage() {
         </div>
       </section>
 
+      {/* AI-assistent */}
+      <section className="bg-[#fff1e6] py-16 md:py-20">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+          <div className="fade-in">
+            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+              Använd vår AI för att få hjälp.
+            </h2>
+            <p className="text-[#4a5e5f] leading-relaxed mb-8">
+              Den är tränad på allt som har med samboavtal att göra och kan svara på alla dina frågor
+              kopplat till det. Du får tydliga och korrekta svar skrivet på ett enkelt och mänskligt
+              sätt (trots att det är en AI). Testa nu — skriv din fråga här i rutan bredvid.
+            </p>
+            <p className="text-sm font-medium text-[#354042] mb-3">Exempel på frågor du kan ställa:</p>
+            <ul className="flex flex-col gap-2">
+              {[
+                "Vad reglerar ett samboavtal?",
+                "Behöver vi ett samboavtal om vi har barn tillsammans?",
+                "Vad händer med bostaden om vi separerar utan samboavtal?",
+                "Kan vi skriva att allt ska delas lika i ett samboavtal?",
+                "Skiljer sig samboavtal från äktenskapsförord?",
+              ].map((q) => (
+                <li key={q} className="flex items-start gap-2 text-sm text-[#4a5e5f] leading-relaxed">
+                  <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
+                  {q}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="fade-in fade-in-delay-1 w-full rounded-2xl overflow-hidden">
+            <iframe
+              src="https://ai.fride.se/chatbot/Hh7ZinstzP0WsGuC"
+              style={{ width: "100%", height: "100%", minHeight: "700px" }}
+              frameBorder={0}
+              allow="microphone"
+              title="Fride AI – samboavtal"
+            />
+          </div>
+        </div>
+      </section>
+
       <ProcessSteps
         steps={steps}
         price={499}
