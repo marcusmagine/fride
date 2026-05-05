@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { ProductsSection } from "@/components/sections/ProductsSection";
+import { LifeSituationsSection } from "@/components/sections/LifeSituationsSection";
 import { FoundersSection } from "@/components/sections/FoundersSection";
 import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
@@ -25,6 +26,7 @@ export default function HomePage() {
         imageAlt="Familj som skrattar tillsammans"
       />
       <ProductsSection />
+      <LifeSituationsSection />
       <FoundersSection />
       <CTASection ctaHref="https://app.fride.se" ctaLabel="Skapa ditt dokument" />
     </>
