@@ -129,7 +129,7 @@ export default function EnsamstaendePage() {
                 <h3 className="font-serif text-xl font-semibold text-[#354042] mb-3">{doc.title}</h3>
                 <p className="text-[#4a5e5f] leading-relaxed mb-4">{doc.description}</p>
                 <p className="text-sm text-[#4a5e5f] mb-5">
-                  499 kr · Juridiskt korrekt · Guidning steg för steg
+                  Fast pris <strong>499 kr</strong> inkl. moms
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Link
@@ -150,11 +150,10 @@ export default function EnsamstaendePage() {
           </div>
 
           {/* Rabattinfo */}
-          <div className="mt-8 bg-[#20293d] text-[#fff1e6] rounded-2xl px-6 py-4">
+          <div className="mt-8 bg-[#20293d] text-[#fff1e6] rounded-2xl px-6 py-4 flex items-center gap-4">
+            <span className="text-2xl font-serif font-bold text-[#d27957] shrink-0">50%</span>
             <p className="text-sm leading-snug">
-              Köper du två produkter, t.ex. Framtidsfullmakt och Testamente, får du det ena för
-              halva priset — <strong>249,50 kr</strong>. Köper du alla tre får du två för halva
-              priset och betalar totalt <strong>998 kr inkl. moms</strong>.
+              <strong>Rabatt på alla efterföljande dokument</strong> — köper du fler än ett dokument hos oss får du 50% rabatt på alla efterföljande.
             </p>
           </div>
         </div>
@@ -189,7 +188,7 @@ export default function EnsamstaendePage() {
               Det tar några minuter. Det ger trygghet för resten av livet.
             </p>
             <Link
-              href="#dokument"
+              href="https://app.fride.se"
               className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"
             >
               Kom igång nu
