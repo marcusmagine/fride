@@ -25,8 +25,8 @@ export default function HomePage() {
         imageSrc="/images/hero-familj.webp"
         imageAlt="Familj som skrattar tillsammans"
       />
-      <ProductsSection />
       <LifeSituationsSection />
+      <ProductsSection />
       <FoundersSection />
       <CTASection ctaHref="https://app.fride.se" ctaLabel="Skapa ditt dokument" />
     </>

@@ -3,31 +3,34 @@ import Image from "next/image";
 
 const situations = [
   {
-    label: "Sambor",
-    headline: "Ni lever som ett par. Men lagen ser er inte alltid som ett.",
+    label: "Ensamstående med barn",
+    headline: "Du står ensam med ansvaret. Bli inte ensam med oron också.",
     description:
-      "Sambor har inte samma automatiska rättigheter som gifta. Det fixar ni enkelt.",
-    href: "/framtidsklar/sambor",
-    imageSrc: "/images/sambor-1.webp",
-    imageAlt: "Sambo par",
+      "Som ensamstående förälder är du den viktigaste personen i ditt barns liv. Men vad händer om du plötsligt inte kan fatta beslut?",
+    href: "/framtidsklar/ensamstaende",
+    imageSrc: "/images/ensamstaende-1.webp",
+    imageAlt: "Ensamstående förälder med barn",
+    imagePosition: "object-bottom",
   },
   {
     label: "Gift",
     headline: "Ni har byggt något tillsammans. Se till att det skyddas.",
     description:
-      "Äktenskapet ger trygghet — men inte alltid det skydd du tror. Få ordning på det viktiga.",
+      "Äktenskapet ger trygghet — men inte alltid det skydd ni tror. Utan rätt dokument bestämmer lagen, inte ni.",
     href: "/framtidsklar/gift",
     imageSrc: "/images/gift-1.webp",
     imageAlt: "Gift par",
+    imagePosition: "object-top",
   },
   {
-    label: "Ensamstående med barn",
-    headline: "Du står ensam med ansvaret. Bli inte ensam med oron också.",
+    label: "Sambor",
+    headline: "Ni lever som ett par. Men lagen ser er inte alltid som ett.",
     description:
-      "Som ensamstående förälder är du den viktigaste personen i ditt barns liv. Se till att de är skyddade.",
-    href: "/framtidsklar/ensamstaende",
-    imageSrc: "/images/ensamstaende-1.webp",
-    imageAlt: "Ensamstående förälder med barn",
+      "Sambor har inte samma automatiska rättigheter som gifta. Det betyder att den du älskar kanske inte kan ta hand om det praktiska om något händer.",
+    href: "/framtidsklar/sambor",
+    imageSrc: "/images/sambor-1.webp",
+    imageAlt: "Sambo par",
+    imagePosition: "object-top",
   },
 ];
 
@@ -56,7 +59,7 @@ export function LifeSituationsSection() {
                   src={s.imageSrc}
                   alt={s.imageAlt}
                   fill
-                  className="object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
+                  className={`object-cover ${s.imagePosition} group-hover:scale-[1.03] transition-transform duration-500`}
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
@@ -69,9 +72,15 @@ export function LifeSituationsSection() {
                 <p className="text-sm text-[#4a5e5f] leading-relaxed mb-6 flex-1">
                   {s.description}
                 </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-medium text-[#354042] group-hover:text-[#d27957] transition-colors">
+                <span className="inline-flex items-center gap-1.5 text-sm font-medium text-[#d27957] group-hover:text-[#c06a44] transition-colors">
                   Bli framtidsklar
-                  <svg className="w-4 h-4 translate-x-0 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg
+                    className="w-4 h-4 group-hover:translate-x-0.5 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
                 </span>
