@@ -10,7 +10,7 @@ const situations = [
     href: "/framtidsklar/ensamstaende",
     imageSrc: "/images/ensamstaende-1.webp",
     imageAlt: "Ensamstående förälder med barn",
-    imagePosition: "object-bottom",
+    imagePosition: "object-center",
   },
   {
     label: "Gift",
