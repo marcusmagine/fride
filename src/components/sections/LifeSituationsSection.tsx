@@ -36,7 +36,7 @@ const situations = [
 
 export function LifeSituationsSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section id="bli-framtidsklar" className="py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-10 fade-in">
           <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">

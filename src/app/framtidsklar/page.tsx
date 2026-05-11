@@ -90,7 +90,7 @@ export default function FramtidsklarPage() {
           <div className="fade-in fade-in-delay-1 relative h-72 md:h-[480px]">
             <div className="absolute inset-0 overflow-hidden rounded-t-[50%] rounded-b-2xl">
               <Image
-                src="/images/hero-familj.webp"
+                src="/images/framtidsklar.webp"
                 alt="Familj som planerar framtiden"
                 fill
                 className="object-cover object-top"
