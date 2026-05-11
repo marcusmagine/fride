@@ -16,11 +16,11 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        headline="Vi hjälper dig att ta hand om livets viktiga beslut – i tid."
-        subtext="Förbered dig och dina anhöriga för framtiden, och slipp onödigt svåra situationer. Hos Fride får du guidning steg för steg och kan enkelt skapa juridiskt korrekta dokument som fungerar i praktiken."
-        ctaLabel="Skapa framtidsfullmakt"
-        ctaHref="https://app.fride.se/create/framtidsfullmakt"
-        secondaryLabel="Utforska fler dokument"
+        headline="Bli framtidsklar – innan livet ändrar sig."
+        subtext="De flesta vet att det är viktigt. Få har gjort det. Hos Fride skapar du juridiskt korrekta framtidsdokument på några minuter – steg för steg, på svenska."
+        ctaLabel="Bli framtidsklar"
+        ctaHref="/framtidsklar"
+        secondaryLabel="Se alla framtidsdokument"
         secondaryHref="/framtidsdokument"
         imageSrc="/images/hero-familj.webp"
         imageAlt="Familj som skrattar tillsammans"

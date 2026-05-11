@@ -73,10 +73,10 @@ export function Header() {
 
         {/* CTA */}
         <Link
-          href="/framtidsfullmakt"
+          href="/framtidsklar"
           className="hidden md:inline-block bg-[#d27957] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#c06a44] transition-colors duration-300 ml-4"
         >
-          Skapa framtidsfullmakt
+          Bli framtidsklar
         </Link>
 
         {/* Mobile menu button */}
@@ -141,11 +141,11 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/framtidsfullmakt"
+            href="/framtidsklar"
             className="mt-4 block bg-[#d27957] text-white text-sm font-medium px-5 py-3 rounded-full text-center"
             onClick={() => setMobileOpen(false)}
           >
-            Skapa framtidsfullmakt
+            Bli framtidsklar
           </Link>
         </div>
       )}
