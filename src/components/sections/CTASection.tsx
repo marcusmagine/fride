@@ -3,17 +3,19 @@ import Link from "next/link";
 interface CTASectionProps {
   ctaHref?: string;
   ctaLabel?: string;
+  headline?: string;
 }
 
 export function CTASection({
   ctaHref = "https://app.fride.se/create/framtidsfullmakt",
   ctaLabel = "Skapa ditt dokument",
+  headline = "Redo att ta hand om framtiden?",
 }: CTASectionProps) {
   return (
     <section className="bg-[#20293d] py-20 md:py-28">
       <div className="max-w-2xl mx-auto px-6 text-center fade-in">
         <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#fff1e6] mb-4">
-          Redo att ta hand om framtiden?
+          {headline}
         </h2>
         <p className="text-[#d9c1b1] mb-8">Skapa trygghet för dig och dina anhöriga på några minuter.</p>
         <ul className="flex flex-col items-center gap-2 mb-10">

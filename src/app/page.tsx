@@ -26,7 +26,7 @@ export default function HomePage() {
       />
       <LifeSituationsSection />
       <FoundersSection />
-      <CTASection ctaHref="https://app.fride.se" ctaLabel="Skapa ditt dokument" />
+      <CTASection ctaHref="https://app.fride.se" ctaLabel="Skapa ditt dokument" headline="Redo att bli framtidsklar?" />
     </>
   );
 }
