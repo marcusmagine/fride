@@ -71,21 +71,15 @@ export default function FramtidsklarPage() {
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-28 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
             <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-4">
-              Bli framtidsklar
+              Framtidsklar
             </p>
             <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#354042] leading-tight mb-5">
-              Bli framtidsklar – innan livet ändrar sig.
+              Vilket paket passar dig?
             </h1>
-            <p className="text-base md:text-lg text-[#4a5e5f] leading-relaxed mb-8">
-              De flesta vet att det är viktigt. Få har gjort det. Hos Fride skapar du juridiskt
-              korrekta framtidsdokument på några minuter – steg för steg, på svenska.
+            <p className="text-base md:text-lg text-[#4a5e5f] leading-relaxed">
+              Olika livssituationer kräver olika dokument. Välj den som stämmer in på dig — vi guidar
+              dig till precis vad du behöver ha på plats.
             </p>
-            <Link
-              href="#livssituationer"
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"
-            >
-              Hitta min situation
-            </Link>
           </div>
           <div className="fade-in fade-in-delay-1 relative h-72 md:h-[480px]">
             <div className="absolute inset-0 overflow-hidden rounded-t-[50%] rounded-b-2xl">
@@ -101,45 +95,9 @@ export default function FramtidsklarPage() {
         </div>
       </section>
 
-      {/* Varför bli framtidsklar? */}
-      <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
-        <div className="fade-in mb-12">
-          <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">
-            Varför det är viktigt
-          </p>
-          <h2 className="font-serif text-3xl font-semibold text-[#354042]">
-            Att vara framtidsklar handlar om att ha koll — i förväg.
-          </h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          {whyItems.map((item, i) => (
-            <div key={item.title} className={`fade-in fade-in-delay-${i + 1}`}>
-              <div className="w-10 h-10 rounded-full bg-[#fff1e6] border border-[#d9c1b1] flex items-center justify-center mb-4">
-                <span className="font-serif font-semibold text-[#d27957]">{i + 1}</span>
-              </div>
-              <h3 className="font-serif text-lg font-semibold text-[#354042] mb-2">{item.title}</h3>
-              <p className="text-sm text-[#4a5e5f] leading-relaxed">{item.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Livssituationer */}
-      <section id="livssituationer" className="bg-[#fff1e6] py-16 md:py-24">
+      <section id="livssituationer" className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="fade-in mb-10">
-            <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">
-              Vad stämmer in på dig?
-            </p>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042]">
-              Välj din livssituation
-            </h2>
-            <p className="mt-3 text-[#4a5e5f] leading-relaxed max-w-xl">
-              Olika livssituationer kräver olika dokument. Välj den som stämmer bäst in på dig — vi
-              guidar dig till precis det du behöver.
-            </p>
-          </div>
-
           <div className="flex flex-col gap-6">
             {situations.map((s, i) => (
               <Link
@@ -189,6 +147,31 @@ export default function FramtidsklarPage() {
                   </span>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Varför bli framtidsklar? */}
+      <section className="bg-[#fff1e6] py-16 md:py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="fade-in mb-12">
+            <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">
+              Varför det är viktigt
+            </p>
+            <h2 className="font-serif text-3xl font-semibold text-[#354042]">
+              Att vara framtidsklar handlar om att ha koll — i förväg.
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {whyItems.map((item, i) => (
+              <div key={item.title} className={`fade-in fade-in-delay-${i + 1}`}>
+                <div className="w-10 h-10 rounded-full bg-white border border-[#d9c1b1] flex items-center justify-center mb-4">
+                  <span className="font-serif font-semibold text-[#d27957]">{i + 1}</span>
+                </div>
+                <h3 className="font-serif text-lg font-semibold text-[#354042] mb-2">{item.title}</h3>
+                <p className="text-sm text-[#4a5e5f] leading-relaxed">{item.description}</p>
+              </div>
             ))}
           </div>
         </div>
