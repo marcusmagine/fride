@@ -58,7 +58,7 @@ export default function EnsamstaendePage() {
       <section className="bg-[#fff1e6] overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-28 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-4">Bli framtidsklar</p>
+            <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-4">Framtidsklar – Ensamstående förälder</p>
             <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#354042] leading-tight mb-5">
               Du står ensam med ansvaret. Bli inte ensam med oron också.
             </h1>
