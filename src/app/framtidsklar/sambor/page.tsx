@@ -164,12 +164,18 @@ export default function SamborPage() {
             ))}
           </div>
 
-          {/* Rabattbanner */}
-          <div className="mt-8 bg-[#20293d] text-[#fff1e6] rounded-2xl px-6 py-4 flex items-center gap-4">
-            <span className="text-2xl font-serif font-bold text-[#d27957] shrink-0">50%</span>
-            <p className="text-sm leading-snug">
-              <strong>Rabatt på alla efterföljande dokument</strong> — köper du fler än ett dokument hos oss får du 50% rabatt på alla efterföljande.
-            </p>
+          {/* Paketpris */}
+          <div className="mt-8 bg-[#20293d] text-[#fff1e6] rounded-2xl px-6 py-5 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+            <div className="shrink-0">
+              <p className="text-xs uppercase tracking-widest text-[#d27957] font-medium mb-1">Hela paketet</p>
+              <p className="font-serif text-3xl font-bold text-[#fff1e6]">1 247,50 kr</p>
+              <p className="text-xs text-[#fff1e6]/60 mt-0.5">inkl. moms</p>
+            </div>
+            <div className="w-px h-12 bg-[#fff1e6]/15 hidden sm:block shrink-0" />
+            <div className="text-sm text-[#fff1e6]/80 leading-relaxed">
+              <p>Första dokumentet kostar <strong className="text-[#fff1e6]">499 kr</strong>. De tre efterföljande kostar <strong className="text-[#fff1e6]">249,50 kr/st</strong> (50% rabatt).</p>
+              <p className="mt-1 text-[#fff1e6]/50">Du sparar 748,50 kr jämfört med att köpa dem separat.</p>
+            </div>
           </div>
         </div>
       </section>
