@@ -232,10 +232,10 @@ export default function FramtidsklarPage() {
             Det tar några minuter. Det ger trygghet för resten av livet.
           </p>
           <Link
-            href="#livssituationer"
+            href="https://app.fride.se/"
             className="fade-in inline-block bg-[#d27957] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#c06a44] transition-colors duration-300"
           >
-            Hitta min situation
+            Skapa mina dokument
           </Link>
         </div>
       </section>
