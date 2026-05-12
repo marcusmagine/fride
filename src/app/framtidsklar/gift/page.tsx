@@ -63,9 +63,17 @@ export default function GiftPage() {
     <>
       {/* Hero */}
       <section className="bg-[#fff1e6] overflow-hidden">
-        <div className="max-w-6xl mx-auto px-6 py-16 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto px-6 pt-8 pb-0">
+          <Link href="/framtidsklar" className="inline-flex items-center gap-1.5 text-sm text-[#4a5e5f] hover:text-[#354042] transition-colors">
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            Tillbaka till Framtidsklar
+          </Link>
+        </div>
+        <div className="max-w-6xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-4">Bli framtidsklar</p>
+            <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-4">Framtidsklar – Gift</p>
             <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#354042] leading-tight mb-5">
               Ni har byggt något tillsammans. Se till att det skyddas.
             </h1>
