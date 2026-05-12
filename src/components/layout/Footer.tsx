@@ -11,6 +11,7 @@ const columns = [
   {
     heading: "Dokument",
     links: [
+      { label: "Framtidsdokument", href: "/framtidsdokument" },
       { label: "Framtidsfullmakt", href: "/framtidsfullmakt" },
       { label: "Gåvobrev", href: "/gavobrev" },
       { label: "Skuldebrev", href: "/skuldebrev" },
@@ -21,6 +22,10 @@ const columns = [
   {
     heading: "Vägledning",
     links: [
+      { label: "Framtidsklar", href: "/framtidsklar" },
+      { label: "För sambor", href: "/framtidsklar/sambor" },
+      { label: "För gifta", href: "/framtidsklar/gift" },
+      { label: "För ensamstående med barn", href: "/framtidsklar/ensamstaende" },
       { label: "När någon gått bort", href: "/steg-for-steg" },
       { label: "Bouppteckning", href: "/bouppteckning" },
       { label: "Kunskapsbanken", href: "/kunskap" },
