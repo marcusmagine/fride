@@ -206,7 +206,7 @@ export default function SamborPage() {
               href="https://app.fride.se"
               className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"
             >
-              Kom igång nu
+              Skapa mina dokument
             </Link>
           </div>
           <div className="fade-in fade-in-delay-1 relative h-64 md:h-80 rounded-2xl overflow-hidden">
