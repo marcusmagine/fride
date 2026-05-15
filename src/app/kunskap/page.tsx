@@ -324,6 +324,9 @@ export default function KunskapPage() {
               { label: "Framtidsfullmakt", href: "/framtidsfullmakt" },
               { label: "Gåvobrev", href: "/gavobrev" },
               { label: "Skuldebrev", href: "/skuldebrev" },
+              { label: "Samboavtal", href: "/samboavtal" },
+              { label: "Äktenskapsförord", href: "/aktenskapsforord" },
+              { label: "Testamente", href: "/testamente" },
             ].map((l) => (
               <Link
                 key={l.href}
