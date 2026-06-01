@@ -27,6 +27,108 @@ const pillars = [
   },
 ];
 
+const nodes = [
+  { label: "Skatteverket",        angle: 270 },
+  { label: ["Pensions-", "myndigheten"], angle: 315 },
+  { label: "Banker",              angle: 0   },
+  { label: ["Försäkrings-", "bolag"], angle: 45  },
+  { label: "Lantmäteriet",        angle: 90  },
+  { label: ["Transport-", "styrelsen"], angle: 135 },
+  { label: ["Kredit-", "institut"], angle: 180 },
+  { label: "Fondbolag",           angle: 225 },
+];
+
+function BouppteckningDiagram() {
+  const cx = 250;
+  const cy = 250;
+  const orbitR = 162;
+  const nodeR = 50;
+  const centerR = 62;
+
+  return (
+    <svg
+      viewBox="0 0 500 500"
+      className="w-full max-w-sm md:max-w-md"
+      aria-label="Datakällor i en bouppteckning"
+    >
+      {/* Lines from center to nodes */}
+      {nodes.map((n) => {
+        const rad = (n.angle * Math.PI) / 180;
+        const x2 = cx + orbitR * Math.cos(rad);
+        const y2 = cy + orbitR * Math.sin(rad);
+        const x1 = cx + centerR * Math.cos(rad);
+        const y1 = cy + centerR * Math.sin(rad);
+        return (
+          <line
+            key={n.angle}
+            x1={x1} y1={y1}
+            x2={x2 - (nodeR - 4) * Math.cos(rad)}
+            y2={y2 - (nodeR - 4) * Math.sin(rad)}
+            stroke="#d27957"
+            strokeWidth="1.5"
+            strokeDasharray="4 3"
+            opacity="0.6"
+          />
+        );
+      })}
+
+      {/* Outer node circles */}
+      {nodes.map((n) => {
+        const rad = (n.angle * Math.PI) / 180;
+        const x = cx + orbitR * Math.cos(rad);
+        const y = cy + orbitR * Math.sin(rad);
+        const lines = Array.isArray(n.label) ? n.label : [n.label];
+        const lineH = 13;
+        const totalH = lines.length * lineH;
+        return (
+          <g key={n.angle}>
+            <circle cx={x} cy={y} r={nodeR} fill="white" stroke="#d9c1b1" strokeWidth="1.5" />
+            {lines.map((line, i) => (
+              <text
+                key={i}
+                x={x}
+                y={y - totalH / 2 + lineH * i + lineH * 0.75}
+                textAnchor="middle"
+                fontSize="10"
+                fontFamily="var(--font-sans, sans-serif)"
+                fill="#354042"
+                fontWeight="500"
+              >
+                {line}
+              </text>
+            ))}
+          </g>
+        );
+      })}
+
+      {/* Center circle */}
+      <circle cx={cx} cy={cy} r={centerR} fill="#20293d" />
+      <text
+        x={cx} y={cy - 8}
+        textAnchor="middle"
+        fontSize="11"
+        fontFamily="var(--font-sans, sans-serif)"
+        fill="#fff1e6"
+        fontWeight="600"
+        letterSpacing="0.5"
+      >
+        Boupp-
+      </text>
+      <text
+        x={cx} y={cy + 7}
+        textAnchor="middle"
+        fontSize="11"
+        fontFamily="var(--font-sans, sans-serif)"
+        fill="#fff1e6"
+        fontWeight="600"
+        letterSpacing="0.5"
+      >
+        teckning
+      </text>
+    </svg>
+  );
+}
+
 export default function SamarbetenPage() {
   return (
     <>
@@ -148,20 +250,8 @@ export default function SamarbetenPage() {
               i rättssäkerhet eller kvalitet.
             </p>
           </div>
-          <div className="fade-in fade-in-delay-1 bg-[#fff1e6] rounded-2xl p-8 md:p-10">
-            <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-5">
-              I dialog med
-            </p>
-            <ul className="flex flex-col gap-3">
-              {["Skatteverket", "Lantmäteriet", "Transportstyrelsen"].map((actor) => (
-                <li key={actor} className="flex items-center gap-3 text-[#354042] font-medium">
-                  <svg className="w-5 h-5 text-[#d27957] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  {actor}
-                </li>
-              ))}
-            </ul>
+          <div className="fade-in fade-in-delay-1 flex items-center justify-center">
+            <BouppteckningDiagram />
           </div>
         </div>
       </section>
