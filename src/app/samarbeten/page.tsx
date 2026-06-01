@@ -143,7 +143,7 @@ export default function SamarbetenPage() {
               Vi digitaliserar bouppteckningen i Sverige
             </h1>
             <p className="text-base md:text-lg text-[#4a5e5f] leading-relaxed mb-8">
-              Varje år dör ungefär 90 000 människor i Sverige – och för varje dödsfall väntar en
+              Varje år dör över 90 000 människor i Sverige – och för varje dödsfall väntar en
               bouppteckning. En process som idag är manuell, fragmenterad och ofta överväldigande
               för den som redan bär på en sorg. Vi tror att det kan göras bättre. Det arbetar vi
               aktivt för att förändra.
@@ -241,8 +241,8 @@ export default function SamarbetenPage() {
             <p className="text-[#4a5e5f] leading-relaxed mb-4">
               Digitaliseringen av bouppteckning i Sverige är ett arbete som kräver många parter.
               Fride deltar i den kartläggning som pågår för att ta reda på hur en sådan förändring
-              ska se ut i praktiken – tillsammans med Skatteverket, Lantmäteriet, Transportstyrelsen
-              och andra aktörer som är en del av processen idag.
+              ska se ut i praktiken – tillsammans med Skatteverket och andra samhälls- och privata
+              aktörer som är en del av processen idag.
             </p>
             <p className="text-[#4a5e5f] leading-relaxed">
               Vi är ett entreprenörsbolag med en tydlig övertygelse: att det som idag är tungt,
