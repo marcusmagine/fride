@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { ArticleGrid, type Article } from "@/components/sections/ArticleGrid";
 
 export const metadata: Metadata = {
-  title: "Kunskap",
+  title: "Juridisk vägledning för privatpersoner – framtidsfullmakt och mer | Fride",
   description:
-    "Praktisk vägledning om framtidsfullmakter, gåvobrev, skuldebrev, testamente och dödsbohantering.",
+    "Guider och artiklar om framtidsfullmakt, testamente, gåvobrev, samboavtal och dödsbohantering. Skrivet för dig – inte för jurister.",
   alternates: { canonical: "https://www.fride.se/kunskap" },
 };
 
