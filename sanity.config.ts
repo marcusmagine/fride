@@ -10,4 +10,14 @@ export default defineConfig({
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET ?? "production",
   plugins: [structureTool(), visionTool()],
   schema: { types: schemaTypes },
+  document: {
+    actions: (prev) =>
+      prev.map((action) =>
+        action.action === "publish"
+          ? { ...action, label: "Publicera" }
+          : action
+      ),
+    // Show publish button prominently at the top
+    unstable_comments: { enabled: false },
+  },
 });
