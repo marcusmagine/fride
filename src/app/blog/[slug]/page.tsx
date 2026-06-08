@@ -68,8 +68,23 @@ export default async function ArticlePage({
 
   if (!article) notFound();
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Hem", item: "https://www.fride.se" },
+      { "@type": "ListItem", position: 2, name: "Kunskap", item: "https://www.fride.se/kunskap" },
+      { "@type": "ListItem", position: 3, name: article.seoTitle || article.title, item: `https://www.fride.se/blog/${slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       {/* Hero */}
       <section className="bg-[#fff1e6]">
         <div className="max-w-3xl mx-auto px-6 py-12 md:py-16">
