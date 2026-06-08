@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
+import { PortableText } from "@portabletext/react";
 import { client } from "@/sanity/lib/client";
 import { articleBySlugQuery, allArticleSlugsQuery } from "@/sanity/lib/queries";
 
@@ -10,8 +11,11 @@ interface Article {
   slug: { current: string };
   excerpt: string;
   rawHtml: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  body: any[];
   category: string;
   coverImageUrl: string;
+  coverImageAssetUrl: string;
   publishedAt: string;
   seoTitle: string;
   seoDescription: string;
@@ -111,12 +115,12 @@ export default async function ArticlePage({
         </div>
       </section>
 
-      {/* Cover image */}
-      {article.coverImageUrl && (
+      {/* Cover image — uploaded asset takes priority over legacy CDN URL */}
+      {(article.coverImageAssetUrl || article.coverImageUrl) && (
         <div className="max-w-3xl mx-auto px-6 mb-10">
           <div className="relative h-64 md:h-96 w-full rounded-2xl overflow-hidden">
             <Image
-              src={article.coverImageUrl}
+              src={article.coverImageAssetUrl || article.coverImageUrl}
               alt={article.title}
               fill
               className="object-cover"
@@ -138,8 +142,13 @@ export default async function ArticlePage({
             prose-strong:text-[#354042]
             prose-a:text-[#d27957] prose-a:no-underline hover:prose-a:underline
             prose-ul:list-disc prose-ol:list-decimal"
-          dangerouslySetInnerHTML={{ __html: article.rawHtml }}
-        />
+        >
+          {article.rawHtml ? (
+            <div dangerouslySetInnerHTML={{ __html: article.rawHtml }} />
+          ) : article.body ? (
+            <PortableText value={article.body} />
+          ) : null}
+        </div>
       </article>
 
       {/* Bottom CTA */}
