@@ -21,3 +21,15 @@ export const allArticleSlugsQuery = groq`
     "slug": slug.current
   }
 `;
+
+export const allArticlesQuery = groq`
+  *[_type == "article" && defined(slug.current)] | order(publishedAt desc) {
+    title,
+    "slug": slug.current,
+    category,
+    excerpt,
+    coverImageUrl,
+    "coverImageAssetUrl": coverImage.asset->url,
+    publishedAt,
+  }
+`;

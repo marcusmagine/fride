@@ -1,6 +1,10 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { ArticleGrid, type Article } from "@/components/sections/ArticleGrid";
+import { client } from "@/sanity/lib/client";
+import { allArticlesQuery } from "@/sanity/lib/queries";
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "Juridisk vägledning för privatpersoner – framtidsfullmakt och mer | Fride",
@@ -297,7 +301,34 @@ const articles: Article[] = [
   },
 ];
 
-export default function KunskapPage() {
+export default async function KunskapPage() {
+  // Fetch articles from Sanity, fall back to hardcoded list
+  let sanityArticles: Article[] = [];
+  try {
+    if (process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
+      const raw = await client.fetch(allArticlesQuery);
+      sanityArticles = raw.map((a: {
+        title: string; slug: string; category: string;
+        excerpt: string; coverImageUrl?: string; coverImageAssetUrl?: string;
+      }) => ({
+        title: a.title,
+        category: a.category || "Övrigt",
+        ingress: a.excerpt || "",
+        href: `/blog/${a.slug}`,
+        image: a.coverImageAssetUrl || a.coverImageUrl || IMG[a.category] || "/images/hero-familj.webp",
+      }));
+    }
+  } catch {
+    // fall through to hardcoded list
+  }
+
+  // Merge: Sanity articles first, then any hardcoded ones not already in Sanity
+  const sanityHrefs = new Set(sanityArticles.map((a) => a.href));
+  const combined = [
+    ...sanityArticles,
+    ...articles.filter((a) => !sanityHrefs.has(a.href)),
+  ];
+
   return (
     <>
       <section className="bg-[#fff1e6]">
@@ -312,7 +343,7 @@ export default function KunskapPage() {
       </section>
 
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <ArticleGrid articles={articles} />
+        <ArticleGrid articles={combined} />
       </div>
 
       <section className="max-w-4xl mx-auto px-6 pb-16 fade-in">
