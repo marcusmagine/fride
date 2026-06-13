@@ -1,8 +1,11 @@
 import { Hero } from "@/components/sections/Hero";
 import { LifeSituationsSection } from "@/components/sections/LifeSituationsSection";
+import { LatestArticlesSection } from "@/components/sections/LatestArticlesSection";
 import { FoundersSection } from "@/components/sections/FoundersSection";
 import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
+
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "Fride – Juridiska dokument online",
@@ -25,6 +28,7 @@ export default function HomePage() {
         imageAlt="Familj som skrattar tillsammans"
       />
       <LifeSituationsSection />
+      <LatestArticlesSection />
       <FoundersSection />
       <CTASection ctaHref="https://app.fride.se" ctaLabel="Skapa ditt dokument" headline="Redo att bli framtidsklar?" />
     </>
