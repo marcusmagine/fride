@@ -83,14 +83,14 @@ export default function BouppteckningPage() {
       <section className="max-w-6xl mx-auto px-6 pb-8 fade-in">
         <div className="bg-[#354042] rounded-2xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
-            <h2 className="font-serif text-xl font-semibold text-[#fff1e6] mb-2">Behöver du hjälp?</h2>
-            <p className="text-sm text-[#d9c1b1]">Vi erbjuder kostnadsfri rådgivning om bouppteckning.</p>
+            <h2 className="font-serif text-xl font-semibold text-[#fff1e6] mb-2">Vi digitaliserar bouppteckningen.</h2>
+            <p className="text-sm text-[#d9c1b1] max-w-xl">I samarbete med Skatteverket och andra myndigheter och aktörer arbetar Fride för att göra bouppteckningen helt digital. Vill du veta mer om hur vi tänker kring framtidens bouppteckning kan du läsa om det här.</p>
           </div>
           <Link
-            href="/kontakta-oss"
+            href="/samarbeten"
             className="flex-shrink-0 bg-[#fff1e6] text-[#354042] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#d27957] hover:text-white transition-colors duration-300"
           >
-            Kontakta oss
+            Läs mer här
           </Link>
         </div>
       </section>
