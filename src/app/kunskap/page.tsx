@@ -308,15 +308,19 @@ export default async function KunskapPage() {
     if (process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
       const raw = await client.fetch(allArticlesQuery);
       sanityArticles = raw.map((a: {
-        title: string; slug: string; category: string;
+        title: string; slug: string; category?: string; categories?: string[];
         excerpt: string; coverImageUrl?: string; coverImageAssetUrl?: string;
-      }) => ({
-        title: a.title,
-        category: a.category || "Övrigt",
-        ingress: a.excerpt || "",
-        href: `/blog/${a.slug}`,
-        image: a.coverImageAssetUrl || a.coverImageUrl || IMG[a.category] || "/images/hero-familj.webp",
-      }));
+      }) => {
+        const primaryCat = (a.categories && a.categories[0]) || a.category || "Övrigt";
+        return {
+          title: a.title,
+          category: primaryCat,
+          categories: a.categories && a.categories.length > 0 ? a.categories : (a.category ? [a.category] : []),
+          ingress: a.excerpt || "",
+          href: `/blog/${a.slug}`,
+          image: a.coverImageAssetUrl || a.coverImageUrl || IMG[primaryCat] || "/images/hero-familj.webp",
+        };
+      });
     }
   } catch {
     // fall through to hardcoded list

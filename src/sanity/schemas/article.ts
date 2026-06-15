@@ -43,8 +43,26 @@ export const article = defineType({
     }),
     defineField({
       name: "category",
-      title: "Kategori",
+      title: "Kategori (legacy)",
       type: "string",
+      hidden: true,
+    }),
+    defineField({
+      name: "categories",
+      title: "Kategorier",
+      type: "array",
+      of: [{ type: "string" }],
+      options: {
+        list: [
+          { title: "Framtidsfullmakt", value: "Framtidsfullmakt" },
+          { title: "Testamente", value: "Testamente" },
+          { title: "Gåvor och arv", value: "Gåvor och arv" },
+          { title: "Skulder och lån", value: "Skulder och lån" },
+          { title: "Sambor", value: "Sambor" },
+          { title: "Bouppteckning", value: "Bouppteckning" },
+          { title: "Dödsbohantering", value: "Dödsbohantering" },
+        ],
+      },
     }),
     defineField({
       name: "coverImageUrl",

@@ -6,7 +6,8 @@ import { useState } from "react";
 
 export interface Article {
   title: string;
-  category: string;
+  category: string;       // legacy single category
+  categories?: string[];  // new multi-category
   ingress: string;
   href: string;
   image: string;
@@ -14,11 +15,23 @@ export interface Article {
 
 const CATEGORY_ALL = "Alla";
 
+function getCategories(a: Article): string[] {
+  if (a.categories && a.categories.length > 0) return a.categories;
+  if (a.category) return [a.category];
+  return [];
+}
+
 export function ArticleGrid({ articles }: { articles: Article[] }) {
-  const categories = [CATEGORY_ALL, ...Array.from(new Set(articles.map((a) => a.category)))];
+  const categories = [
+    CATEGORY_ALL,
+    ...Array.from(new Set(articles.flatMap(getCategories))).sort(),
+  ];
   const [active, setActive] = useState(CATEGORY_ALL);
 
-  const filtered = active === CATEGORY_ALL ? articles : articles.filter((a) => a.category === active);
+  const filtered =
+    active === CATEGORY_ALL
+      ? articles
+      : articles.filter((a) => getCategories(a).includes(active));
 
   return (
     <div>
@@ -57,7 +70,7 @@ export function ArticleGrid({ articles }: { articles: Article[] }) {
             </div>
             <div className="flex flex-col flex-1 p-6">
               <span className="text-xs font-medium text-[#d27957] uppercase tracking-wide mb-2">
-                {article.category}
+                {getCategories(article).join(", ")}
               </span>
               <h3 className="font-serif font-semibold text-[#354042] leading-snug mb-3 flex-1">
                 {article.title}
