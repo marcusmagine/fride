@@ -18,7 +18,7 @@ const navLinks = [
   },
   { label: "Om oss", href: "/om-oss" },
   { label: "Kunskap", href: "/kunskap" },
-  { label: "När någon gått bort", href: "/steg-for-steg" },
+  { label: "Bouppteckning", href: "/bouppteckning" },
   { label: "Samarbeten", href: "/samarbeten" },
 ];
 
