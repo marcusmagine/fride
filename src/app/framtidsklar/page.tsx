@@ -20,6 +20,7 @@ const situations = [
     imageAlt: "Ensamstående förälder med barn",
     imagePosition: "object-center",
     documents: ["Framtidsfullmakt", "Testamente", "Gåvobrev"],
+    ctaText: "Se vad du behöver som ensamstående",
   },
   {
     label: "Gift",
@@ -31,6 +32,7 @@ const situations = [
     imageAlt: "Gift par",
     imagePosition: "object-top",
     documents: ["Framtidsfullmakt", "Testamente", "Äktenskapsförord", "Gåvobrev"],
+    ctaText: "Se vad ni behöver som gifta",
   },
   {
     label: "Sambor",
@@ -42,6 +44,7 @@ const situations = [
     imageAlt: "Sambo par",
     imagePosition: "object-top",
     documents: ["Framtidsfullmakt", "Samboavtal", "Testamente", "Skuldebrev"],
+    ctaText: "Se vad ni behöver som sambor",
   },
 ];
 
@@ -74,12 +77,32 @@ export default function FramtidsklarPage() {
               Framtidsklar
             </p>
             <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#354042] leading-tight mb-5">
-              Vilket paket passar dig?
+              Vad gäller för dig – och vad behöver du ha på plats?
             </h1>
-            <p className="text-base md:text-lg text-[#4a5e5f] leading-relaxed">
-              Olika livssituationer kräver olika dokument. Välj den som stämmer in på dig — vi guidar
-              dig till precis vad du behöver ha på plats.
+            <p className="text-base md:text-lg text-[#4a5e5f] leading-relaxed mb-6">
+              De flesta vet att det är viktigt. Få har gjort det. Välj din situation nedan – vi
+              guidar dig till exakt vad du behöver, steg för steg.
             </p>
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#354042]">
+              <span className="flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-[#d27957]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                Fast pris 499 kr
+              </span>
+              <span className="flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-[#d27957]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                Juridiskt korrekt
+              </span>
+              <span className="flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-[#d27957]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                Klart på 20 minuter
+              </span>
+            </div>
           </div>
           <div className="fade-in fade-in-delay-1 relative h-72 md:h-[480px]">
             <div className="absolute inset-0 overflow-hidden rounded-t-[50%] rounded-b-2xl">
@@ -91,6 +114,31 @@ export default function FramtidsklarPage() {
                 priority
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Varför bli framtidsklar? */}
+      <section className="bg-[#fff1e6] py-16 md:py-20 border-t border-[#d9c1b1]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="fade-in mb-12">
+            <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">
+              Varför det är viktigt
+            </p>
+            <h2 className="font-serif text-3xl font-semibold text-[#354042]">
+              Att vara framtidsklar handlar om att ha koll — i förväg.
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {whyItems.map((item, i) => (
+              <div key={item.title} className={`fade-in fade-in-delay-${i + 1}`}>
+                <div className="w-10 h-10 rounded-full bg-white border border-[#d9c1b1] flex items-center justify-center mb-4">
+                  <span className="font-serif font-semibold text-[#d27957]">{i + 1}</span>
+                </div>
+                <h3 className="font-serif text-lg font-semibold text-[#354042] mb-2">{item.title}</h3>
+                <p className="text-sm text-[#4a5e5f] leading-relaxed">{item.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -134,7 +182,7 @@ export default function FramtidsklarPage() {
                     </div>
                   </div>
                   <span className="inline-flex items-center gap-1.5 text-sm font-medium text-[#d27957] group-hover:text-[#c06a44] transition-colors">
-                    Bli framtidsklar
+                    {s.ctaText}
                     <svg
                       className="w-4 h-4 group-hover:translate-x-0.5 transition-transform"
                       fill="none"
@@ -147,31 +195,6 @@ export default function FramtidsklarPage() {
                   </span>
                 </div>
               </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Varför bli framtidsklar? */}
-      <section className="bg-[#fff1e6] py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="fade-in mb-12">
-            <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">
-              Varför det är viktigt
-            </p>
-            <h2 className="font-serif text-3xl font-semibold text-[#354042]">
-              Att vara framtidsklar handlar om att ha koll — i förväg.
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {whyItems.map((item, i) => (
-              <div key={item.title} className={`fade-in fade-in-delay-${i + 1}`}>
-                <div className="w-10 h-10 rounded-full bg-white border border-[#d9c1b1] flex items-center justify-center mb-4">
-                  <span className="font-serif font-semibold text-[#d27957]">{i + 1}</span>
-                </div>
-                <h3 className="font-serif text-lg font-semibold text-[#354042] mb-2">{item.title}</h3>
-                <p className="text-sm text-[#4a5e5f] leading-relaxed">{item.description}</p>
-              </div>
             ))}
           </div>
         </div>
@@ -226,16 +249,16 @@ export default function FramtidsklarPage() {
       <section className="bg-[#20293d] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#fff1e6] mb-4 fade-in">
-            Redo att bli framtidsklar?
+            De flesta skjuter upp det. Du behöver inte.
           </h2>
           <p className="text-[#fff1e6]/70 mb-8 fade-in">
-            Det tar några minuter. Det ger trygghet för resten av livet.
+            Det tar 20 minuter. Det kostar 499 kr. Och det är ordnat för resten av livet.
           </p>
           <Link
             href="https://app.fride.se/"
             className="fade-in inline-block bg-[#d27957] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#c06a44] transition-colors duration-300"
           >
-            Skapa mina dokument
+            Kom igång nu
           </Link>
         </div>
       </section>
