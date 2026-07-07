@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+
+const GREEN_PAGES = ["/bouppteckning", "/steg-for-steg", "/samarbeten"];
 
 const navLinks = [
   {
@@ -23,11 +26,14 @@ const navLinks = [
 ];
 
 export function Header() {
+  const pathname = usePathname();
+  const isGreen = GREEN_PAGES.includes(pathname);
+  const bg = isGreen ? "bg-[#353F42]" : "bg-[#20293d]";
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#20293d]">
+    <header className={`sticky top-0 z-50 ${bg}`}>
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <div className="flex items-center gap-4">
@@ -48,7 +54,7 @@ export function Header() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </Link>
-                <div className="absolute top-full left-0 mt-2 bg-[#20293d] border border-[#fff1e6]/10 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 w-52 py-2">
+                <div className={`absolute top-full left-0 mt-2 ${bg} border border-[#fff1e6]/10 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 w-52 py-2`}>
                   {item.children.map((child) => (
                     <Link
                       key={child.href}
@@ -98,7 +104,7 @@ export function Header() {
 
       {/* Mobile nav */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-[#fff1e6]/10 bg-[#20293d] px-6 pb-6">
+        <div className={`md:hidden border-t border-[#fff1e6]/10 ${bg} px-6 pb-6`}>
           <div className="flex items-center justify-between py-3">
             <Link
               href="/framtidsdokument"

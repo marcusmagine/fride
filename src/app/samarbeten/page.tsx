@@ -102,7 +102,7 @@ function BouppteckningDiagram() {
       })}
 
       {/* Center circle */}
-      <circle cx={cx} cy={cy} r={centerR} fill="#20293d" />
+      <circle cx={cx} cy={cy} r={centerR} fill="#353F42" />
       <text
         x={cx} y={cy - 8}
         textAnchor="middle"
@@ -150,7 +150,7 @@ export default function SamarbetenPage() {
             </p>
             <Link
               href="/kontakta-oss"
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"
+              className="inline-block bg-[#353F42] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#4a5e5f] transition-colors duration-300"
             >
               Kontakta oss
             </Link>
@@ -257,7 +257,7 @@ export default function SamarbetenPage() {
       </section>
 
       {/* Sektion 4 – Dialog / CTA */}
-      <section className="bg-[#20293d] py-16 md:py-24">
+      <section className="bg-[#353F42] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
             <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">

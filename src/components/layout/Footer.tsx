@@ -1,4 +1,9 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const GREEN_PAGES = ["/bouppteckning", "/steg-for-steg", "/samarbeten"];
 
 const columns = [
   {
@@ -41,8 +46,13 @@ const columns = [
 ];
 
 export function Footer() {
+  const pathname = usePathname();
+  const isGreen = GREEN_PAGES.includes(pathname);
+  const bg = isGreen ? "bg-[#353F42]" : "bg-[#20293d]";
+  const footerSvg = isGreen ? "/footer-bg-green.svg" : "/footer-bg.svg";
+
   return (
-    <footer className="bg-[#20293d] text-[#fff1e6] relative overflow-hidden">
+    <footer className={`${bg} text-[#fff1e6] relative overflow-hidden`}>
       <div className="max-w-6xl mx-auto px-6 pt-16 pb-12 relative z-10">
         <Link
           href="/"
@@ -89,7 +99,7 @@ export function Footer() {
       {/* Decorative background */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/footer-bg.svg"
+        src={footerSvg}
         alt=""
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
