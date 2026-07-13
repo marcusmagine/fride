@@ -85,9 +85,26 @@ function TwoColSection({
   );
 }
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Gåvobrev",
+  description:
+    "Ge din gåva med tydliga villkor – enskild egendom eller förskott på arv. Skapa ett juridiskt korrekt gåvobrev online på några minuter.",
+  brand: { "@type": "Brand", name: "Fride" },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "SEK",
+    price: "499",
+    availability: "https://schema.org/InStock",
+    url: "https://app.fride.se/create/gavobrev",
+  },
+};
+
 export default function GavobrevPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <Hero
         headline="Skapa gåvobrev online – enkelt och tryggt"
         subtext="Skapa ett juridiskt korrekt gåvobrev anpassat efter din situation. Du guidas steg för steg och får ett färdigt dokument direkt."

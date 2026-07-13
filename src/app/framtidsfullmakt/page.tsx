@@ -78,8 +78,36 @@ const faq = [
 ];
 
 export default function FramtidsfullmaktPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Framtidsfullmakt",
+    description:
+      "Bestäm själv vem som får hjälpa dig om du en dag inte kan. Skriv en juridiskt korrekt framtidsfullmakt online, med guidning steg för steg.",
+    brand: { "@type": "Brand", name: "Fride" },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "SEK",
+      price: "499",
+      availability: "https://schema.org/InStock",
+      url: "https://app.fride.se/create/framtidsfullmakt",
+    },
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <Hero
         headline="Framtidsfullmakt – ett enkelt sätt att skapa trygghet innan det oväntade händer"
         subtext="Livet förändras — ibland långsamt, ibland på en dag. Med en framtidsfullmakt bestämmer du själv vem som ska ta hand om det praktiska om du en dag inte kan."

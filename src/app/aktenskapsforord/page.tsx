@@ -70,9 +70,26 @@ function CheckList({ items }: { items: string[] }) {
   );
 }
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Äktenskapsförord",
+  description:
+    "Bestäm vad som ska vara enskild egendom i ert äktenskap. Skriv ett juridiskt korrekt äktenskapsförord online, steg för steg.",
+  brand: { "@type": "Brand", name: "Fride" },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "SEK",
+    price: "499",
+    availability: "https://schema.org/InStock",
+    url: "https://app.fride.se/create/aktenskapsforord",
+  },
+};
+
 export default function AktenskapsforodPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <Hero
         headline="Skapa äktenskapsförord online – enkelt och tryggt"
         subtext="Med ett äktenskapsförord bestämmer ni själva vad som ska gälla om ni separerar eller om någon av er går bort. Vi skapar ett juridiskt korrekt förord anpassat efter er situation – så att ni skyddar det som är viktigt för er båda."

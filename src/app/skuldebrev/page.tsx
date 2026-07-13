@@ -65,9 +65,26 @@ function CheckList({ items }: { items: string[] }) {
   );
 }
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Skuldebrev",
+  description:
+    "Lån mellan privatpersoner blir tydliga med ett skuldebrev – belopp, ränta och återbetalning. Skapa ert online, steg för steg.",
+  brand: { "@type": "Brand", name: "Fride" },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "SEK",
+    price: "499",
+    availability: "https://schema.org/InStock",
+    url: "https://app.fride.se/create/skuldbrev",
+  },
+};
+
 export default function SkuldebrevPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <Hero
         headline="Skapa skuldebrev online – enkelt och tryggt"
         subtext="Skapa ett juridiskt korrekt skuldebrev anpassat efter din situation. Dokumentera lånet tydligt och undvik framtida missförstånd."

@@ -70,9 +70,26 @@ function CheckList({ items }: { items: string[] }) {
   );
 }
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Testamente",
+  description:
+    "Utan testamente bestämmer lagen vem som ärver dig. Skriv ditt testamente online på några minuter, med guidning steg för steg.",
+  brand: { "@type": "Brand", name: "Fride" },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "SEK",
+    price: "499",
+    availability: "https://schema.org/InStock",
+    url: "https://app.fride.se/create/testamente",
+  },
+};
+
 export default function TestamentePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <Hero
         headline="Skapa testamente online – enkelt och tryggt"
         subtext="Med ett testamente bestämmer du själv vad som händer med det du lämnar efter dig. Vi skapar ett juridiskt korrekt testamente anpassat efter din situation – så att rätt personer får rätt sak, och dina närmaste slipper onödiga konflikter."

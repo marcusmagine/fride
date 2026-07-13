@@ -70,9 +70,26 @@ function CheckList({ items }: { items: string[] }) {
   );
 }
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "Samboavtal",
+  description:
+    "Sambor har inte samma skydd som gifta. Ett samboavtal gör det tydligt vem som äger vad. Skapa ert online med guidning steg för steg.",
+  brand: { "@type": "Brand", name: "Fride" },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "SEK",
+    price: "499",
+    availability: "https://schema.org/InStock",
+    url: "https://app.fride.se/create/samboavtal",
+  },
+};
+
 export default function SamboavtalPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <Hero
         headline="Skapa samboavtal online – enkelt och tryggt"
         subtext="Med ett samboavtal bestämmer ni själva vad som gäller om ni separerar. Vi skapar ett juridiskt korrekt avtal anpassat efter er situation – så att ni slipper onödiga konflikter om ni en dag går skilda vägar."
