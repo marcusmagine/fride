@@ -22,6 +22,7 @@ const columns = [
       { label: "Skuldebrev", href: "/skuldebrev" },
       { label: "Testamente", href: "/testamente" },
       { label: "Samboavtal", href: "/samboavtal" },
+      { label: "Äktenskapsförord", href: "/aktenskapsforord" },
     ],
   },
   {
