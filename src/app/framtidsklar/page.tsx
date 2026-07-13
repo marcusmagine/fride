@@ -77,7 +77,7 @@ export default function FramtidsklarPage() {
               Framtidsklar
             </p>
             <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#354042] leading-tight mb-5">
-              Vad gäller för dig – och vad behöver du ha på plats?
+              Vad stämmer in på dig?
             </h1>
             <p className="text-base md:text-lg text-[#4a5e5f] leading-relaxed mb-6">
               De flesta vet att det är viktigt. Få har gjort det. Välj din situation nedan – vi
