@@ -8,9 +8,9 @@ import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Testamente",
+  title: "Skriv testamente online – juridiskt korrekt, 499 kr | Fride",
   description:
-    "Skapa ett testamente online – juridiskt korrekt och anpassat efter din situation. Bestäm vem som ärver och hur arvet fördelas. Fast pris 499 kr.",
+    "Utan testamente bestämmer lagen vem som ärver dig. Skriv ditt testamente online på några minuter, med guidning steg för steg. Fast pris 499 kr.",
   alternates: { canonical: "https://www.fride.se/testamente" },
 };
 

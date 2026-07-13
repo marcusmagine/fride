@@ -8,9 +8,9 @@ import type { Metadata } from "next";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "Fride – Juridiska dokument online",
+  title: "Fride – Skapa juridiska dokument online till fast pris",
   description:
-    "Skapa juridiskt korrekta dokument online med guidning steg för steg. Framtidsfullmakt, gåvobrev och skuldebrev till ett fast pris.",
+    "Bli framtidsklar. Skapa testamente, framtidsfullmakt och andra juridiska dokument online – steg för steg, på svenska. Fast pris 499 kr per dokument.",
   alternates: { canonical: "https://www.fride.se" },
 };
 

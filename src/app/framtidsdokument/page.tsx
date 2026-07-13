@@ -5,9 +5,9 @@ import { CTASection } from "@/components/sections/CTASection";
 import { ProductsSection } from "@/components/sections/ProductsSection";
 
 export const metadata: Metadata = {
-  title: "Framtidsdokument",
+  title: "Framtidsdokument – skapa alla viktiga dokument online | Fride",
   description:
-    "Skapa juridiskt korrekta framtidsdokument online – framtidsfullmakt, gåvobrev och skuldebrev. Stegvis vägledning och fast pris.",
+    "Framtidsfullmakt, testamente, samboavtal och fler dokument som skapar trygghet när livet förändras. Guidning steg för steg, fast pris 499 kr.",
   alternates: { canonical: "https://www.fride.se/framtidsdokument" },
 };
 
