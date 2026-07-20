@@ -86,6 +86,7 @@ export function Footer() {
           <div className="space-y-1">
             <p className="text-sm text-[#fff1e6]/70">info@fride.se</p>
             <p className="text-sm text-[#fff1e6]/70">Stockholm</p>
+            <p className="text-xs text-[#fff1e6]/40">Fride AB · Org.nr 559544-5049</p>
           </div>
           <Link
             href="/kontakta-oss"

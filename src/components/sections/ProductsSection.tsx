@@ -67,7 +67,7 @@ const products: Product[] = [
     readMoreHref: "/samboavtal",
     ctaHref: "https://app.fride.se/create/samboavtal",
     ctaLabel: "Skapa samboavtal",
-    imageSrc: "/images/bouppteckning.webp",
+    imageSrc: "/images/sambor-3.webp",
     imageAlt: "Par",
   },
 ];
