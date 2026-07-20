@@ -6,6 +6,7 @@ import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
+import { buildProductSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Äktenskapsförord online – klar på 10 minuter, 499 kr",
@@ -70,21 +71,13 @@ function CheckList({ items }: { items: string[] }) {
   );
 }
 
-const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
+const productSchema = buildProductSchema({
   name: "Äktenskapsförord",
   description:
     "Bestäm vad som ska vara enskild egendom i ert äktenskap. Skriv ett juridiskt korrekt äktenskapsförord online, steg för steg.",
-  brand: { "@type": "Brand", name: "Fride" },
-  offers: {
-    "@type": "Offer",
-    priceCurrency: "SEK",
-    price: "499",
-    availability: "https://schema.org/InStock",
-    url: "https://app.fride.se/create/aktenskapsforord",
-  },
-};
+  image: "/images/aktenskapsforord-2.webp",
+  url: "https://app.fride.se/create/aktenskapsforord",
+});
 
 export default function AktenskapsforodPage() {
   return (

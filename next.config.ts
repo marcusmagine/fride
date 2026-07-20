@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Utan explicit root gissar Turbopack fel projektrot (SARAI/dev) och
+  // hittar inte tailwindcss i lokal dev
+  turbopack: {
+    root: __dirname,
+  },
   async redirects() {
     return [
       // Redirect non-www to www (HTTP→HTTPS is handled by Vercel automatically)

@@ -6,6 +6,7 @@ import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
+import { buildProductSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Gåvobrev online – klar på 10 minuter, 499 kr",
@@ -85,21 +86,13 @@ function TwoColSection({
   );
 }
 
-const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
+const productSchema = buildProductSchema({
   name: "Gåvobrev",
   description:
     "Ge din gåva med tydliga villkor – enskild egendom eller förskott på arv. Skapa ett juridiskt korrekt gåvobrev online på några minuter.",
-  brand: { "@type": "Brand", name: "Fride" },
-  offers: {
-    "@type": "Offer",
-    priceCurrency: "SEK",
-    price: "499",
-    availability: "https://schema.org/InStock",
-    url: "https://app.fride.se/create/gavobrev",
-  },
-};
+  image: "/images/hero-par.webp",
+  url: "https://app.fride.se/create/gavobrev",
+});
 
 export default function GavobrevPage() {
   return (

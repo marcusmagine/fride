@@ -7,6 +7,7 @@ import { WhyFrideSection } from "@/components/sections/WhyFrideSection";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
+import { buildProductSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Framtidsfullmakt online – klar på 10 minuter, 499 kr",
@@ -88,21 +89,13 @@ export default function FramtidsfullmaktPage() {
     })),
   };
 
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
+  const productSchema = buildProductSchema({
     name: "Framtidsfullmakt",
     description:
       "Bestäm själv vem som får hjälpa dig om du en dag inte kan. Skriv en juridiskt korrekt framtidsfullmakt online, med guidning steg för steg.",
-    brand: { "@type": "Brand", name: "Fride" },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "SEK",
-      price: "499",
-      availability: "https://schema.org/InStock",
-      url: "https://app.fride.se/create/framtidsfullmakt",
-    },
-  };
+    image: "/images/framtidsfullmakt.webp",
+    url: "https://app.fride.se/create/framtidsfullmakt",
+  });
 
   return (
     <>

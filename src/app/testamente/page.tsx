@@ -6,6 +6,7 @@ import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
+import { buildProductSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Testamente online – klar på 10 minuter, 499 kr",
@@ -70,21 +71,13 @@ function CheckList({ items }: { items: string[] }) {
   );
 }
 
-const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
+const productSchema = buildProductSchema({
   name: "Testamente",
   description:
     "Utan testamente bestämmer lagen vem som ärver dig. Skriv ditt testamente online på några minuter, med guidning steg för steg.",
-  brand: { "@type": "Brand", name: "Fride" },
-  offers: {
-    "@type": "Offer",
-    priceCurrency: "SEK",
-    price: "499",
-    availability: "https://schema.org/InStock",
-    url: "https://app.fride.se/create/testamente",
-  },
-};
+  image: "/images/testemtente-hero.webp",
+  url: "https://app.fride.se/create/testamente",
+});
 
 export default function TestamentePage() {
   return (
