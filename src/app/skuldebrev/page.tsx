@@ -8,7 +8,7 @@ import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Skuldebrev online – klar på 10 minuter, 499 kr | Fride",
+  title: "Skuldebrev online – klar på 10 minuter, 499 kr",
   description:
     "Lån mellan privatpersoner blir tydliga med ett skuldebrev – belopp, ränta och återbetalning. Skapa ert online, steg för steg. Fast pris 499 kr.",
   alternates: { canonical: "https://www.fride.se/skuldebrev" },

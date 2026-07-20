@@ -8,7 +8,7 @@ import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gåvobrev online – klar på 10 minuter, 499 kr | Fride",
+  title: "Gåvobrev online – klar på 10 minuter, 499 kr",
   description:
     "Ge din gåva med tydliga villkor – enskild egendom eller förskott på arv. Skapa ett juridiskt korrekt gåvobrev online på några minuter. 499 kr.",
   alternates: { canonical: "https://www.fride.se/gavobrev" },

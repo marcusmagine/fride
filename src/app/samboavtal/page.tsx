@@ -8,7 +8,7 @@ import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Samboavtal online – klar på 10 minuter, 499 kr | Fride",
+  title: "Samboavtal online – klar på 10 minuter, 499 kr",
   description:
     "Sambor har inte samma skydd som gifta. Ett samboavtal gör det tydligt vem som äger vad. Skapa ert online med guidning steg för steg. Fast pris 499 kr.",
   alternates: { canonical: "https://www.fride.se/samboavtal" },

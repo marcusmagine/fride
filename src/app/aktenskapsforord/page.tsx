@@ -8,7 +8,7 @@ import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Äktenskapsförord online – klar på 10 minuter, 499 kr | Fride",
+  title: "Äktenskapsförord online – klar på 10 minuter, 499 kr",
   description:
     "Bestäm vad som ska vara enskild egendom i ert äktenskap. Skriv ett juridiskt korrekt äktenskapsförord online, steg för steg. Fast pris 499 kr.",
   alternates: { canonical: "https://www.fride.se/aktenskapsforord" },

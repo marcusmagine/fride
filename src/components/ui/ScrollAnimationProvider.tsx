@@ -16,24 +16,38 @@ export function ScrollAnimationProvider() {
       { threshold: 0, rootMargin: "0px" }
     );
 
-    const observeAll = () => {
+    // IntersectionObserver callbacks are paused in background tabs, so
+    // elements already in the viewport are revealed directly via rect check.
+    const reveal = () => {
+      const viewportHeight = window.innerHeight;
       document.querySelectorAll(".fade-in:not(.visible)").forEach((el) => {
-        observer.observe(el);
+        const rect = el.getBoundingClientRect();
+        if (rect.top < viewportHeight && rect.bottom > 0) {
+          el.classList.add("visible");
+          observer.unobserve(el);
+        } else {
+          observer.observe(el);
+        }
       });
     };
 
-    // Defer until after React hydration is complete
-    const timer = setTimeout(observeAll, 0);
-    requestAnimationFrame(() => {
-      requestAnimationFrame(observeAll);
-    });
+    const timer = setTimeout(reveal, 0);
 
-    const mutation = new MutationObserver(observeAll);
+    const onVisibilityChange = () => {
+      if (document.visibilityState === "visible") reveal();
+    };
+    document.addEventListener("visibilitychange", onVisibilityChange);
+    window.addEventListener("pageshow", reveal);
+
+    const mutation = new MutationObserver(reveal);
     mutation.observe(document.body, { childList: true, subtree: true });
 
     return () => {
+      clearTimeout(timer);
       observer.disconnect();
       mutation.disconnect();
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+      window.removeEventListener("pageshow", reveal);
     };
   }, []);
 

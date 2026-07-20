@@ -7,7 +7,7 @@ import { allArticlesQuery } from "@/sanity/lib/queries";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "Juridisk vägledning för privatpersoner – framtidsfullmakt och mer | Fride",
+  title: "Juridisk vägledning för privatpersoner – framtidsfullmakt och mer",
   description:
     "Guider och artiklar om framtidsfullmakt, testamente, gåvobrev, samboavtal och dödsbohantering. Skrivet för dig – inte för jurister.",
   alternates: { canonical: "https://www.fride.se/kunskap" },

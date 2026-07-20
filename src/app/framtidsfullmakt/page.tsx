@@ -9,7 +9,7 @@ import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Framtidsfullmakt online – klar på 10 minuter, 499 kr | Fride",
+  title: "Framtidsfullmakt online – klar på 10 minuter, 499 kr",
   description:
     "Bestäm själv vem som får hjälpa dig om du en dag inte kan. Skriv en juridiskt korrekt framtidsfullmakt online, med guidning steg för steg. 499 kr.",
   alternates: { canonical: "https://www.fride.se/framtidsfullmakt" },
