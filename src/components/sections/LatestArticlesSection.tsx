@@ -49,7 +49,7 @@ export async function LatestArticlesSection() {
         </div>
         <Link
           href="/kunskap"
-          className="shrink-0 inline-block border border-[#354042] text-[#354042] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#354042] hover:text-[#fff1e6] transition-colors"
+          className="shrink-0 inline-block border border-[#20293d] text-[#20293d] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#20293d] hover:text-[#fff1e6] transition-colors"
         >
           Till kunskapsbanken
         </Link>

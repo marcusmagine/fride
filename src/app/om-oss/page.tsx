@@ -245,7 +245,7 @@ export default function OmOssPage() {
           <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-6">Vår kunskapsbank</h2>
           <Link
             href="/kunskap"
-            className="inline-block border border-[#354042] text-[#354042] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#354042] hover:text-[#fff1e6] transition-colors"
+            className="inline-block border border-[#20293d] text-[#20293d] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#20293d] hover:text-[#fff1e6] transition-colors"
           >
             Till alla artiklar
           </Link>
