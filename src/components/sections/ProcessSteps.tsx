@@ -45,7 +45,7 @@ export function ProcessSteps({ headline = "Så funkar det", steps, price, imageS
             <div className="mt-8 fade-in">
               <Link
                 href={ctaHref}
-                className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"
+                className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
               >
                 {ctaLabel}
               </Link>

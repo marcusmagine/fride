@@ -121,7 +121,7 @@ export default function OmOssPage() {
             </div>
             <Link
               href="/intervju-joanna-robarth--grundare"
-              className="inline-block mt-6 bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"
+              className="inline-block mt-6 bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
             >
               Läs intervjun med Joanna
             </Link>
@@ -157,7 +157,7 @@ export default function OmOssPage() {
             </div>
             <Link
               href="/intervju-elza-kazemi-grundare-fride"
-              className="inline-block mt-6 bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"
+              className="inline-block mt-6 bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
             >
               Läs intervjun med Elza
             </Link>

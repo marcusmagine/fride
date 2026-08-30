@@ -104,7 +104,7 @@ export default function JoannaIntervjuPage() {
               <Link
                 key={href}
                 href={href}
-                className="bg-[#20293d] text-[#fff1e6] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors whitespace-nowrap"
+                className="bg-[#20293d] text-[#fff1e6] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors whitespace-nowrap"
               >
                 {label}
               </Link>

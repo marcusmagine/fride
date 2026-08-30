@@ -77,7 +77,7 @@ export default function EnsamstaendePage() {
             </p>
             <Link
               href="#dokument"
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"
+              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
             >
               Bli framtidsklar
             </Link>
@@ -203,7 +203,7 @@ export default function EnsamstaendePage() {
             </p>
             <Link
               href="https://app.fride.se"
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#354042] transition-colors duration-300"
+              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
             >
               Skapa mina dokument
             </Link>
