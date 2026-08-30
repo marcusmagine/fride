@@ -337,7 +337,7 @@ export default async function KunskapPage() {
     <>
       <section className="bg-[#fff1e6]">
         <div className="max-w-4xl mx-auto px-6 py-16 md:py-24 fade-in">
-          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#354042] mb-3">
+          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#20293d] mb-3">
             Kunskap
           </h1>
           <p className="text-lg text-[#d27957]">
@@ -352,8 +352,8 @@ export default async function KunskapPage() {
 
       <section className="max-w-4xl mx-auto px-6 pb-16 fade-in">
         <div className="bg-[#fff1e6] border border-[#d9c1b1] rounded-2xl p-8">
-          <h2 className="font-serif text-xl font-semibold text-[#354042] mb-2">Redo att skapa ditt dokument?</h2>
-          <p className="text-sm text-[#4a5e5f] mb-6">Vi guidar dig steg för steg till ett juridiskt korrekt dokument.</p>
+          <h2 className="font-serif text-xl font-semibold text-[#20293d] mb-2">Redo att skapa ditt dokument?</h2>
+          <p className="text-sm text-[#515b73] mb-6">Vi guidar dig steg för steg till ett juridiskt korrekt dokument.</p>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Framtidsfullmakt", href: "/framtidsfullmakt" },

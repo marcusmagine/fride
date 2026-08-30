@@ -30,21 +30,21 @@ export function Hero({
       <div className="max-w-6xl mx-auto px-6 py-16 md:py-28 grid md:grid-cols-2 gap-12 items-center">
         <FadeIn>
           <h1
-            className="font-serif text-4xl md:text-5xl lg:text-5xl font-semibold text-[#354042] leading-tight"
+            className="font-serif text-4xl md:text-5xl lg:text-5xl font-semibold text-[#20293d] leading-tight"
           >
             {headline}
           </h1>
           <p className="mt-5 text-base md:text-lg text-[#d27957] leading-relaxed">{subtext}</p>
           {price && (
             <div className="mt-6 inline-flex items-center gap-3 border border-[#d9c1b1] rounded-xl px-4 py-2.5 bg-white/50">
-              <span className="text-2xl font-serif font-semibold text-[#354042]">{price} kr</span>
-              <span className="text-xs text-[#4a5e5f] leading-tight">inkl.<br />moms</span>
+              <span className="text-2xl font-serif font-semibold text-[#20293d]">{price} kr</span>
+              <span className="text-xs text-[#515b73] leading-tight">inkl.<br />moms</span>
             </div>
           )}
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href={ctaHref}
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               {ctaLabel}
             </Link>

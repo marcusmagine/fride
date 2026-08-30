@@ -16,15 +16,15 @@ export default function OmOssPage() {
       <section className="bg-[#fff1e6] overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-28 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#354042] mb-6">
+            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#20293d] mb-6">
               Om oss, och varför vi startade Fride
             </h1>
-            <p className="text-lg text-[#354042] leading-relaxed mb-4">
+            <p className="text-lg text-[#20293d] leading-relaxed mb-4">
               Vi vet hur det känns när någon går bort – sorgen, kaoset och alla praktiska frågor som hopar sig.
               Fride är vår lösning på ett problem vi sett på nära håll. Vi har själva sett vänner kämpa med
               myndigheter, bankkrav och juridiska dokument mitt i en sörjande tid.
             </p>
-            <p className="text-lg text-[#354042] leading-relaxed">
+            <p className="text-lg text-[#20293d] leading-relaxed">
               Det fick oss att ställa en enkel fråga: varför ska det vara så svårt att få hjälp när man behöver
               det som mest?
             </p>
@@ -61,10 +61,10 @@ export default function OmOssPage() {
       <section className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-[#354042] mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-[#20293d] mb-6">
               Vår vision: att förändra hur Sverige hanterar dödsbon
             </h2>
-            <div className="space-y-4 text-[#354042] leading-relaxed">
+            <div className="space-y-4 text-[#20293d] leading-relaxed">
               <p>Varje år går cirka 90 000 människor bort i Sverige.</p>
               <p>
                 Varje gång lämnar de efter sig ett dödsbo – och en familj som ska hantera allt det praktiska. Idag
@@ -99,8 +99,8 @@ export default function OmOssPage() {
       <section className="max-w-6xl mx-auto px-6 py-12 border-t border-[#d9c1b1] fade-in">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h3 className="font-serif text-2xl font-semibold text-[#354042] mb-4">Joanna Robarth, Grundare</h3>
-            <div className="space-y-4 text-[#354042] leading-relaxed">
+            <h3 className="font-serif text-2xl font-semibold text-[#20293d] mb-4">Joanna Robarth, Grundare</h3>
+            <div className="space-y-4 text-[#20293d] leading-relaxed">
               <p>
                 Idén till Fride växte fram efter att en nära vän förlorat sin sambo. Hon kämpade med att få ihop
                 alla dokument, kontakta myndigheter och upprätta bouppteckningen – samtidigt som hon tog hand om
@@ -121,7 +121,7 @@ export default function OmOssPage() {
             </div>
             <Link
               href="/intervju-joanna-robarth--grundare"
-              className="inline-block mt-6 bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="inline-block mt-6 bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Läs intervjun med Joanna
             </Link>
@@ -141,8 +141,8 @@ export default function OmOssPage() {
       <section className="max-w-6xl mx-auto px-6 py-12 border-t border-[#d9c1b1] fade-in">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h3 className="font-serif text-2xl font-semibold text-[#354042] mb-4">Elza Kazemi, Grundare</h3>
-            <div className="space-y-4 text-[#354042] leading-relaxed">
+            <h3 className="font-serif text-2xl font-semibold text-[#20293d] mb-4">Elza Kazemi, Grundare</h3>
+            <div className="space-y-4 text-[#20293d] leading-relaxed">
               <p>
                 Med min bakgrund som civilekonom och rådgivare i banksektorn såg jag tidigt hur svår
                 dödsbohanteringen kan vara – särskilt för småföretagare och anhöriga som redan har fullt upp. Det är
@@ -157,7 +157,7 @@ export default function OmOssPage() {
             </div>
             <Link
               href="/intervju-elza-kazemi-grundare-fride"
-              className="inline-block mt-6 bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="inline-block mt-6 bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Läs intervjun med Elza
             </Link>
@@ -177,8 +177,8 @@ export default function OmOssPage() {
       <section className="max-w-6xl mx-auto px-6 py-12 border-t border-[#d9c1b1] fade-in">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h3 className="font-serif text-2xl font-semibold text-[#354042] mb-4">Sara Gustafsson, Delägare</h3>
-            <div className="space-y-4 text-[#354042] leading-relaxed">
+            <h3 className="font-serif text-2xl font-semibold text-[#20293d] mb-4">Sara Gustafsson, Delägare</h3>
+            <div className="space-y-4 text-[#20293d] leading-relaxed">
               <p className="italic">
                 "Första gången jag träffade Joanna och Elza och hörde om deras vision förstod jag direkt – det här
                 vill jag vara med och bygga. Jag hade nyss förlorat min bonuspappa. Samtidigt fick min mamma en
@@ -208,10 +208,10 @@ export default function OmOssPage() {
       <section className="max-w-6xl mx-auto px-6 py-12 border-t border-[#d9c1b1] fade-in">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <h3 className="font-serif text-2xl font-semibold text-[#354042] mb-4">
+            <h3 className="font-serif text-2xl font-semibold text-[#20293d] mb-4">
               Carlos Manriquez, Delägare
             </h3>
-            <div className="space-y-4 text-[#354042] leading-relaxed">
+            <div className="space-y-4 text-[#20293d] leading-relaxed">
               <p className="italic">
                 "Tekniken ska göra det enkla möjligt – och det möjliga enkelt. Det är så jag tänker när jag
                 bygger Frides plattform."
@@ -242,7 +242,7 @@ export default function OmOssPage() {
       {/* Knowledge bank CTA */}
       <section className="bg-[#fff1e6] py-16 mt-8">
         <div className="max-w-4xl mx-auto px-6 text-center fade-in">
-          <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-6">Vår kunskapsbank</h2>
+          <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-6">Vår kunskapsbank</h2>
           <Link
             href="/kunskap"
             className="inline-block border border-[#20293d] text-[#20293d] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#20293d] hover:text-[#fff1e6] transition-colors"

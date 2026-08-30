@@ -43,7 +43,7 @@ export async function LatestArticlesSection() {
           <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-2">
             Kunskap
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042]">
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d]">
             Senaste från kunskapsbanken
           </h2>
         </div>
@@ -78,15 +78,15 @@ export async function LatestArticlesSection() {
                   {article.category}
                 </span>
               )}
-              <h3 className="font-serif font-semibold text-[#354042] leading-snug mb-3 flex-1">
+              <h3 className="font-serif font-semibold text-[#20293d] leading-snug mb-3 flex-1">
                 {article.title}
               </h3>
               {article.excerpt && (
-                <p className="text-sm text-[#4a5e5f] leading-relaxed mb-4 line-clamp-2">
+                <p className="text-sm text-[#515b73] leading-relaxed mb-4 line-clamp-2">
                   {article.excerpt}
                 </p>
               )}
-              <span className="text-sm font-medium text-[#354042] flex items-center gap-1 group-hover:text-[#d27957] transition-colors">
+              <span className="text-sm font-medium text-[#20293d] flex items-center gap-1 group-hover:text-[#d27957] transition-colors">
                 Läs mer
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

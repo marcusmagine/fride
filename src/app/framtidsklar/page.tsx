@@ -76,14 +76,14 @@ export default function FramtidsklarPage() {
             <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-4">
               Framtidsklar
             </p>
-            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#354042] leading-tight mb-5">
+            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#20293d] leading-tight mb-5">
               Vad stämmer in på dig?
             </h1>
-            <p className="text-base md:text-lg text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-base md:text-lg text-[#515b73] leading-relaxed mb-6">
               De flesta vet att det är viktigt. Få har gjort det. Välj din situation nedan – vi
               guidar dig till exakt vad du behöver, steg för steg.
             </p>
-            <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#354042]">
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#20293d]">
               <span className="flex items-center gap-1.5">
                 <svg className="w-4 h-4 text-[#d27957]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -125,7 +125,7 @@ export default function FramtidsklarPage() {
             <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">
               Varför det är viktigt
             </p>
-            <h2 className="font-serif text-3xl font-semibold text-[#354042]">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d]">
               Att vara framtidsklar handlar om att ha koll — i förväg.
             </h2>
           </div>
@@ -135,8 +135,8 @@ export default function FramtidsklarPage() {
                 <div className="w-10 h-10 rounded-full bg-white border border-[#d9c1b1] flex items-center justify-center mb-4">
                   <span className="font-serif font-semibold text-[#d27957]">{i + 1}</span>
                 </div>
-                <h3 className="font-serif text-lg font-semibold text-[#354042] mb-2">{item.title}</h3>
-                <p className="text-sm text-[#4a5e5f] leading-relaxed">{item.description}</p>
+                <h3 className="font-serif text-lg font-semibold text-[#20293d] mb-2">{item.title}</h3>
+                <p className="text-sm text-[#515b73] leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -166,15 +166,15 @@ export default function FramtidsklarPage() {
                     <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-2">
                       {s.label}
                     </p>
-                    <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#354042] leading-snug mb-3">
+                    <h3 className="font-serif text-xl md:text-2xl font-semibold text-[#20293d] leading-snug mb-3">
                       {s.headline}
                     </h3>
-                    <p className="text-sm text-[#4a5e5f] leading-relaxed mb-5">{s.description}</p>
+                    <p className="text-sm text-[#515b73] leading-relaxed mb-5">{s.description}</p>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {s.documents.map((doc) => (
                         <span
                           key={doc}
-                          className="text-xs bg-[#fff1e6] text-[#354042] border border-[#d9c1b1] px-3 py-1 rounded-full"
+                          className="text-xs bg-[#fff1e6] text-[#20293d] border border-[#d9c1b1] px-3 py-1 rounded-full"
                         >
                           {doc}
                         </span>
@@ -207,7 +207,7 @@ export default function FramtidsklarPage() {
             <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">
               Så funkar det
             </p>
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-6">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-6">
               Tre steg till trygghet
             </h2>
             <ol className="flex flex-col gap-6">
@@ -217,21 +217,21 @@ export default function FramtidsklarPage() {
                 { title: "Betala och ta emot", desc: "Ditt dokument skickas direkt till din e-post." },
               ].map((step, i) => (
                 <li key={step.title} className="flex gap-4 items-start">
-                  <div className="w-8 h-8 rounded-full bg-[#354042] text-[#fff1e6] flex items-center justify-center font-semibold text-sm shrink-0 mt-0.5">
+                  <div className="w-8 h-8 rounded-full bg-[#20293d] text-[#fff1e6] flex items-center justify-center font-semibold text-sm shrink-0 mt-0.5">
                     {i + 1}
                   </div>
                   <div>
-                    <p className="font-semibold text-[#354042] mb-1">{step.title}</p>
-                    <p className="text-sm text-[#4a5e5f] leading-relaxed">{step.desc}</p>
+                    <p className="font-semibold text-[#20293d] mb-1">{step.title}</p>
+                    <p className="text-sm text-[#515b73] leading-relaxed">{step.desc}</p>
                   </div>
                 </li>
               ))}
             </ol>
             <div className="mt-8 inline-flex items-center gap-3 border border-[#d9c1b1] rounded-xl px-4 py-2.5 bg-[#fff1e6]">
-              <span className="text-2xl font-serif font-semibold text-[#354042]">499 kr</span>
-              <span className="text-xs text-[#4a5e5f] leading-tight">inkl.<br />moms</span>
+              <span className="text-2xl font-serif font-semibold text-[#20293d]">499 kr</span>
+              <span className="text-xs text-[#515b73] leading-tight">inkl.<br />moms</span>
               <span className="w-px h-6 bg-[#d9c1b1]" />
-              <span className="text-xs text-[#4a5e5f] leading-tight">50% rabatt<br />på fler dokument</span>
+              <span className="text-xs text-[#515b73] leading-tight">50% rabatt<br />på fler dokument</span>
             </div>
           </div>
           <div className="fade-in fade-in-delay-1 relative h-72 md:h-[420px] rounded-2xl overflow-hidden">

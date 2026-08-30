@@ -15,10 +15,10 @@ export function FoundersSection() {
         </div>
 
         <div className="fade-in">
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] leading-snug mb-6">
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] leading-snug mb-6">
             Möt Joanna och Elza, grundarna till Fride.
           </h2>
-          <p className="text-[#354042] leading-relaxed mb-8">
+          <p className="text-[#20293d] leading-relaxed mb-8">
             Vi har sett hur svåra situationer i livet förvärrats av att man inte har de rättigheter man behöver som
             anhörig, och vilken påverkan det har för de som drabbas. Därför startade vi Fride – för att göra livets
             svårare omställningar något lättare, genom att förbereda sig på rätt sätt.

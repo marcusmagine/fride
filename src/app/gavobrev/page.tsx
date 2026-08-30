@@ -68,7 +68,7 @@ function TwoColSection({
 }) {
   const text = (
     <div className="fade-in">
-      <h2 className="font-serif text-3xl font-semibold text-[#354042] leading-tight mb-5">{heading}</h2>
+      <h2 className="font-serif text-3xl font-semibold text-[#20293d] leading-tight mb-5">{heading}</h2>
       {children}
     </div>
   );
@@ -113,8 +113,8 @@ export default function GavobrevPage() {
       {/* Vad är ett gåvobrev? */}
       <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
         <div className="max-w-2xl fade-in">
-          <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">Vad är ett gåvobrev?</h2>
-          <p className="text-[#4a5e5f] leading-relaxed">
+          <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">Vad är ett gåvobrev?</h2>
+          <p className="text-[#515b73] leading-relaxed">
             Ett gåvobrev är ett juridiskt dokument som visar att något ges bort som en gåva. Det kan till
             exempel handla om pengar, en bostad eller annan egendom. I gåvobrevet kan du också ange villkor
             för gåvan – till exempel att den ska vara mottagarens enskilda egendom eller att den inte får
@@ -128,15 +128,15 @@ export default function GavobrevPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Använd vår AI för att få hjälp.
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-8">
+            <p className="text-[#515b73] leading-relaxed mb-8">
               Den är tränad på allt som har med gåvobrev att göra och kan svara på alla dina frågor
               kopplat till det. Du får tydliga och korrekta svar skrivet på ett enkelt och mänskligt
               sätt (trots att det är en AI). Testa nu — skriv din fråga här i rutan bredvid.
             </p>
-            <p className="text-sm font-medium text-[#354042] mb-3">Exempel på frågor du kan ställa:</p>
+            <p className="text-sm font-medium text-[#20293d] mb-3">Exempel på frågor du kan ställa:</p>
             <ul className="flex flex-col gap-2">
               {[
                 "Måste ett gåvobrev bevittnas?",
@@ -145,7 +145,7 @@ export default function GavobrevPage() {
                 "Kan ett gåvobrev göras om till förskott på arv?",
                 "Hur skiljer sig ett gåvobrev från ett testamente?",
               ].map((q) => (
-                <li key={q} className="flex items-start gap-2 text-sm text-[#4a5e5f] leading-relaxed">
+                <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
                   <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
                   {q}
                 </li>
@@ -181,7 +181,7 @@ export default function GavobrevPage() {
         imageAlt="När behövs ett gåvobrev?"
         bg="cream"
       >
-        <p className="text-[#4a5e5f] leading-relaxed mb-5">
+        <p className="text-[#515b73] leading-relaxed mb-5">
           Ett gåvobrev kan vara viktigt i flera situationer:
         </p>
         <ul className="flex flex-col gap-3">
@@ -191,7 +191,7 @@ export default function GavobrevPage() {
             "När det handlar om större summor pengar",
             "När du vill undvika oklarheter mellan familjemedlemmar",
           ].map((item) => (
-            <li key={item} className="flex items-start gap-3 text-[#354042] text-sm leading-relaxed">
+            <li key={item} className="flex items-start gap-3 text-[#20293d] text-sm leading-relaxed">
               <svg className="w-5 h-5 text-[#d27957] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
@@ -208,7 +208,7 @@ export default function GavobrevPage() {
         imageAlt="Gåvobrev mellan föräldrar och barn"
         imageLeft
       >
-        <div className="space-y-4 text-[#4a5e5f] leading-relaxed">
+        <div className="space-y-4 text-[#515b73] leading-relaxed">
           <p>
             Vid gåvor inom familjen – särskilt större gåvor – är ett gåvobrev viktigt för att tydliggöra
             vad som gäller.
@@ -219,7 +219,7 @@ export default function GavobrevPage() {
               "om gåvan ska räknas som förskott på arv",
               "om den ska vara enskild egendom",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-[#354042] text-sm">
+              <li key={item} className="flex items-start gap-3 text-[#20293d] text-sm">
                 <svg className="w-5 h-5 text-[#d27957] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
@@ -237,7 +237,7 @@ export default function GavobrevPage() {
         imageAlt="Gåvobrev för bostad och tillgångar"
         bg="cream"
       >
-        <div className="space-y-4 text-[#4a5e5f] leading-relaxed">
+        <div className="space-y-4 text-[#515b73] leading-relaxed">
           <p>
             När du ger bort en bostad, eller en del av en bostad, krävs ett skriftligt gåvobrev för att
             gåvan ska vara giltig. Det är också vanligt att ange villkor, till exempel att bostaden ska
@@ -254,10 +254,10 @@ export default function GavobrevPage() {
       <section className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] mb-5">
               Varför välja Frides gåvobrev?
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-[#515b73] leading-relaxed mb-6">
               Att skriva ett gåvobrev själv kan verka enkelt – men det är lätt att missa viktiga detaljer.
               Med Frides tjänst får du ett juridiskt korrekt dokument, anpassat efter din situation.
             </p>
@@ -268,7 +268,7 @@ export default function GavobrevPage() {
                 "Trygg betalning via Stripe – välj mellan kort, Klarna, Apple Pay eller Google Pay.",
                 "Enkelt och snabbt – du är klar på bara några minuter, utan juridisk förkunskap.",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-[#354042] text-sm leading-relaxed">
+                <li key={item} className="flex items-start gap-3 text-[#20293d] text-sm leading-relaxed">
                   <svg className="w-5 h-5 text-[#d27957] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
@@ -276,7 +276,7 @@ export default function GavobrevPage() {
                 </li>
               ))}
             </ul>
-            <p className="text-[#354042] mb-6">
+            <p className="text-[#20293d] mb-6">
               Skapa ditt gåvobrev digitalt för endast <strong>499 kr inkl. moms</strong>.<br />
               Skapar du fler dokument hos oss får du <strong>50% rabatt</strong> på alla efterföljande.<br />
               Ingen prenumeration. Inga dolda avgifter.

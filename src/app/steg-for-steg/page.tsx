@@ -129,7 +129,7 @@ export default function StegForStegPage() {
         </div>
       </section>
 
-      <FAQ items={faq} headline="Vanliga frågor om dödsfall och bouppteckning" />
+      <FAQ items={faq} headline="Vanliga frågor om dödsfall och bouppteckning" track="green" />
     </>
   );
 }

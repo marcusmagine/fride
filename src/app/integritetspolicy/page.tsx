@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 export default function IntegritetspolicyPage() {
   return (
     <section className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-      <h1 className="font-serif text-4xl font-semibold text-[#354042] mb-8">Integritetspolicy</h1>
+      <h1 className="font-serif text-4xl font-semibold text-[#20293d] mb-8">Integritetspolicy</h1>
 
-      <div className="space-y-10 text-[#4a5e5f] leading-relaxed">
+      <div className="space-y-10 text-[#515b73] leading-relaxed">
 
         <p>
           Tack för att du tar dig tid att läsa vår integritetspolicy! Vi som tillhandahåller tjänsterna är
@@ -29,8 +29,8 @@ export default function IntegritetspolicyPage() {
 
         {/* Section 1 */}
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[#354042] mb-4">Definitioner</h2>
-          <p className="font-medium text-[#354042] mb-3">1. DEFINITIONER</p>
+          <h2 className="font-serif text-xl font-semibold text-[#20293d] mb-4">Definitioner</h2>
+          <p className="font-medium text-[#20293d] mb-3">1. DEFINITIONER</p>
           <p className="mb-4">
             1.1 Följande definitioner ska, i denna Integritetspolicy, ha den betydelse som förklaras nedan:
           </p>
@@ -51,7 +51,7 @@ export default function IntegritetspolicyPage() {
               { term: '"Hemsida"', def: 'Frides hemsida med domänen www.fride.se eller annan domän som ägs och disponeras av Fride, inklusive underdomäner till dessa.' },
             ].map(({ term, def }) => (
               <div key={term} className="flex gap-2">
-                <dt className="font-medium text-[#354042] shrink-0">{term} –</dt>
+                <dt className="font-medium text-[#20293d] shrink-0">{term} –</dt>
                 <dd>{def}</dd>
               </div>
             ))}
@@ -60,7 +60,7 @@ export default function IntegritetspolicyPage() {
 
         {/* Section 2 */}
         <div>
-          <p className="font-medium text-[#354042] mb-3">2. BEHANDLING AV PERSONUPPGIFTER FÖR ATT UPPFYLLA AVTALET</p>
+          <p className="font-medium text-[#20293d] mb-3">2. BEHANDLING AV PERSONUPPGIFTER FÖR ATT UPPFYLLA AVTALET</p>
           <div className="space-y-4">
             <p>
               2.1 Fride behandlar sådana Personuppgifter som lämnas av Beställare eller andra personer med det
@@ -82,18 +82,18 @@ export default function IntegritetspolicyPage() {
               begravningsgäster) för syften som avses i punkten 2.1 faller utanför GDPR:s tillämpningsområde.
             </p>
             <div>
-              <p className="font-medium text-[#354042] mb-2">2.4 Marknadsföra våra tjänster</p>
-              <p className="mb-1"><span className="font-medium text-[#354042]">Syfte med behandlingen:</span> Marknadsföra våra tjänster till dig genom att skicka dig information och erbjudanden, t.ex. via mejl, om vår verksamhet.</p>
-              <p className="mb-1"><span className="font-medium text-[#354042]">Personuppgifter:</span> Namn; Kontaktuppgifter.</p>
+              <p className="font-medium text-[#20293d] mb-2">2.4 Marknadsföra våra tjänster</p>
+              <p className="mb-1"><span className="font-medium text-[#20293d]">Syfte med behandlingen:</span> Marknadsföra våra tjänster till dig genom att skicka dig information och erbjudanden, t.ex. via mejl, om vår verksamhet.</p>
+              <p className="mb-1"><span className="font-medium text-[#20293d]">Personuppgifter:</span> Namn; Kontaktuppgifter.</p>
               <p className="mb-1">Personuppgifterna samlas in från dig.</p>
-              <p><span className="font-medium text-[#354042]">Laglig grund:</span> Frides berättigade intresse (artikel 6.1.f i GDPR) att marknadsföra vår verksamhet. Du har alltid rätt att invända mot behandlingen.</p>
+              <p><span className="font-medium text-[#20293d]">Laglig grund:</span> Frides berättigade intresse (artikel 6.1.f i GDPR) att marknadsföra vår verksamhet. Du har alltid rätt att invända mot behandlingen.</p>
             </div>
           </div>
         </div>
 
         {/* Section 3 */}
         <div>
-          <p className="font-medium text-[#354042] mb-3">3. BEHANDLING AV PERSONUPPGIFTER I MARKNADSFÖRINGSSYFTE</p>
+          <p className="font-medium text-[#20293d] mb-3">3. BEHANDLING AV PERSONUPPGIFTER I MARKNADSFÖRINGSSYFTE</p>
           <div className="space-y-4">
             <p>
               3.1 Utöver ovannämnda ändamål behandlar Fride Personuppgifter i syfte att på ett bättre sätt
@@ -115,7 +115,7 @@ export default function IntegritetspolicyPage() {
 
         {/* Section 4 */}
         <div>
-          <p className="font-medium text-[#354042] mb-3">4. ÖVRIG BEHANDLING AV PERSONUPPGIFTER</p>
+          <p className="font-medium text-[#20293d] mb-3">4. ÖVRIG BEHANDLING AV PERSONUPPGIFTER</p>
           <p>
             4.1 Det förekommer att Beställaren lämnar Personuppgifter som inte är nödvändiga för ovan angivna
             syften. I de fall Fride anses personuppgiftsansvarig för behandlingen av dessa uppgifter anses
@@ -127,7 +127,7 @@ export default function IntegritetspolicyPage() {
 
         {/* Section 5 */}
         <div>
-          <p className="font-medium text-[#354042] mb-3">5. UPPGIFTER SOM INTE LÄMNAS AV DEN REGISTRERADE SJÄLV</p>
+          <p className="font-medium text-[#20293d] mb-3">5. UPPGIFTER SOM INTE LÄMNAS AV DEN REGISTRERADE SJÄLV</p>
           <p>
             5.1 Genom inhämtande av dödsfallsintyg kommer Fride att behandla Personuppgifter avseende
             dödsbodelägare (namn, personnummer adress). Beställaren lämnar även uppgifter avseende
@@ -137,7 +137,7 @@ export default function IntegritetspolicyPage() {
 
         {/* Section 6 */}
         <div>
-          <p className="font-medium text-[#354042] mb-3">6. REGISTRERADE RÄTTIGHETER</p>
+          <p className="font-medium text-[#20293d] mb-3">6. REGISTRERADE RÄTTIGHETER</p>
           <div className="space-y-4">
             <p>
               6.1 Den Registrerade har nedanstående rättigheter avseende Personuppgifter som behandlas av Fride.
@@ -177,7 +177,7 @@ export default function IntegritetspolicyPage() {
 
         {/* Section 7 */}
         <div>
-          <p className="font-medium text-[#354042] mb-3">7. GALLRING</p>
+          <p className="font-medium text-[#20293d] mb-3">7. GALLRING</p>
           <div className="space-y-4">
             <p>
               7.1 Personuppgifterna lagras i vårt affärssystem och tas bort när de inte längre är nödvändiga,
@@ -196,7 +196,7 @@ export default function IntegritetspolicyPage() {
 
         {/* Section 8 */}
         <div>
-          <p className="font-medium text-[#354042] mb-3">8. SÄKERHET</p>
+          <p className="font-medium text-[#20293d] mb-3">8. SÄKERHET</p>
           <p>
             8.1 Fride sätter de Registrerades personliga integritet i första rummet och arbetar därför aktivt
             för att Registrerades Personuppgifter behandlas med största försiktighet. Fride vidtar de åtgärder
@@ -207,7 +207,7 @@ export default function IntegritetspolicyPage() {
 
         {/* Section 9 */}
         <div>
-          <p className="font-medium text-[#354042] mb-3">9. PERSONUPPGIFTER TILL TREDJE PART</p>
+          <p className="font-medium text-[#20293d] mb-3">9. PERSONUPPGIFTER TILL TREDJE PART</p>
           <div className="space-y-4">
             <p>
               9.1 Fride kommer inte att sälja eller dela ut Personuppgifter till tredje part, om inte annat
@@ -216,7 +216,7 @@ export default function IntegritetspolicyPage() {
             <p>9.2 Fride kan dock komma att överföra Personuppgifter som avser de Registrerade till:</p>
             <ul className="space-y-3 pl-4">
               <li>
-                <span className="font-medium text-[#354042]">i.</span> Leverantörer av IT-tjänster. Vi använder underleverantörer för IT-support, underhåll, och
+                <span className="font-medium text-[#20293d]">i.</span> Leverantörer av IT-tjänster. Vi använder underleverantörer för IT-support, underhåll, och
                 serverhosting (lagring av data). Vi köper också in IT-system för intern- och extern kommunikation
                 (t.ex. utskick av mejl till dig), samt för dokumentlagring. Dessa underleverantörer är
                 personuppgiftsbiträden till oss och får bara behandla personuppgifter enligt våra instruktioner
@@ -227,21 +227,21 @@ export default function IntegritetspolicyPage() {
                 Framework). Vill du veta mer om skyddsåtgärder vid tredjelandsöverföringar, vänligen kontakta oss;
               </li>
               <li>
-                <span className="font-medium text-[#354042]">ii.</span> Leverantör av informationstjänster. För att säkerställa din identitet och korrekta
+                <span className="font-medium text-[#20293d]">ii.</span> Leverantör av informationstjänster. För att säkerställa din identitet och korrekta
                 adressuppgifter kontrollerar vi av dig angivna uppgifter om identitet mot folkbokföringsregistret.
                 Denna tjänst köper vi in av en leverantör av sådana informationstjänster. För att göra detta måste
                 vi dela ditt personnummer med leverantören;
               </li>
               <li>
-                <span className="font-medium text-[#354042]">iii.</span> Frides underleverantörer och samarbetspartners, som i vissa avseenden agerar som våra
+                <span className="font-medium text-[#20293d]">iii.</span> Frides underleverantörer och samarbetspartners, som i vissa avseenden agerar som våra
                 personuppgiftsbiträden i enlighet med våra instruktioner, för tillhandahållandet av våra tjänster;
               </li>
               <li>
-                <span className="font-medium text-[#354042]">iv.</span> myndigheter eller juridiska rådgivare vid misstanke om brott mot lag, denna
+                <span className="font-medium text-[#20293d]">iv.</span> myndigheter eller juridiska rådgivare vid misstanke om brott mot lag, denna
                 Integritetspolicy eller de Allmänna villkoren; samt
               </li>
               <li>
-                <span className="font-medium text-[#354042]">v.</span> myndigheter, juridiska rådgivare eller annan aktör om så krävs av Fride enligt lag eller
+                <span className="font-medium text-[#20293d]">v.</span> myndigheter, juridiska rådgivare eller annan aktör om så krävs av Fride enligt lag eller
                 myndighets påbud.
               </li>
             </ul>
@@ -256,7 +256,7 @@ export default function IntegritetspolicyPage() {
 
         {/* Section 10 */}
         <div>
-          <p className="font-medium text-[#354042] mb-3">10. AGGREGERAD DATA (ICKE IDENTIFIERBARA PERSONUPPGIFTER)</p>
+          <p className="font-medium text-[#20293d] mb-3">10. AGGREGERAD DATA (ICKE IDENTIFIERBARA PERSONUPPGIFTER)</p>
           <p>
             10.1 Fride kan komma att dela aggregerad information till tredje part. Den aggregerade informationen
             har i ett sådant fall sammanställts från information som samlats in vid genomförandet av Frides
@@ -268,7 +268,7 @@ export default function IntegritetspolicyPage() {
 
         {/* Section 11 */}
         <div>
-          <p className="font-medium text-[#354042] mb-3">11. COOKIES, LÄNKAR TILL ANDRA HEMSIDOR M.M.</p>
+          <p className="font-medium text-[#20293d] mb-3">11. COOKIES, LÄNKAR TILL ANDRA HEMSIDOR M.M.</p>
           <div className="space-y-4">
             <p>
               11.1 När en Besökare besöker Hemsidan kommer information om användandet att lagras genom cookies.

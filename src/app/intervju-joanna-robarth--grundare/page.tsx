@@ -46,10 +46,10 @@ export default function JoannaIntervjuPage() {
             </svg>
             Om oss
           </Link>
-          <h1 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] leading-tight mb-4">
+          <h1 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] leading-tight mb-4">
             Möt Joanna Robarth, grundare
           </h1>
-          <p className="text-lg text-[#4a5e5f] leading-relaxed">
+          <p className="text-lg text-[#515b73] leading-relaxed">
             När en nära vän plötsligt förlorade sin partner blev bristerna i dagens dödsbohantering
             smärtsamt tydliga. I den här intervjun berättar en av Frides grundare om varför bolaget
             startades – och hur hon och teamet vill minska bördan för människor i livets svåraste stunder.
@@ -75,8 +75,8 @@ export default function JoannaIntervjuPage() {
         <div className="space-y-10">
           {qa.map(({ q, a }) => (
             <div key={q}>
-              <h2 className="font-serif text-xl font-semibold text-[#354042] mb-3">{q}</h2>
-              <p className="text-[#4a5e5f] leading-relaxed">"{a}"</p>
+              <h2 className="font-serif text-xl font-semibold text-[#20293d] mb-3">{q}</h2>
+              <p className="text-[#515b73] leading-relaxed">"{a}"</p>
             </div>
           ))}
         </div>
@@ -85,7 +85,7 @@ export default function JoannaIntervjuPage() {
       {/* Bottom CTA */}
       <section className="bg-[#fff1e6] py-12 md:py-16">
         <div className="max-w-3xl mx-auto px-6">
-          <p className="text-[#4a5e5f] leading-relaxed mb-6">
+          <p className="text-[#515b73] leading-relaxed mb-6">
             Vill du förstå mer om hur du kan förbereda dig för framtiden och underlätta för dina
             närstående?{" "}
             <Link href="/framtidsfullmakt" className="text-[#d27957] hover:underline">
@@ -104,7 +104,7 @@ export default function JoannaIntervjuPage() {
               <Link
                 key={href}
                 href={href}
-                className="bg-[#20293d] text-[#fff1e6] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors whitespace-nowrap"
+                className="bg-[#20293d] text-[#fff1e6] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors whitespace-nowrap"
               >
                 {label}
               </Link>

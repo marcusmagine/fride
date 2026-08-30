@@ -44,7 +44,7 @@ export function HowItWorksCards() {
   return (
     <section className="bg-[#fff1e6] py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-10 fade-in">
+        <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-10 fade-in">
           Så funkar det
         </h2>
         <div className="grid sm:grid-cols-3 gap-6">
@@ -53,11 +53,11 @@ export function HowItWorksCards() {
               key={i}
               className={`fade-in fade-in-delay-${i + 1} bg-white rounded-2xl p-8 flex flex-col gap-4`}
             >
-              <div className="w-12 h-12 rounded-full bg-[#354042] text-[#fff1e6] flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-full bg-[#20293d] text-[#fff1e6] flex items-center justify-center shrink-0">
                 {card.icon}
               </div>
-              <h3 className="font-serif font-semibold text-[#354042] text-lg">{card.title}</h3>
-              <p className="text-sm text-[#4a5e5f] leading-relaxed">{card.description}</p>
+              <h3 className="font-serif font-semibold text-[#20293d] text-lg">{card.title}</h3>
+              <p className="text-sm text-[#515b73] leading-relaxed">{card.description}</p>
             </div>
           ))}
         </div>

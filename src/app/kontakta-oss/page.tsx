@@ -11,13 +11,13 @@ export default function KontaktaOssPage() {
   return (
     <div className="max-w-2xl mx-auto px-6 py-16 md:py-24">
       <div className="fade-in">
-        <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#354042] mb-5">Kontakta oss</h1>
-        <p className="text-lg text-[#4a5e5f] leading-relaxed mb-10">
+        <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#20293d] mb-5">Kontakta oss</h1>
+        <p className="text-lg text-[#515b73] leading-relaxed mb-10">
           Har du frågor om våra dokument, en pågående tjänst eller något annat? Vi hjälper gärna till.
         </p>
         <a
           href="mailto:hej@fride.se"
-          className="inline-block bg-[#354042] text-[#fff1e6] px-7 py-3.5 rounded-full text-sm font-medium hover:bg-[#d27957] transition-colors duration-300"
+          className="inline-block bg-[#20293d] text-[#fff1e6] px-7 py-3.5 rounded-full text-sm font-medium hover:bg-[#d27957] transition-colors duration-300"
         >
           Skicka e-post till hej@fride.se
         </a>

@@ -105,13 +105,13 @@ export default function FramtidsdokumentPage() {
       <section className="bg-[#fff1e6] overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 py-16 md:py-28 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#354042] mb-5 leading-tight">
+            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#20293d] mb-5 leading-tight">
               Framtidsdokument som skapar trygghet för dig och dina nära
             </h1>
             <p className="text-base md:text-lg text-[#d27957] leading-relaxed">
               Fride hjälper dig att skapa juridiskt korrekta dokument som klargör vad som gäller när livet förändras – med stegvis vägledning och fast pris.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4 text-sm text-[#354042]">
+            <div className="mt-8 flex flex-wrap gap-4 text-sm text-[#20293d]">
               {["Fast pris", "Juridiskt korrekt", "Guidning steg för steg"].map((point) => (
                 <span key={point} className="flex items-center gap-2">
                   <svg className="w-4 h-4 text-[#d27957]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -139,11 +139,11 @@ export default function FramtidsdokumentPage() {
       {/* What is it */}
       <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
         <div className="max-w-2xl fade-in">
-          <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">Vad är framtidsdokument?</h2>
-          <p className="text-[#4a5e5f] leading-relaxed mb-4">
+          <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">Vad är framtidsdokument?</h2>
+          <p className="text-[#515b73] leading-relaxed mb-4">
             Framtidsdokument är juridiska handlingar som hjälper dig att klargöra vad som gäller – för dig själv och för dina närstående – när livet förändras. Det kan handla om vem som fattar beslut om du blir sjuk, hur en gåva ska hanteras, eller hur ett lån ska återbetalas.
           </p>
-          <p className="text-[#4a5e5f] leading-relaxed">
+          <p className="text-[#515b73] leading-relaxed">
             Att ha rätt dokument på plats minskar risken för missförstånd och tvister, och ger trygghet för alla inblandade. Med Fride skapar du juridiskt korrekta dokument enkelt och snabbt – utan juridisk förkunskap.
           </p>
         </div>
@@ -152,7 +152,7 @@ export default function FramtidsdokumentPage() {
       {/* Documents grid */}
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-6 fade-in">Våra dokument</h2>
+          <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-6 fade-in">Våra dokument</h2>
           <div className="mb-10 bg-[#20293d] text-[#fff1e6] rounded-2xl px-6 py-4 flex items-center gap-4">
             <span className="text-2xl font-serif font-bold text-[#d27957] shrink-0">50%</span>
             <p className="text-sm leading-snug">
@@ -173,18 +173,18 @@ export default function FramtidsdokumentPage() {
                     className="object-cover"
                   />
                   {!doc.available && (
-                    <div className="absolute inset-0 bg-[#354042]/40 flex items-center justify-center">
-                      <span className="bg-white text-[#354042] text-xs font-semibold px-3 py-1 rounded-full">
+                    <div className="absolute inset-0 bg-[#20293d]/40 flex items-center justify-center">
+                      <span className="bg-white text-[#20293d] text-xs font-semibold px-3 py-1 rounded-full">
                         Kommer snart
                       </span>
                     </div>
                   )}
                 </div>
                 <div className="flex flex-col flex-1 p-6">
-                  <h3 className="font-serif text-xl font-semibold text-[#354042] mb-3">{doc.title}</h3>
-                  <p className="text-sm text-[#4a5e5f] leading-relaxed flex-1 mb-5">{doc.description}</p>
+                  <h3 className="font-serif text-xl font-semibold text-[#20293d] mb-3">{doc.title}</h3>
+                  <p className="text-sm text-[#515b73] leading-relaxed flex-1 mb-5">{doc.description}</p>
                   {doc.available && doc.price && (
-                    <p className="text-sm text-[#354042] mb-4">
+                    <p className="text-sm text-[#20293d] mb-4">
                       Fast pris <strong>{doc.price} kr</strong> inkl. moms
                     </p>
                   )}
@@ -199,7 +199,7 @@ export default function FramtidsdokumentPage() {
                       {doc.href && (
                         <Link
                           href={doc.href}
-                          className="text-sm text-center text-[#354042] hover:text-[#d27957] transition-colors py-1"
+                          className="text-sm text-center text-[#20293d] hover:text-[#d27957] transition-colors py-1"
                         >
                           Läs mer
                         </Link>
@@ -215,15 +215,15 @@ export default function FramtidsdokumentPage() {
 
       {/* How it works */}
       <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
-        <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-10 fade-in">Så funkar det</h2>
+        <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-10 fade-in">Så funkar det</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step) => (
             <div key={step.number} className="fade-in">
-              <div className="w-10 h-10 rounded-full bg-[#354042] text-[#fff1e6] flex items-center justify-center font-semibold text-sm mb-4">
+              <div className="w-10 h-10 rounded-full bg-[#20293d] text-[#fff1e6] flex items-center justify-center font-semibold text-sm mb-4">
                 {step.number}
               </div>
-              <h3 className="font-serif text-lg font-semibold text-[#354042] mb-2">{step.title}</h3>
-              <p className="text-sm text-[#4a5e5f] leading-relaxed">{step.description}</p>
+              <h3 className="font-serif text-lg font-semibold text-[#20293d] mb-2">{step.title}</h3>
+              <p className="text-sm text-[#515b73] leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>

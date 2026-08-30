@@ -12,15 +12,15 @@ export function WhenYouNeedIt() {
     <section className="bg-[#fff1e6] py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div className="fade-in">
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] leading-tight mb-6">
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] leading-tight mb-6">
             När är en framtidsfullmakt bra att ha?
           </h2>
-          <p className="text-[#4a5e5f] leading-relaxed mb-8">
+          <p className="text-[#515b73] leading-relaxed mb-8">
             En framtidsfullmakt träder i kraft den dag du inte längre kan ta hand om dina egna angelägenheter. Det kan hända tidigare än du tror – och utan en fullmakt på plats kan dina närstående stå handfallna.
           </p>
           <ul className="flex flex-col gap-4">
             {scenarios.map((s) => (
-              <li key={s} className="flex items-start gap-3 text-[#354042] text-sm leading-relaxed">
+              <li key={s} className="flex items-start gap-3 text-[#20293d] text-sm leading-relaxed">
                 <svg
                   className="w-5 h-5 text-[#d27957] shrink-0 mt-0.5"
                   fill="none"

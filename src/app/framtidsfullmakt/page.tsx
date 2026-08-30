@@ -117,10 +117,10 @@ export default function FramtidsfullmaktPage() {
       <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Vad är en framtidsfullmakt?
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed">
+            <p className="text-[#515b73] leading-relaxed">
               En framtidsfullmakt är ett juridiskt dokument där du själv utser någon du litar på att
               företräda dig, om du i framtiden blir sjuk, dement eller av annan anledning inte längre
               kan fatta egna beslut. Det är ett alternativ till god man, och gäller när fullmakten
@@ -143,16 +143,16 @@ export default function FramtidsfullmaktPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Använd vår AI för att få hjälp.
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-8">
+            <p className="text-[#515b73] leading-relaxed mb-8">
               Den är tränad på allt som har med framtidsfullmakter att göra och kan svara på alla
               dina frågor kopplat till det. Du får tydliga och korrekta svar skrivet på ett enkelt
               och mänskligt sätt (trots att det är en AI). Testa nu — skriv din fråga här i rutan
               bredvid.
             </p>
-            <p className="text-sm font-medium text-[#354042] mb-3">Exempel på frågor du kan ställa:</p>
+            <p className="text-sm font-medium text-[#20293d] mb-3">Exempel på frågor du kan ställa:</p>
             <ul className="flex flex-col gap-2">
               {[
                 "Vad är viktigt att tänka på när man ska skriva en framtidsfullmakt?",
@@ -161,7 +161,7 @@ export default function FramtidsfullmaktPage() {
                 "Kan jag ändra min framtidsfullmakt i efterhand?",
                 "Vad skiljer en framtidsfullmakt från en vanlig fullmakt?",
               ].map((q) => (
-                <li key={q} className="flex items-start gap-2 text-sm text-[#4a5e5f] leading-relaxed">
+                <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
                   <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
                   {q}
                 </li>
@@ -191,14 +191,14 @@ export default function FramtidsfullmaktPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] leading-tight mb-5">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] leading-tight mb-5">
               Därför är framtidsfullmakt en viktig trygghet
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-[#515b73] leading-relaxed mb-6">
               Ingen vet vad framtiden för med sig. Med en framtidsfullmakt får du själv bestämma
               vem som ska hjälpa dig — istället för att det avgörs av andra.
             </p>
-            <p className="text-[#354042] font-medium mb-4">
+            <p className="text-[#20293d] font-medium mb-4">
               En framtidsfullmakt kan bland annat ge rätt att:
             </p>
             <ul className="flex flex-col gap-3">
@@ -209,7 +209,7 @@ export default function FramtidsfullmaktPage() {
                 "Fatta beslut kring vård och boende",
                 "Hantera försäljning av fastighet",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-[#354042] text-sm leading-relaxed">
+                <li key={item} className="flex items-start gap-3 text-[#20293d] text-sm leading-relaxed">
                   <svg className="w-5 h-5 text-[#d27957] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
@@ -217,7 +217,7 @@ export default function FramtidsfullmaktPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-6 text-[#4a5e5f] leading-relaxed text-sm">
+            <p className="mt-6 text-[#515b73] leading-relaxed text-sm">
               Att skapa framtidsfullmakt är en enkel handling — men gör stor skillnad för dig och
               dina närstående.
             </p>
@@ -237,16 +237,16 @@ export default function FramtidsfullmaktPage() {
       <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] leading-tight mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] leading-tight mb-5">
               För dig som står ensam med ansvaret för din vardag och din familj
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-4">
+            <p className="text-[#515b73] leading-relaxed mb-4">
               När du är ensam med mindre barn vilar mycket på dina axlar — både praktiskt och
               känslomässigt. Och även om en framtidsfullmakt <strong>inte</strong> kan styra över vem
               som tar hand om barnen om något skulle hända, kan den ge något annat som är minst lika
               värdefullt:
             </p>
-            <p className="text-[#354042] font-medium mb-4">
+            <p className="text-[#20293d] font-medium mb-4">
               Trygghet i att allt det praktiska hanteras av någon du litar på.
             </p>
             <ul className="flex flex-col gap-3 mb-6">
@@ -256,7 +256,7 @@ export default function FramtidsfullmaktPage() {
                 "Avtal, juridik och andra vardagsbeslut",
                 "Allt det som annars kan bli både krångligt och känslomässigt tungt för dina barn",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-[#354042] text-sm leading-relaxed">
+                <li key={item} className="flex items-start gap-3 text-[#20293d] text-sm leading-relaxed">
                   <svg className="w-5 h-5 text-[#d27957] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
@@ -264,14 +264,14 @@ export default function FramtidsfullmaktPage() {
                 </li>
               ))}
             </ul>
-            <p className="text-[#4a5e5f] leading-relaxed text-sm mb-8">
+            <p className="text-[#515b73] leading-relaxed text-sm mb-8">
               På så sätt slipper barnen hamna mitt i praktiska beslut, och du vet att din vardag tas
               om hand av någon som står på din sida. Det är ett sätt att skapa lugn — både för dig
               och för dem du gör allt för.
             </p>
             <Link
               href="https://app.fride.se/create/framtidsfullmakt"
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Skapa din framtidsfullmakt
             </Link>
@@ -291,14 +291,14 @@ export default function FramtidsfullmaktPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] leading-tight mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] leading-tight mb-5">
               För dig som vill skapa ordning inför framtiden – för din egen och dina barns skull
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-4">
+            <p className="text-[#515b73] leading-relaxed mb-4">
               När barnen fått sina egna liv och kanske egna barn, väcks ofta ett nytt ansvar: att
               inte belasta dem den dag du själv behöver stöd.
             </p>
-            <p className="text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-[#515b73] leading-relaxed mb-6">
               Kanske börjar kroppen kännas tröttare. Kanske börjar din partner bli äldre och mer
               sårbar. Eller kanske vill du bara vara trygg i att allt är ordnat om något händer.
             </p>
@@ -308,7 +308,7 @@ export default function FramtidsfullmaktPage() {
                 "Att dina barn slipper fatta svåra beslut mitt i en tuff tid",
                 "Att du själv har kontroll över hur du vill att livet ska skötas",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-[#354042] text-sm leading-relaxed">
+                <li key={item} className="flex items-start gap-3 text-[#20293d] text-sm leading-relaxed">
                   <svg className="w-5 h-5 text-[#d27957] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
@@ -316,12 +316,12 @@ export default function FramtidsfullmaktPage() {
                 </li>
               ))}
             </ul>
-            <p className="text-[#4a5e5f] leading-relaxed text-sm mb-8">
+            <p className="text-[#515b73] leading-relaxed text-sm mb-8">
               Det är ett sätt att skapa lugn — både för dig och för dem som betyder mest.
             </p>
             <Link
               href="https://app.fride.se/create/framtidsfullmakt"
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Skapa din framtidsfullmakt
             </Link>

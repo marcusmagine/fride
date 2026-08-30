@@ -103,14 +103,14 @@ export default async function ArticlePage({
               {article.category}
             </Link>
           )}
-          <h1 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] leading-tight mb-4">
+          <h1 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] leading-tight mb-4">
             {article.title}
           </h1>
           {article.excerpt && (
-            <p className="text-lg text-[#4a5e5f] leading-relaxed mb-4">{article.excerpt}</p>
+            <p className="text-lg text-[#515b73] leading-relaxed mb-4">{article.excerpt}</p>
           )}
           {article.publishedAt && (
-            <p className="text-sm text-[#4a5e5f]">{formatDate(article.publishedAt)}</p>
+            <p className="text-sm text-[#515b73]">{formatDate(article.publishedAt)}</p>
           )}
         </div>
       </section>
@@ -134,12 +134,12 @@ export default async function ArticlePage({
       <article className="max-w-3xl mx-auto px-6 pb-16 md:pb-24">
         <div
           className="prose prose-lg max-w-none
-            prose-headings:font-serif prose-headings:text-[#354042] prose-headings:font-semibold
+            prose-headings:font-serif prose-headings:text-[#20293d] prose-headings:font-semibold
             prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
             prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-            prose-p:text-[#4a5e5f] prose-p:leading-relaxed
-            prose-li:text-[#4a5e5f]
-            prose-strong:text-[#354042]
+            prose-p:text-[#515b73] prose-p:leading-relaxed
+            prose-li:text-[#515b73]
+            prose-strong:text-[#20293d]
             prose-a:text-[#d27957] prose-a:no-underline hover:prose-a:underline
             prose-ul:list-disc prose-ol:list-decimal"
         >
@@ -155,10 +155,10 @@ export default async function ArticlePage({
       <section className="bg-[#fff1e6] py-12 md:py-16">
         <div className="max-w-3xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
-            <h2 className="font-serif text-xl font-semibold text-[#354042] mb-1">
+            <h2 className="font-serif text-xl font-semibold text-[#20293d] mb-1">
               Redo att skapa ditt dokument?
             </h2>
-            <p className="text-sm text-[#4a5e5f]">Vi guidar dig steg för steg – juridiskt korrekt och enkelt.</p>
+            <p className="text-sm text-[#515b73]">Vi guidar dig steg för steg – juridiskt korrekt och enkelt.</p>
           </div>
           <div className="flex flex-wrap gap-3">
             {[
@@ -172,7 +172,7 @@ export default async function ArticlePage({
               <Link
                 key={href}
                 href={href}
-                className="bg-[#20293d] text-[#fff1e6] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors whitespace-nowrap"
+                className="bg-[#20293d] text-[#fff1e6] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors whitespace-nowrap"
               >
                 {label}
               </Link>

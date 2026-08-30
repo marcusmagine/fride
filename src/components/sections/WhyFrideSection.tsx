@@ -33,10 +33,10 @@ export function WhyFrideSection({ ctaHref = "https://app.fride.se/create/framtid
     <section className="bg-[#fff1e6] py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         <div className="fade-in mb-10">
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] mb-3">
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] mb-3">
             Varför välja Frides framtidsfullmakt?
           </h2>
-          <p className="text-[#4a5e5f]">När du skapar din framtidsfullmakt hos Fride får du:</p>
+          <p className="text-[#515b73]">När du skapar din framtidsfullmakt hos Fride får du:</p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
@@ -45,14 +45,14 @@ export function WhyFrideSection({ ctaHref = "https://app.fride.se/create/framtid
               key={i}
               className={`fade-in fade-in-delay-${i + 1} bg-white rounded-2xl p-8 border border-[#d9c1b1]`}
             >
-              <h3 className="font-serif font-semibold text-[#354042] text-lg mb-2">{f.title}</h3>
-              <p className="text-sm text-[#4a5e5f] leading-relaxed">{f.description}</p>
+              <h3 className="font-serif font-semibold text-[#20293d] text-lg mb-2">{f.title}</h3>
+              <p className="text-sm text-[#515b73] leading-relaxed">{f.description}</p>
             </div>
           ))}
         </div>
 
         <div className="fade-in text-center">
-          <p className="text-[#354042] mb-6">
+          <p className="text-[#20293d] mb-6">
             En trygg framtid för ett fast pris. Skapa din framtidsfullmakt digitalt för endast{" "}
             <strong>499 kr inkl. moms</strong>.<br />
             Skapar du fler dokument hos oss får du <strong>50% rabatt</strong> på alla efterföljande.<br />

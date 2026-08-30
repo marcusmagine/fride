@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 export default function CookiesPage() {
   return (
     <section className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-      <h1 className="font-serif text-4xl font-semibold text-[#354042] mb-8">Cookies</h1>
+      <h1 className="font-serif text-4xl font-semibold text-[#20293d] mb-8">Cookies</h1>
 
-      <div className="space-y-8 text-[#4a5e5f] leading-relaxed">
+      <div className="space-y-8 text-[#515b73] leading-relaxed">
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[#354042] mb-3">
+          <h2 className="font-serif text-xl font-semibold text-[#20293d] mb-3">
             Vi använder cookies på vår hemsida.
           </h2>
           <p>
@@ -27,7 +27,7 @@ export default function CookiesPage() {
         </div>
 
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[#354042] mb-3">
+          <h2 className="font-serif text-xl font-semibold text-[#20293d] mb-3">
             Vad är en cookie och vilka använder vi?
           </h2>
           <p>
@@ -41,7 +41,7 @@ export default function CookiesPage() {
         </div>
 
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[#354042] mb-3">
+          <h2 className="font-serif text-xl font-semibold text-[#20293d] mb-3">
             Varför använder vi det?
           </h2>
           <p>
@@ -51,7 +51,7 @@ export default function CookiesPage() {
         </div>
 
         <div>
-          <h2 className="font-serif text-xl font-semibold text-[#354042] mb-3">
+          <h2 className="font-serif text-xl font-semibold text-[#20293d] mb-3">
             Och om jag inte vill att ni sparar cookies?
           </h2>
           <p>

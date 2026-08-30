@@ -55,7 +55,7 @@ function CheckList({ items }: { items: string[] }) {
   return (
     <ul className="flex flex-col gap-3">
       {items.map((item) => (
-        <li key={item} className="flex items-start gap-3 text-[#354042] text-sm leading-relaxed">
+        <li key={item} className="flex items-start gap-3 text-[#20293d] text-sm leading-relaxed">
           <svg className="w-5 h-5 text-[#d27957] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
@@ -93,8 +93,8 @@ export default function SkuldebrevPage() {
       {/* Vad är ett skuldebrev? */}
       <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
         <div className="max-w-2xl fade-in">
-          <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">Vad är ett skuldebrev?</h2>
-          <p className="text-[#4a5e5f] leading-relaxed">
+          <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">Vad är ett skuldebrev?</h2>
+          <p className="text-[#515b73] leading-relaxed">
             Ett skuldebrev är ett juridiskt dokument som visar att en person är skyldig en annan person pengar.
             Det används mellan privatpersoner för att klargöra lånevillkor som återbetalningstid, ränta och
             andra överenskommelser. Med ett skuldebrev på plats minskar risken för missförstånd och båda
@@ -107,15 +107,15 @@ export default function SkuldebrevPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Använd vår AI för att få hjälp.
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-8">
+            <p className="text-[#515b73] leading-relaxed mb-8">
               Den är tränad på allt som har med skuldebrev att göra och kan svara på alla dina frågor
               kopplat till det. Du får tydliga och korrekta svar skrivet på ett enkelt och mänskligt
               sätt (trots att det är en AI). Testa nu — skriv din fråga här i rutan bredvid.
             </p>
-            <p className="text-sm font-medium text-[#354042] mb-3">Exempel på frågor du kan ställa:</p>
+            <p className="text-sm font-medium text-[#20293d] mb-3">Exempel på frågor du kan ställa:</p>
             <ul className="flex flex-col gap-2">
               {[
                 "Vad är skillnaden mellan ett enkelt och löpande skuldebrev?",
@@ -124,7 +124,7 @@ export default function SkuldebrevPage() {
                 "Vad händer med skuldebrevet om låntagaren går bort?",
                 "Hur skriver jag ett skuldebrev för lån till bostadsköp?",
               ].map((q) => (
-                <li key={q} className="flex items-start gap-2 text-sm text-[#4a5e5f] leading-relaxed">
+                <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
                   <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
                   {q}
                 </li>
@@ -157,10 +157,10 @@ export default function SkuldebrevPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               När behövs ett skuldebrev?
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-[#515b73] leading-relaxed mb-6">
               Ett skuldebrev är särskilt viktigt i dessa situationer:
             </p>
             <CheckList items={[
@@ -180,11 +180,11 @@ export default function SkuldebrevPage() {
       <section className="py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Olika typer av skuldebrev
             </h2>
-            <h3 className="font-serif text-xl font-semibold text-[#354042] mb-3">Enkelt skuldebrev</h3>
-            <p className="text-[#4a5e5f] leading-relaxed mb-5">
+            <h3 className="font-serif text-xl font-semibold text-[#20293d] mb-3">Enkelt skuldebrev</h3>
+            <p className="text-[#515b73] leading-relaxed mb-5">
               Det enkla skuldebrevet är ställt till en specifik person och kan inte överlåtas på samma sätt.
               Denna form passar utmärkt när:
             </p>
@@ -207,8 +207,8 @@ export default function SkuldebrevPage() {
             <Image src="/images/Lopande-skuldebrev.webp" alt="Löpande skuldebrev" fill className="object-cover" />
           </div>
           <div className="fade-in">
-            <h3 className="font-serif text-xl font-semibold text-[#354042] mb-3">Löpande skuldebrev</h3>
-            <p className="text-[#4a5e5f] leading-relaxed mb-5">
+            <h3 className="font-serif text-xl font-semibold text-[#20293d] mb-3">Löpande skuldebrev</h3>
+            <p className="text-[#515b73] leading-relaxed mb-5">
               Det löpande skuldebrevet innebär att den som har skuldebrevet i sin hand kan ha rätt att kräva
               betalning. Det används ofta i mer formella eller affärsmässiga situationer och passar när:
             </p>
@@ -225,10 +225,10 @@ export default function SkuldebrevPage() {
       <section className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] mb-5">
               Varför välja Frides skuldebrev?
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-[#515b73] leading-relaxed mb-6">
               Att skriva ett skuldebrev själv kan verka enkelt – men det är lätt att missa viktiga detaljer.
               Med Frides tjänst får du ett juridiskt korrekt dokument, anpassat efter din situation.
             </p>
@@ -238,7 +238,7 @@ export default function SkuldebrevPage() {
               "Trygg betalning via Stripe – välj mellan kort, Klarna, Apple Pay eller Google Pay.",
               "Enkelt och snabbt – du är klar på bara några minuter, utan juridisk förkunskap.",
             ]} />
-            <p className="mt-8 text-[#354042] mb-6">
+            <p className="mt-8 text-[#20293d] mb-6">
               Skapa ditt skuldebrev digitalt för endast <strong>499 kr inkl. moms</strong>.<br />
               Skapar du fler dokument hos oss får du <strong>50% rabatt</strong> på alla efterföljande.<br />
               Ingen prenumeration. Inga dolda avgifter.

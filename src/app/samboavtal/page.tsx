@@ -60,7 +60,7 @@ function CheckList({ items }: { items: string[] }) {
   return (
     <ul className="flex flex-col gap-3">
       {items.map((item) => (
-        <li key={item} className="flex items-start gap-3 text-[#354042] text-sm leading-relaxed">
+        <li key={item} className="flex items-start gap-3 text-[#20293d] text-sm leading-relaxed">
           <svg className="w-5 h-5 text-[#d27957] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
@@ -98,13 +98,13 @@ export default function SamboavtalPage() {
       {/* Vad är ett samboavtal? */}
       <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
         <div className="max-w-2xl fade-in">
-          <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">Vad är ett samboavtal?</h2>
-          <p className="text-[#4a5e5f] leading-relaxed mb-4">
+          <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">Vad är ett samboavtal?</h2>
+          <p className="text-[#515b73] leading-relaxed mb-4">
             Sambolagen ger sambor ett visst skydd – men den täcker bara det ni köpt tillsammans för
             gemensamt bruk, som bostaden och möblerna. Den täcker inte det du ägde innan, eller det
             du fått i arv eller gåva.
           </p>
-          <p className="text-[#4a5e5f] leading-relaxed">
+          <p className="text-[#515b73] leading-relaxed">
             Med ett samboavtal kan ni avtala bort sambolagens regler helt eller delvis – och bestämma
             exakt vad som ska gälla för just er.
           </p>
@@ -115,15 +115,15 @@ export default function SamboavtalPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Använd vår AI för att få hjälp.
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-8">
+            <p className="text-[#515b73] leading-relaxed mb-8">
               Den är tränad på allt som har med samboavtal att göra och kan svara på alla dina frågor
               kopplat till det. Du får tydliga och korrekta svar skrivet på ett enkelt och mänskligt
               sätt (trots att det är en AI). Testa nu — skriv din fråga här i rutan bredvid.
             </p>
-            <p className="text-sm font-medium text-[#354042] mb-3">Exempel på frågor du kan ställa:</p>
+            <p className="text-sm font-medium text-[#20293d] mb-3">Exempel på frågor du kan ställa:</p>
             <ul className="flex flex-col gap-2">
               {[
                 "Vad reglerar ett samboavtal?",
@@ -132,7 +132,7 @@ export default function SamboavtalPage() {
                 "Kan vi skriva att allt ska delas lika i ett samboavtal?",
                 "Skiljer sig samboavtal från äktenskapsförord?",
               ].map((q) => (
-                <li key={q} className="flex items-start gap-2 text-sm text-[#4a5e5f] leading-relaxed">
+                <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
                   <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
                   {q}
                 </li>
@@ -165,10 +165,10 @@ export default function SamboavtalPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               När behövs ett samboavtal?
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-[#515b73] leading-relaxed mb-6">
               Ett samboavtal kan vara viktigt i många situationer. Några vanliga exempel:
             </p>
             <CheckList items={[
@@ -180,7 +180,7 @@ export default function SamboavtalPage() {
             ]} />
             <Link
               href="https://app.fride.se/create/samboavtal"
-              className="mt-8 inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="mt-8 inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Skapa samboavtal
             </Link>
@@ -198,13 +198,13 @@ export default function SamboavtalPage() {
             <Image src="/images/samboavtal-4.webp" alt="Par som köper bostad tillsammans" fill className="object-cover" />
           </div>
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               När ni köper bostad ihop – men bidrar olika mycket
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-5">
+            <p className="text-[#515b73] leading-relaxed mb-5">
               Utan samboavtal delas samboegendomen lika vid en separation – oavsett vem som betalade mest.
             </p>
-            <p className="text-[#4a5e5f] leading-relaxed mb-5">
+            <p className="text-[#515b73] leading-relaxed mb-5">
               Det kan till exempel handla om att:
             </p>
             <CheckList items={[
@@ -212,7 +212,7 @@ export default function SamboavtalPage() {
               "du fick hjälp av dina föräldrar med handpenningen",
               "du tog ett större bolån än din partner",
             ]} />
-            <p className="mt-6 text-[#4a5e5f] leading-relaxed text-sm">
+            <p className="mt-6 text-[#515b73] leading-relaxed text-sm">
               Med ett samboavtal kan ni reglera att var och en får tillbaka det de satt in – och undvika
               en konflikt om ni en dag separerar.
             </p>
@@ -224,20 +224,20 @@ export default function SamboavtalPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Samboavtal när du äger bostaden sedan innan
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-4">
+            <p className="text-[#515b73] leading-relaxed mb-4">
               Om du äger en bostad när ni flyttar ihop räknas den inte som samboegendom – den är din.
               Men det kan ändå uppstå otydlighet om ni bor där länge, renoverar tillsammans eller
               betalar gemensamma kostnader.
             </p>
-            <p className="text-[#4a5e5f] leading-relaxed mb-8">
+            <p className="text-[#515b73] leading-relaxed mb-8">
               Ett samboavtal gör det tydligt vad som gäller och skyddar er båda från onödiga tvister.
             </p>
             <Link
               href="https://app.fride.se/create/samboavtal"
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Skapa samboavtal
             </Link>
@@ -252,10 +252,10 @@ export default function SamboavtalPage() {
       <section className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] mb-5">
               Varför välja Frides samboavtal?
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-[#515b73] leading-relaxed mb-6">
               Vi är inte en juristbyrå – vi är en digital tjänst som gör det enkla möjligt för alla.
             </p>
             <CheckList items={[
@@ -264,7 +264,7 @@ export default function SamboavtalPage() {
               "Trygg betalning du väljer – via Klarna, Apple Pay eller kort.",
               "Enkelt och snabbt – ni kan skapa ert samboavtal på bara några minuter, utan förkunskaper.",
             ]} />
-            <p className="mt-8 text-[#354042] mb-6">
+            <p className="mt-8 text-[#20293d] mb-6">
               Skapa ett samboavtal digitalt för endast <strong>499 kr inkl. moms</strong>.<br />
               Skapar du fler dokument hos oss får du <strong>50% rabatt</strong> på alla efterföljande.<br />
               Ingen prenumeration. Inga dolda avgifter.

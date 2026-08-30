@@ -60,7 +60,7 @@ function CheckList({ items }: { items: string[] }) {
   return (
     <ul className="flex flex-col gap-3">
       {items.map((item) => (
-        <li key={item} className="flex items-start gap-3 text-[#354042] text-sm leading-relaxed">
+        <li key={item} className="flex items-start gap-3 text-[#20293d] text-sm leading-relaxed">
           <svg className="w-5 h-5 text-[#d27957] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
@@ -98,13 +98,13 @@ export default function TestamentePage() {
       {/* Vad är ett testamente? */}
       <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
         <div className="max-w-2xl fade-in">
-          <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">Vad är ett testamente?</h2>
-          <p className="text-[#4a5e5f] leading-relaxed mb-4">
+          <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">Vad är ett testamente?</h2>
+          <p className="text-[#515b73] leading-relaxed mb-4">
             Utan testamente fördelas ditt arv enligt arvslagen – och den tar inte hänsyn till vad du
             faktiskt velat. Det kan innebära att din sambo inte ärver någonting, att ett särkullbarn
             får ut sitt arv direkt, eller att en person du vill skydda inte får något alls.
           </p>
-          <p className="text-[#4a5e5f] leading-relaxed">
+          <p className="text-[#515b73] leading-relaxed">
             Med ett testamente bestämmer du själv. Du väljer vem som ska ärva, vad de ska få och hur
             det ska fördelas. Det är ett av de viktigaste dokumenten du kan skriva – för dem du bryr
             dig om.
@@ -116,15 +116,15 @@ export default function TestamentePage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Använd vår AI för att få hjälp.
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-8">
+            <p className="text-[#515b73] leading-relaxed mb-8">
               Den är tränad på allt som har med testamente att göra och kan svara på alla dina frågor
               kopplat till det. Du får tydliga och korrekta svar skrivet på ett enkelt och mänskligt
               sätt (trots att det är en AI). Testa nu — skriv din fråga här i rutan bredvid.
             </p>
-            <p className="text-sm font-medium text-[#354042] mb-3">Exempel på frågor du kan ställa:</p>
+            <p className="text-sm font-medium text-[#20293d] mb-3">Exempel på frågor du kan ställa:</p>
             <ul className="flex flex-col gap-2">
               {[
                 "Måste ett testamente bevittnas?",
@@ -133,7 +133,7 @@ export default function TestamentePage() {
                 "Kan sambor ärva varandra utan testamente?",
                 "Hur ändrar jag ett testamente jag redan skrivit?",
               ].map((q) => (
-                <li key={q} className="flex items-start gap-2 text-sm text-[#4a5e5f] leading-relaxed">
+                <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
                   <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
                   {q}
                 </li>
@@ -166,10 +166,10 @@ export default function TestamentePage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               När behövs ett testamente?
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-[#515b73] leading-relaxed mb-6">
               Arvslagen gäller för alla – oavsett om du har skrivit testamente eller inte. Men den tar
               sällan hänsyn till din faktiska livssituation. Några vanliga exempel på när ett testamente
               är viktigt:
@@ -183,7 +183,7 @@ export default function TestamentePage() {
             ]} />
             <Link
               href="https://app.fride.se/create/testamente"
-              className="mt-8 inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="mt-8 inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Skapa testamente
             </Link>
@@ -201,19 +201,19 @@ export default function TestamentePage() {
             <Image src="/images/Testamente-4.webp" alt="Sambor och testamente" fill className="object-cover" />
           </div>
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Är ni sambor? Då ärver ni inte varandra.
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-4">
+            <p className="text-[#515b73] leading-relaxed mb-4">
               Det är ett av de vanligaste missförstånden i Sverige. Många tror att ett långt
               förhållande eller gemensamma barn ger automatisk arvsrätt – men det gör det inte.
             </p>
-            <p className="text-[#4a5e5f] leading-relaxed mb-4">
+            <p className="text-[#515b73] leading-relaxed mb-4">
               Om du går bort utan testamente går arvet till dina barn eller dina föräldrar – inte till
               din sambo. Det kan innebära att din partner tvingas flytta från bostaden ni delade, eller
               att de hamnar i en ekonomiskt svår situation vid en redan svår tidpunkt.
             </p>
-            <p className="text-[#4a5e5f] leading-relaxed">
+            <p className="text-[#515b73] leading-relaxed">
               Med ett testamente kan du säkerställa att din sambo får det du vill att de ska ha.
             </p>
           </div>
@@ -224,21 +224,21 @@ export default function TestamentePage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Barn från olika relationer – när arvet behöver vara tydligt
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-4">
+            <p className="text-[#515b73] leading-relaxed mb-4">
               Om du har barn från ett tidigare förhållande – så kallade särkullbarn – har de rätt att
               få ut sitt arv direkt när du går bort. Det kan påverka din nuvarande partners möjlighet
               att bo kvar eller behålla tillgångar ni byggt upp tillsammans.
             </p>
-            <p className="text-[#4a5e5f] leading-relaxed mb-8">
+            <p className="text-[#515b73] leading-relaxed mb-8">
               Med ett testamente kan du ta hänsyn till alla i din familj och skapa en lösning som
               känns rätt – för alla inblandade.
             </p>
             <Link
               href="https://app.fride.se/create/testamente"
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Skapa testamente
             </Link>
@@ -253,10 +253,10 @@ export default function TestamentePage() {
       <section className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] mb-5">
               Varför välja Frides testamente?
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-[#515b73] leading-relaxed mb-6">
               Vi är inte en juristbyrå – vi är en digital tjänst som gör det enkla möjligt för alla.
             </p>
             <CheckList items={[
@@ -265,7 +265,7 @@ export default function TestamentePage() {
               "Trygg betalning du väljer – via Klarna, Apple Pay eller kort.",
               "Enkelt och snabbt – du kan skapa ditt testamente på bara några minuter, utan förkunskaper.",
             ]} />
-            <p className="mt-8 text-[#354042] mb-6">
+            <p className="mt-8 text-[#20293d] mb-6">
               Skapa ett testamente digitalt för endast <strong>499 kr inkl. moms</strong>.<br />
               Skapar du fler dokument hos oss får du <strong>50% rabatt</strong> på alla efterföljande.<br />
               Ingen prenumeration. Inga dolda avgifter.

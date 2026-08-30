@@ -64,7 +64,7 @@ export default function SamborPage() {
       {/* Hero */}
       <section className="bg-[#fff1e6] overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 pt-8 pb-0">
-          <Link href="/framtidsklar" className="inline-flex items-center gap-1.5 text-sm text-[#4a5e5f] hover:text-[#354042] transition-colors">
+          <Link href="/framtidsklar" className="inline-flex items-center gap-1.5 text-sm text-[#515b73] hover:text-[#20293d] transition-colors">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
@@ -74,17 +74,17 @@ export default function SamborPage() {
         <div className="max-w-6xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
             <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-4">Framtidsklar – Sambor</p>
-            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#354042] leading-tight mb-5">
+            <h1 className="font-serif text-4xl md:text-5xl font-semibold text-[#20293d] leading-tight mb-5">
               Ni lever som ett par. Men lagen ser er inte alltid som ett.
             </h1>
-            <p className="text-base md:text-lg text-[#4a5e5f] leading-relaxed mb-8">
+            <p className="text-base md:text-lg text-[#515b73] leading-relaxed mb-8">
               Sambor har inte samma automatiska rättigheter som gifta. Det betyder att den du älskar
               kanske inte kan ta hand om det praktiska — eller få behålla hemmet — om något händer.
               Det fixar ni enkelt, i dag.
             </p>
             <Link
               href="#dokument"
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Bli framtidsklar
             </Link>
@@ -116,10 +116,10 @@ export default function SamborPage() {
           </div>
           <div className="fade-in fade-in-delay-1 order-1 md:order-2">
             <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">Det här gäller dig</p>
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Sambor ärver inte varandra. Det vet de flesta inte.
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed">
+            <p className="text-[#515b73] leading-relaxed">
               Många sambor tror att de har samma skydd som gifta par. Det stämmer inte. Utan
               testamente går arvet till den avlidnes släkt — inte till dig. Utan samboavtal kan en
               separation bli onödigt rörig. Och utan framtidsfullmakt kan du inte automatiskt hjälpa
@@ -132,7 +132,7 @@ export default function SamborPage() {
       {/* Dina dokument */}
       <section id="dokument" className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-10 fade-in">
+          <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-10 fade-in">
             Det här behöver ni ha på plats
           </h2>
           <div className="flex flex-col gap-6">
@@ -141,9 +141,9 @@ export default function SamborPage() {
                 key={doc.title}
                 className={`fade-in fade-in-delay-${i + 1} bg-white border border-[#d9c1b1] rounded-2xl p-6 md:p-8`}
               >
-                <h3 className="font-serif text-xl font-semibold text-[#354042] mb-3">{doc.title}</h3>
-                <p className="text-[#4a5e5f] leading-relaxed mb-4">{doc.description}</p>
-                <p className="text-sm text-[#4a5e5f] mb-5">
+                <h3 className="font-serif text-xl font-semibold text-[#20293d] mb-3">{doc.title}</h3>
+                <p className="text-[#515b73] leading-relaxed mb-4">{doc.description}</p>
+                <p className="text-sm text-[#515b73] mb-5">
                   Fast pris <strong>499 kr</strong> inkl. moms
                 </p>
                 <div className="flex flex-wrap gap-3">
@@ -182,17 +182,17 @@ export default function SamborPage() {
 
       {/* Så funkar det */}
       <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
-        <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-10 fade-in">
+        <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-10 fade-in">
           Tre steg till trygghet
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, i) => (
             <div key={step.number} className={`fade-in fade-in-delay-${i + 1}`}>
-              <div className="w-10 h-10 rounded-full bg-[#354042] text-[#fff1e6] flex items-center justify-center font-semibold text-sm mb-4">
+              <div className="w-10 h-10 rounded-full bg-[#20293d] text-[#fff1e6] flex items-center justify-center font-semibold text-sm mb-4">
                 {step.number}
               </div>
-              <h3 className="font-serif text-lg font-semibold text-[#354042] mb-2">{step.title}</h3>
-              <p className="text-sm text-[#4a5e5f] leading-relaxed">{step.description}</p>
+              <h3 className="font-serif text-lg font-semibold text-[#20293d] mb-2">{step.title}</h3>
+              <p className="text-sm text-[#515b73] leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
@@ -202,15 +202,15 @@ export default function SamborPage() {
       <section className="bg-[#fff1e6] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] leading-tight mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] leading-tight mb-4">
               Ni har valt varandra. Se till att juridiken håller med.
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-8">
+            <p className="text-[#515b73] leading-relaxed mb-8">
               Det tar några minuter. Det ger trygghet för resten av livet.
             </p>
             <Link
               href="https://app.fride.se"
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Skapa mina dokument
             </Link>

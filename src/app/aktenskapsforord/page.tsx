@@ -60,7 +60,7 @@ function CheckList({ items }: { items: string[] }) {
   return (
     <ul className="flex flex-col gap-3">
       {items.map((item) => (
-        <li key={item} className="flex items-start gap-3 text-[#354042] text-sm leading-relaxed">
+        <li key={item} className="flex items-start gap-3 text-[#20293d] text-sm leading-relaxed">
           <svg className="w-5 h-5 text-[#d27957] shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
@@ -98,17 +98,17 @@ export default function AktenskapsforodPage() {
       {/* Vad är ett äktenskapsförord? */}
       <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
         <div className="max-w-2xl fade-in">
-          <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">Vad är ett äktenskapsförord?</h2>
-          <p className="text-[#4a5e5f] leading-relaxed mb-4">
+          <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">Vad är ett äktenskapsförord?</h2>
+          <p className="text-[#515b73] leading-relaxed mb-4">
             När ni gifter er blir det mesta ni äger giftorättsgods – det vill säga att det ska delas
             lika vid en skilsmässa eller dödsfall.
           </p>
-          <p className="text-[#4a5e5f] leading-relaxed mb-4">
+          <p className="text-[#515b73] leading-relaxed mb-4">
             Med ett äktenskapsförord kan ni avtala om att viss egendom ska vara enskild – och alltså
             inte ingå i en bodelning. Det kan handla om ett arv ni fått, en bostad ni ägde innan
             äktenskapet, eller tillgångar ni vill hålla separerade.
           </p>
-          <p className="text-[#4a5e5f] leading-relaxed">
+          <p className="text-[#515b73] leading-relaxed">
             Ett äktenskapsförord kan upprättas när som helst – före eller under äktenskapet.
           </p>
         </div>
@@ -118,15 +118,15 @@ export default function AktenskapsforodPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Använd vår AI för att få hjälp.
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-8">
+            <p className="text-[#515b73] leading-relaxed mb-8">
               Den är tränad på allt som har med äktenskapsförord att göra och kan svara på alla dina
               frågor kopplat till det. Du får tydliga och korrekta svar skrivet på ett enkelt och
               mänskligt sätt (trots att det är en AI). Testa nu — skriv din fråga här i rutan bredvid.
             </p>
-            <p className="text-sm font-medium text-[#354042] mb-3">Exempel på frågor du kan ställa:</p>
+            <p className="text-sm font-medium text-[#20293d] mb-3">Exempel på frågor du kan ställa:</p>
             <ul className="flex flex-col gap-2">
               {[
                 "Vad kan vi reglera i ett äktenskapsförord?",
@@ -135,7 +135,7 @@ export default function AktenskapsforodPage() {
                 "Vad händer med enskild egendom om vi skiljer oss?",
                 "Skiljer sig äktenskapsförord från samboavtal?",
               ].map((q) => (
-                <li key={q} className="flex items-start gap-2 text-sm text-[#4a5e5f] leading-relaxed">
+                <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
                   <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
                   {q}
                 </li>
@@ -168,10 +168,10 @@ export default function AktenskapsforodPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               När behövs ett äktenskapsförord?
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-[#515b73] leading-relaxed mb-6">
               Ett äktenskapsförord kan vara viktigt i många situationer. Några vanliga exempel:
             </p>
             <CheckList items={[
@@ -183,7 +183,7 @@ export default function AktenskapsforodPage() {
             ]} />
             <Link
               href="https://app.fride.se/create/aktenskapsforord"
-              className="mt-8 inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="mt-8 inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Skapa äktenskapsförord
             </Link>
@@ -201,14 +201,14 @@ export default function AktenskapsforodPage() {
             <Image src="/images/arv-stanna-familjen.webp" alt="Äktenskapsförord för arv" fill className="object-cover" />
           </div>
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               När du fått ett arv – och vill att det stannar i familjen
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-4">
+            <p className="text-[#515b73] leading-relaxed mb-4">
               Utan äktenskapsförord blir arv du tar emot som gift giftorättsgods. Det innebär att det
               kan behöva delas vid en skilsmässa – även om det kom från din sida av familjen.
             </p>
-            <p className="text-[#4a5e5f] leading-relaxed">
+            <p className="text-[#515b73] leading-relaxed">
               Med ett äktenskapsförord kan du göra arvet till enskild egendom. Det betyder att det är
               ditt oavsett vad som händer i äktenskapet – och att det vid din död kan gå vidare till
               dina barn eller den du själv bestämmer.
@@ -221,21 +221,21 @@ export default function AktenskapsforodPage() {
       <section className="bg-[#fff1e6] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
               Ni har varit gifta länge – och behöver det ändå
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-4">
+            <p className="text-[#515b73] leading-relaxed mb-4">
               Många tror att äktenskapsförord bara är för nygifte. Men behovet uppstår ofta mitt i
               livet – när ni ärver, startar företag, köper en ny fastighet eller när en av er går i
               pension med ett större sparande.
             </p>
-            <p className="text-[#4a5e5f] leading-relaxed mb-8">
+            <p className="text-[#515b73] leading-relaxed mb-8">
               Ett äktenskapsförord kan upprättas när som helst under äktenskapet. Det är aldrig för
               sent att göra det tydligt vad som ska gälla för er.
             </p>
             <Link
               href="https://app.fride.se/create/aktenskapsforord"
-              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#2C3447] transition-colors duration-300"
+              className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
             >
               Skapa äktenskapsförord
             </Link>
@@ -250,10 +250,10 @@ export default function AktenskapsforodPage() {
       <section className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042] mb-5">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] mb-5">
               Varför välja Frides äktenskapsförord?
             </h2>
-            <p className="text-[#4a5e5f] leading-relaxed mb-6">
+            <p className="text-[#515b73] leading-relaxed mb-6">
               Vi är inte en juristbyrå – vi är en digital tjänst som gör det enkla möjligt för alla.
             </p>
             <CheckList items={[
@@ -262,7 +262,7 @@ export default function AktenskapsforodPage() {
               "Trygg betalning du väljer – via Klarna, Apple Pay eller kort.",
               "Enkelt och snabbt – ni kan skapa ert äktenskapsförord på bara några minuter, utan förkunskaper.",
             ]} />
-            <p className="mt-8 text-[#354042] mb-6">
+            <p className="mt-8 text-[#20293d] mb-6">
               Skapa ett äktenskapsförord digitalt för endast <strong>499 kr inkl. moms</strong>.<br />
               Skapar du fler dokument hos oss får du <strong>50% rabatt</strong> på alla efterföljande.<br />
               Ingen prenumeration. Inga dolda avgifter.

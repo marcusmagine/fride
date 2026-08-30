@@ -85,15 +85,15 @@ function ProductCard({ product, featured }: { product: Product; featured?: boole
   return (
     <div className={`bg-[#fff1e6] flex gap-4 md:gap-6 ${featured ? "p-8 md:p-12" : "p-6 md:p-10"}`}>
       <div className="flex-1 min-w-0">
-        <p className={`font-serif text-[#354042] leading-snug mb-3 md:mb-4 ${featured ? "text-2xl md:text-4xl" : "text-xl md:text-3xl"}`}>
+        <p className={`font-serif text-[#20293d] leading-snug mb-3 md:mb-4 ${featured ? "text-2xl md:text-4xl" : "text-xl md:text-3xl"}`}>
           {product.intent}
         </p>
-        <p className="font-semibold text-[#354042] mb-3 md:mb-4 text-sm md:text-base">
+        <p className="font-semibold text-[#20293d] mb-3 md:mb-4 text-sm md:text-base">
           {product.title} – {product.price} kr
         </p>
         <ul className="space-y-1.5 md:space-y-2 mb-4 md:mb-6">
           {product.features.map((f) => (
-            <li key={f} className="flex items-center gap-2 text-sm text-[#354042]">
+            <li key={f} className="flex items-center gap-2 text-sm text-[#20293d]">
               <CircleCheck />
               {f}
             </li>
@@ -102,7 +102,7 @@ function ProductCard({ product, featured }: { product: Product; featured?: boole
         {product.readMoreHref && (
           <Link
             href={product.readMoreHref}
-            className="block text-sm text-[#d27957] underline underline-offset-2 mb-4 hover:text-[#354042] transition-colors"
+            className="block text-sm text-[#d27957] underline underline-offset-2 mb-4 hover:text-[#20293d] transition-colors"
           >
             Läs mer om {product.title.toLowerCase()}
           </Link>

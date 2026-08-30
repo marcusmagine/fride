@@ -42,7 +42,7 @@ export function LifeSituationsSection() {
           <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">
             Bli framtidsklar
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#354042]">
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d]">
             Vad stämmer in på dig?
           </h2>
         </div>
@@ -66,10 +66,10 @@ export function LifeSituationsSection() {
                 <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-2">
                   {s.label}
                 </p>
-                <h3 className="font-serif text-xl font-semibold text-[#354042] leading-snug mb-3">
+                <h3 className="font-serif text-xl font-semibold text-[#20293d] leading-snug mb-3">
                   {s.headline}
                 </h3>
-                <p className="text-sm text-[#4a5e5f] leading-relaxed mb-6 flex-1">
+                <p className="text-sm text-[#515b73] leading-relaxed mb-6 flex-1">
                   {s.description}
                 </p>
                 <span className="inline-flex items-center gap-1.5 text-sm font-medium text-[#d27957] group-hover:text-[#c06a44] transition-colors">

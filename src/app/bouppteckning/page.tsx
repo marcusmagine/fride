@@ -78,7 +78,7 @@ export default function BouppteckningPage() {
         </div>
       </section>
 
-      <ProcessSteps steps={steps} headline="Steg för steg" />
+      <ProcessSteps steps={steps} headline="Steg för steg" track="green" />
 
       <section className="max-w-6xl mx-auto px-6 pb-8 fade-in">
         <div className="bg-[#354042] rounded-2xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
@@ -95,7 +95,7 @@ export default function BouppteckningPage() {
         </div>
       </section>
 
-      <FAQ items={faq} />
+      <FAQ items={faq} track="green" />
     </>
   );
 }
