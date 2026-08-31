@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
+import { HowItWorksSteps } from "@/components/sections/HowItWorksSteps";
 import { LifeSituationsSection } from "@/components/sections/LifeSituationsSection";
 import { LatestArticlesSection } from "@/components/sections/LatestArticlesSection";
 import { FoundersSection } from "@/components/sections/FoundersSection";
@@ -8,9 +9,9 @@ import type { Metadata } from "next";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: { absolute: "Fride – Skapa juridiska dokument online till fast pris" },
+  title: { absolute: "Fride – Juridiska framtidsdokument online till fast pris" },
   description:
-    "Bli framtidsklar. Skapa testamente, framtidsfullmakt, samboavtal och fler juridiska dokument online – steg för steg, på svenska. Fast pris 499 kr per dokument.",
+    "Skapa juridiskt korrekta framtidsdokument online, på svenska och till fast pris. Fride guidar dig steg för steg till rätt dokument för din situation.",
   alternates: { canonical: "https://www.fride.se" },
 };
 
@@ -18,18 +19,20 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        headline="Bli framtidsklar – innan livet ändrar sig."
-        subtext="De flesta vet att det är viktigt. Få har gjort det. Hos Fride skapar du juridiskt korrekta framtidsdokument på några minuter – steg för steg, på svenska."
-        ctaLabel="Bli framtidsklar"
+        headline="Skapa rätt juridiska dokument – innan livet förändras."
+        subtext="Bli framtidsklar med juridiskt korrekta dokument online, på svenska och till fast pris. Du får tydlig guidning steg för steg och blir klar på några minuter."
+        ctaLabel="Hitta rätt dokument för mig"
         ctaHref="#bli-framtidsklar"
-        secondaryLabel="Se alla framtidsdokument"
+        secondaryLabel="Se dokument och fasta priser"
         secondaryHref="/framtidsdokument"
+        trustPoints={["Fast pris", "Juridiskt korrekt", "Guidning steg för steg"]}
         imageSrc="/images/hero-familj.webp"
         imageAlt="Familj som skrattar tillsammans"
       />
+      <HowItWorksSteps />
       <LifeSituationsSection />
-      <LatestArticlesSection />
       <FoundersSection />
+      <LatestArticlesSection />
       <CTASection ctaHref="https://app.fride.se" ctaLabel="Skapa ditt dokument" headline="Redo att bli framtidsklar?" />
     </>
   );

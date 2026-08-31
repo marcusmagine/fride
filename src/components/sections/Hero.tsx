@@ -12,6 +12,8 @@ interface HeroProps {
   imageSrc?: string;
   imageAlt?: string;
   price?: number;
+  /** Korta trygghetspunkter under knapparna, t.ex. "Fast pris". */
+  trustPoints?: string[];
 }
 
 export function Hero({
@@ -24,6 +26,7 @@ export function Hero({
   imageSrc,
   imageAlt,
   price,
+  trustPoints,
 }: HeroProps) {
   return (
     <section className="bg-[#fff1e6] overflow-hidden">
@@ -57,6 +60,13 @@ export function Hero({
               </Link>
             )}
           </div>
+          {trustPoints && trustPoints.length > 0 && (
+            <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#515b73]">
+              {trustPoints.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+          )}
         </FadeIn>
 
         {imageSrc ? (

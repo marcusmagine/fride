@@ -15,20 +15,44 @@ export function FadeIn({ children, delay = 0, className = "" }: FadeInProps) {
     const el = ref.current;
     if (!el) return;
 
+    const show = () => el.classList.add("visible");
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => {
-            el.classList.add("visible");
-          }, delay);
+          setTimeout(show, delay);
           observer.disconnect();
         }
       },
       { threshold: 0 }
     );
 
-    observer.observe(el);
-    return () => observer.disconnect();
+    // IntersectionObserver-callbacks pausas i bakgrundsflikar, så ett element
+    // som redan syns avslöjas direkt via rect-koll i stället.
+    const reveal = () => {
+      if (el.classList.contains("visible")) return;
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        setTimeout(show, delay);
+        observer.disconnect();
+      } else {
+        observer.observe(el);
+      }
+    };
+
+    const timer = setTimeout(reveal, 0);
+    const onVisibilityChange = () => {
+      if (document.visibilityState === "visible") reveal();
+    };
+    document.addEventListener("visibilitychange", onVisibilityChange);
+    window.addEventListener("pageshow", reveal);
+
+    return () => {
+      clearTimeout(timer);
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+      window.removeEventListener("pageshow", reveal);
+    };
   }, [delay]);
 
   return (
