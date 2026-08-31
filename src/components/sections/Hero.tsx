@@ -61,9 +61,19 @@ export function Hero({
             )}
           </div>
           {trustPoints && trustPoints.length > 0 && (
-            <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[#515b73]">
+            <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[#515b73]">
               {trustPoints.map((point) => (
-                <li key={point}>{point}</li>
+                <li key={point} className="flex items-center gap-2">
+                  <svg
+                    className="w-4 h-4 flex-shrink-0 text-[#20293d]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                  </svg>
+                  {point}
+                </li>
               ))}
             </ul>
           )}

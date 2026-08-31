@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Hero } from "@/components/sections/Hero";
-import { TrustBar } from "@/components/sections/TrustBar";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { WhyFrideSection } from "@/components/sections/WhyFrideSection";
 import { FAQ } from "@/components/sections/FAQ";
@@ -15,8 +14,6 @@ export const metadata: Metadata = {
     "Bestäm själv vem som får hjälpa dig om du en dag inte kan. Skriv en juridiskt korrekt framtidsfullmakt online, med guidning steg för steg. 499 kr.",
   alternates: { canonical: "https://www.fride.se/framtidsfullmakt" },
 };
-
-const trustPoints = ["Fast pris", "Juridiskt korrekt", "Guidning steg för steg"];
 
 const steps = [
   { title: "Svara på frågor", description: "Vi guidar dig genom processen och samlar in den information som behövs." },
@@ -111,8 +108,6 @@ export default function FramtidsfullmaktPage() {
         imageAlt="Person som planerar sin framtid"
         price={499}
       />
-
-      <TrustBar points={trustPoints} />
 
       {/* Vad är en framtidsfullmakt? */}
       <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
