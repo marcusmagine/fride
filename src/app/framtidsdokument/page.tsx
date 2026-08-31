@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 const documents = [
   {
     title: "Framtidsfullmakt",
+    intent: "Jag vill välja vem som får hjälpa mig",
     description:
       "Bestäm vem som ska ta hand om dina ekonomiska och personliga angelägenheter om du inte längre kan göra det själv. En av de viktigaste juridiska handlingarna du kan upprätta.",
     href: "/framtidsfullmakt",
@@ -24,6 +25,7 @@ const documents = [
   },
   {
     title: "Gåvobrev",
+    intent: "Jag vill vara tydlig med min gåva",
     description:
       "Dokumentera en gåva juridiskt korrekt. Ange villkor för gåvan – till exempel att den ska vara mottagarens enskilda egendom eller räknas som förskott på arv.",
     href: "/gavobrev",
@@ -35,6 +37,7 @@ const documents = [
   },
   {
     title: "Skuldebrev",
+    intent: "Jag vill reglera ett lån med någon",
     description:
       "Dokumentera ett lån mellan privatpersoner med tydliga villkor för återbetalning och ränta. Minskar risken för missförstånd och skapar trygghet för båda parter.",
     href: "/skuldebrev",
@@ -46,6 +49,7 @@ const documents = [
   },
   {
     title: "Samboavtal",
+    intent: "Jag vill vara tydlig i min relation",
     description:
       "Reglera vad som gäller er egendom om ni separerar eller om en av er går bort. Särskilt viktigt om ni äger bostad eller har olika ekonomiska förutsättningar.",
     href: "/samboavtal",
@@ -57,6 +61,7 @@ const documents = [
   },
   {
     title: "Testamente",
+    intent: "Jag vill vara tydlig med mitt arv",
     description:
       "Bestäm vem som ska ärva dig och hur dina tillgångar ska fördelas. Utan testamente styr lagen – med testamente styr du själv.",
     href: "/testamente",
@@ -68,6 +73,7 @@ const documents = [
   },
   {
     title: "Äktenskapsförord",
+    intent: "Jag vill bestämma vad som är enskilt i äktenskapet",
     description:
       "Bestäm vad som ska vara enskild egendom i ert äktenskap. Skyddar tillgångar vid separation och tydliggör vad som gäller för er.",
     href: "/aktenskapsforord",
@@ -180,7 +186,10 @@ export default function FramtidsdokumentPage() {
                   )}
                 </div>
                 <div className="flex flex-col flex-1 p-6">
-                  <h3 className="font-serif text-xl font-semibold text-[#20293d] mb-3">{doc.title}</h3>
+                  <h3 className="font-serif text-xl font-semibold text-[#20293d] mb-1">{doc.title}</h3>
+                  {/* Djupare terrakotta än accentens #d27957 — den når bara 3.2:1
+                      mot vitt och räcker inte för text i den här storleken. */}
+                  <p className="text-sm font-medium text-[#b05c38] leading-snug mb-3">{doc.intent}</p>
                   <p className="text-sm text-[#515b73] leading-relaxed flex-1 mb-5">{doc.description}</p>
                   {doc.available && doc.price && (
                     <p className="text-sm text-[#20293d] mb-4">
