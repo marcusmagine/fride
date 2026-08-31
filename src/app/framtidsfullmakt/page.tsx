@@ -102,10 +102,11 @@ export default function FramtidsfullmaktPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <Hero
-        headline="Framtidsfullmakt – ett enkelt sätt att skapa trygghet innan det oväntade händer"
-        subtext="Livet förändras — ibland långsamt, ibland på en dag. Med en framtidsfullmakt bestämmer du själv vem som ska ta hand om det praktiska om du en dag inte kan."
-        ctaLabel="Skapa din framtidsfullmakt"
+        headline="Bestäm själv vem som får hjälpa dig – med en framtidsfullmakt"
+        subtext="Skapa en juridiskt korrekt framtidsfullmakt online. Fride guidar dig steg för steg, så att någon du litar på kan ta hand om det praktiska om du en dag inte kan."
+        ctaLabel="Skapa min framtidsfullmakt"
         ctaHref="https://app.fride.se/create/framtidsfullmakt"
+        trustPoints={["Juridiskt korrekt", "Guidning steg för steg", "Ingen prenumeration"]}
         imageSrc="/images/framtidsfullmakt.webp"
         imageAlt="Person som planerar sin framtid"
         price={499}
@@ -139,53 +140,17 @@ export default function FramtidsfullmaktPage() {
         </div>
       </section>
 
-      {/* AI-assistent */}
-      <section className="bg-[#fff1e6] py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
-          <div className="fade-in">
-            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
-              Använd vår AI för att få hjälp.
-            </h2>
-            <p className="text-[#515b73] leading-relaxed mb-8">
-              Den är tränad på allt som har med framtidsfullmakter att göra och kan svara på alla
-              dina frågor kopplat till det. Du får tydliga och korrekta svar skrivet på ett enkelt
-              och mänskligt sätt (trots att det är en AI). Testa nu — skriv din fråga här i rutan
-              bredvid.
-            </p>
-            <p className="text-sm font-medium text-[#20293d] mb-3">Exempel på frågor du kan ställa:</p>
-            <ul className="flex flex-col gap-2">
-              {[
-                "Vad är viktigt att tänka på när man ska skriva en framtidsfullmakt?",
-                "Behöver jag en framtidsfullmakt om jag är gift?",
-                "Vad händer om jag inte har en framtidsfullmakt?",
-                "Kan jag ändra min framtidsfullmakt i efterhand?",
-                "Vad skiljer en framtidsfullmakt från en vanlig fullmakt?",
-              ].map((q) => (
-                <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
-                  <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
-                  {q}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="fade-in fade-in-delay-1 w-full rounded-2xl overflow-hidden">
-            <iframe
-              src="https://ai.fride.se/chatbot/Hh7ZinstzP0WsGuC"
-              style={{ width: "100%", height: "100%", minHeight: "700px" }}
-              frameBorder={0}
-              allow="microphone"
-              title="Fride AI – framtidsfullmakt"
-            />
-          </div>
-        </div>
-      </section>
-
       <ProcessSteps
         steps={steps}
         price={499}
         imageSrc="/images/img-app-fride.webp"
         imageAlt="Så här ser Fride-tjänsten ut"
+        ctaHref="https://app.fride.se/create/framtidsfullmakt"
+        ctaLabel="Skapa min framtidsfullmakt"
+        ctaNote="499 kr inkl. moms · ingen prenumeration"
       />
+
+      <WhyFrideSection />
 
       {/* Därför är framtidsfullmakt en viktig trygghet */}
       <section className="bg-[#fff1e6] py-16 md:py-20">
@@ -337,7 +302,45 @@ export default function FramtidsfullmaktPage() {
         </div>
       </section>
 
-      <WhyFrideSection />
+      {/* AI-assistent */}
+      <section className="bg-[#fff1e6] py-16 md:py-20">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+          <div className="fade-in">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
+              Fortfarande osäker? Fråga Fride AI.
+            </h2>
+            <p className="text-[#515b73] leading-relaxed mb-8">
+              Ställ en fråga om framtidsfullmakter och få ett enkelt, lättbegripligt svar som
+              hjälper dig vidare. För personlig juridisk rådgivning är du alltid välkommen att
+              kontakta Fride.
+            </p>
+            <p className="text-sm font-medium text-[#20293d] mb-3">Vanliga frågor att börja med:</p>
+            <ul className="flex flex-col gap-2">
+              {[
+                "Vad är viktigt att tänka på när man ska skriva en framtidsfullmakt?",
+                "Behöver jag en framtidsfullmakt om jag är gift?",
+                "Vad händer om jag inte har en framtidsfullmakt?",
+                "Kan jag ändra min framtidsfullmakt i efterhand?",
+                "Vad skiljer en framtidsfullmakt från en vanlig fullmakt?",
+              ].map((q) => (
+                <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
+                  <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
+                  {q}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="fade-in fade-in-delay-1 w-full rounded-2xl overflow-hidden">
+            <iframe
+              src="https://ai.fride.se/chatbot/Hh7ZinstzP0WsGuC"
+              style={{ width: "100%", height: "100%", minHeight: "700px" }}
+              frameBorder={0}
+              allow="microphone"
+              title="Fride AI – framtidsfullmakt"
+            />
+          </div>
+        </div>
+      </section>
 
       <FAQ
         items={faq}

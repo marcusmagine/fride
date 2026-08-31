@@ -16,10 +16,12 @@ interface ProcessStepsProps {
   stacked?: boolean;
   ctaHref?: string;
   ctaLabel?: string;
+  /** Kort rad under knappen, t.ex. "499 kr inkl. moms · ingen prenumeration". */
+  ctaNote?: string;
   track?: Track;
 }
 
-export function ProcessSteps({ headline = "Så funkar det", steps, price, imageSrc, imageAlt, stacked, ctaHref, ctaLabel, track = "blue" }: ProcessStepsProps) {
+export function ProcessSteps({ headline = "Så funkar det", steps, price, imageSrc, imageAlt, stacked, ctaHref, ctaLabel, ctaNote, track = "blue" }: ProcessStepsProps) {
   const c = trackColors[track];
   return (
     <section className="max-w-6xl mx-auto px-6 py-16 md:py-20">
@@ -52,6 +54,7 @@ export function ProcessSteps({ headline = "Så funkar det", steps, price, imageS
               >
                 {ctaLabel}
               </Link>
+              {ctaNote && <p className={`mt-3 text-sm ${c.body}`}>{ctaNote}</p>}
             </div>
           )}
         </div>
