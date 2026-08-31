@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { CTASection } from "@/components/sections/CTASection";
-import { ProductsSection } from "@/components/sections/ProductsSection";
 
 export const metadata: Metadata = {
   title: "Framtidsdokument – skapa alla viktiga dokument online",
@@ -228,8 +227,6 @@ export default function FramtidsdokumentPage() {
           ))}
         </div>
       </section>
-
-      <ProductsSection />
 
       <CTASection ctaHref="https://app.fride.se" ctaLabel="Skapa ditt dokument" />
     </>
