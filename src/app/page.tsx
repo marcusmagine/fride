@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { HowItWorksSteps } from "@/components/sections/HowItWorksSteps";
+import { AiHighlightSection } from "@/components/sections/AiHighlightSection";
 import { LifeSituationsSection } from "@/components/sections/LifeSituationsSection";
 import { LatestArticlesSection } from "@/components/sections/LatestArticlesSection";
 import { FoundersSection } from "@/components/sections/FoundersSection";
@@ -30,6 +31,7 @@ export default function HomePage() {
         imageAlt="Familj som skrattar tillsammans"
       />
       <HowItWorksSteps />
+      <AiHighlightSection />
       <LifeSituationsSection />
       <FoundersSection />
       <LatestArticlesSection />

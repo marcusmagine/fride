@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { WhyFrideSection } from "@/components/sections/WhyFrideSection";
 import { FAQ } from "@/components/sections/FAQ";
+import { RelatedArticlesSection } from "@/components/sections/RelatedArticlesSection";
 import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
 import { buildProductSchema } from "@/lib/seo";
@@ -341,6 +342,8 @@ export default function FramtidsfullmaktPage() {
         items={faq}
         headline="Frågor och svar om framtidsfullmakten."
       />
+
+      <RelatedArticlesSection category="Framtidsfullmakt" headline="Läs mer om framtidsfullmakt" />
 
       <CTASection
         ctaHref="https://app.fride.se/create/framtidsfullmakt"

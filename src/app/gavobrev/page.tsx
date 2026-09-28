@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { FAQ } from "@/components/sections/FAQ";
+import { RelatedArticlesSection } from "@/components/sections/RelatedArticlesSection";
 import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
 import { buildProductSchema } from "@/lib/seo";
@@ -300,6 +301,8 @@ export default function GavobrevPage() {
       </section>
 
       <FAQ items={faq} headline="Frågor och svar om gåvobrev." />
+
+      <RelatedArticlesSection category="Gåvor och arv" headline="Läs mer om gåvor och arv" />
 
       <CTASection ctaHref="https://app.fride.se/create/gavobrev" ctaLabel="Skapa gåvobrev" />
     </>

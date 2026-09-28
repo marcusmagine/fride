@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { FAQ } from "@/components/sections/FAQ";
+import { RelatedArticlesSection } from "@/components/sections/RelatedArticlesSection";
 import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
 import { buildProductSchema } from "@/lib/seo";
@@ -281,6 +282,8 @@ export default function AktenskapsforodPage() {
       </section>
 
       <FAQ items={faq} headline="Frågor och svar om äktenskapsförord." />
+
+      <RelatedArticlesSection category="Äktenskapsförord" headline="Läs mer om äktenskapsförord" />
 
       <CTASection ctaHref="https://app.fride.se/create/aktenskapsforord" ctaLabel="Skapa äktenskapsförord" />
     </>

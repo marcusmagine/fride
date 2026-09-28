@@ -245,6 +245,53 @@ export default function FramtidsklarPage() {
         </div>
       </section>
 
+      {/* AI-assistent */}
+      <section className="bg-[#fff1e6] py-16 md:py-20 border-t border-[#d9c1b1]">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+          <div className="fade-in">
+            <h2 className="font-serif text-3xl font-semibold text-[#20293d] mb-5">
+              Osäker på vad som gäller för just dig? Fråga Fride AI.
+            </h2>
+            <p className="text-[#515b73] leading-relaxed mb-4">
+              Beskriv din situation med egna ord – om du är ensamstående, gift eller sambo, har
+              barn sedan tidigare eller äger en bostad tillsammans. Du får guidning i vad du bör
+              tänka på, vilka fallgropar som är vanliga och hur du skapar en tryggare situation
+              framåt.
+            </p>
+            <p className="text-[#515b73] leading-relaxed mb-8">
+              Det kostar ingenting att fråga. För personlig juridisk rådgivning är du alltid
+              välkommen att kontakta Fride.
+            </p>
+            <p className="text-sm font-medium text-[#20293d] mb-3">
+              Exempel på hur du kan beskriva din situation:
+            </p>
+            <ul className="flex flex-col gap-2">
+              {[
+                "Vi är sambor, äger huset ihop och har två barn – vad behöver vi?",
+                "Jag är gift och har ett särkullbarn sedan tidigare. Hur skyddar jag båda?",
+                "Jag är ensamstående med små barn – vad händer om jag blir sjuk?",
+                "Vilka misstag är vanligast när man skriver dokumenten själv?",
+                "Vi har inga dokument alls i dag – var bör vi börja?",
+              ].map((q) => (
+                <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
+                  <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
+                  {q}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="fade-in fade-in-delay-1 w-full rounded-2xl overflow-hidden">
+            <iframe
+              src="https://ai.fride.se/chatbot/Hh7ZinstzP0WsGuC"
+              style={{ width: "100%", height: "100%", minHeight: "700px" }}
+              frameBorder={0}
+              allow="microphone"
+              title="Fride AI – bli framtidsklar"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Avslutande CTA */}
       <section className="bg-[#20293d] py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">

@@ -1,0 +1,81 @@
+import Link from "next/link";
+
+const points = [
+  "Kostnadsfri att använda",
+  "Inget konto behövs",
+  "Tydliga svar på svenska",
+];
+
+/**
+ * Lyfter Fride AI på startsidan och leder vidare till /framtidsklar,
+ * där själva chatten finns.
+ */
+export function AiHighlightSection() {
+  return (
+    <section className="bg-[#fff1e6] py-16 md:py-20">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div className="fade-in">
+          <p className="text-xs font-medium text-[#d27957] uppercase tracking-widest mb-3">
+            Fride AI
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#20293d] leading-tight mb-5">
+            Ställ dina frågor till vår AI – helt kostnadsfritt
+          </h2>
+          <p className="text-[#515b73] leading-relaxed mb-4">
+            Vår AI är särskilt tränad på framtidsfullmakt, testamente, samboavtal, gåvor,
+            skuldebrev och bouppteckning. Den svarar på både juridiska och praktiska frågor –
+            oavsett om du förbereder dig inför framtiden eller står mitt i att ta hand om en
+            anhörigs bortgång.
+          </p>
+          <p className="text-[#515b73] leading-relaxed mb-8">
+            Beskriv din egen situation med dina egna ord, så får du tydliga och korrekta svar.
+            Den är öppen för alla att använda.
+          </p>
+
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[#515b73] mb-8">
+            {points.map((point) => (
+              <li key={point} className="flex items-center gap-2">
+                <svg
+                  className="w-4 h-4 flex-shrink-0 text-[#20293d]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                </svg>
+                {point}
+              </li>
+            ))}
+          </ul>
+
+          <Link
+            href="/framtidsklar"
+            className="inline-block bg-[#20293d] text-[#fff1e6] px-6 py-3.5 rounded-full text-sm font-medium hover:bg-[#3A4A6E] transition-colors duration-300"
+          >
+            Ställ en fråga till Fride AI
+          </Link>
+        </div>
+
+        <div className="fade-in fade-in-delay-1 rounded-2xl border border-[#d9c1b1] bg-white p-7 md:p-8">
+          <p className="text-sm font-medium text-[#20293d] mb-4">
+            Exempel på frågor du kan ställa:
+          </p>
+          <ul className="flex flex-col gap-3">
+            {[
+              "Vad händer med vårt hus om min sambo går bort?",
+              "Behöver jag testamente om jag har särkullbarn?",
+              "Vem får hjälpa mig med ekonomin om jag blir sjuk?",
+              "Måste vi göra en bouppteckning, och hur går det till?",
+              "Räcker det med gåvobrev om jag vill ge bort pengar till mitt barn?",
+            ].map((q) => (
+              <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
+                <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
+                {q}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
