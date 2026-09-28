@@ -9,6 +9,9 @@ import { CTASection } from "@/components/sections/CTASection";
 import type { Metadata } from "next";
 import { buildProductSchema } from "@/lib/seo";
 
+// Artikelpuffarna hämtas från Sanity och måste kunna uppdateras utan deploy.
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: "Testamente online – klar på 10 minuter, 499 kr",
   description:

@@ -21,6 +21,10 @@ interface Article {
   seoDescription: string;
 }
 
+// Artiklarna redigeras i Sanity. Utan revalidate byggs sidan en gång vid
+// deploy och uppdateras aldrig när innehållet ändras.
+export const revalidate = 60;
+
 export async function generateStaticParams() {
   if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) return [];
   try {
