@@ -6,9 +6,20 @@ export interface TeaserArticle {
   title: string;
   slug: string;
   category?: string;
+  categories?: string[];
   excerpt?: string;
   coverImageUrl?: string;
   coverImageAssetUrl?: string;
+}
+
+/**
+ * Nyare artiklar taggas i listan `categories`, äldre i strängen `category`.
+ * Listan vinner när den finns, precis som på /kunskap, och flera ämnen
+ * skrivs ut efter varandra.
+ */
+function categoryLabel(article: TeaserArticle): string | undefined {
+  if (article.categories?.length) return article.categories.join(", ");
+  return article.category || undefined;
 }
 
 interface ArticleTeaserGridProps {
@@ -70,9 +81,9 @@ export function ArticleTeaserGrid({
               )}
             </div>
             <div className="flex flex-col flex-1 p-6">
-              {article.category && (
+              {categoryLabel(article) && (
                 <span className="text-xs font-medium text-[#d27957] uppercase tracking-wide mb-2">
-                  {article.category}
+                  {categoryLabel(article)}
                 </span>
               )}
               <h3 className="font-serif font-semibold text-[#20293d] leading-snug mb-3 flex-1">

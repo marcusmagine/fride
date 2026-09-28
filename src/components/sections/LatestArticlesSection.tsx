@@ -7,6 +7,7 @@ const latestArticlesQuery = groq`
     title,
     "slug": slug.current,
     category,
+    categories,
     excerpt,
     coverImageUrl,
     "coverImageAssetUrl": coverImage.asset->url,
