@@ -28,6 +28,11 @@ const navLinks = [
 export function Header() {
   const pathname = usePathname();
   const isGreen = GREEN_PAGES.includes(pathname);
+
+  // Sanity-studion på /studio är ett eget gränssnitt och behöver hela
+  // fönsterhöjden – annars hamnar dokumentpanelens nedre rad, med
+  // publiceringsknappen, utanför skärmen.
+  if (pathname.startsWith("/studio")) return null;
   const bg = isGreen ? "bg-[#353F42]" : "bg-[#20293d]";
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
