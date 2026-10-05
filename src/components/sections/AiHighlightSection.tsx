@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const points = [
   "Kostnadsfri att använda",
@@ -32,6 +33,23 @@ export function AiHighlightSection() {
             Den är öppen för alla att använda.
           </p>
 
+          <p className="text-sm font-medium text-[#20293d] mb-3">
+            Exempel på frågor du kan ställa:
+          </p>
+          <ul className="flex flex-col gap-2 mb-8">
+            {[
+              "Vad händer med vårt hus om min sambo går bort?",
+              "Behöver jag testamente om jag har särkullbarn?",
+              "Vem får hjälpa mig med ekonomin om jag blir sjuk?",
+              "Måste vi göra en bouppteckning, och hur går det till?",
+            ].map((q) => (
+              <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
+                <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
+                {q}
+              </li>
+            ))}
+          </ul>
+
           <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[#515b73] mb-8">
             {points.map((point) => (
               <li key={point} className="flex items-center gap-2">
@@ -56,24 +74,14 @@ export function AiHighlightSection() {
           </Link>
         </div>
 
-        <div className="fade-in fade-in-delay-1 rounded-2xl border border-[#d9c1b1] bg-white p-7 md:p-8">
-          <p className="text-sm font-medium text-[#20293d] mb-4">
-            Exempel på frågor du kan ställa:
-          </p>
-          <ul className="flex flex-col gap-3">
-            {[
-              "Vad händer med vårt hus om min sambo går bort?",
-              "Behöver jag testamente om jag har särkullbarn?",
-              "Vem får hjälpa mig med ekonomin om jag blir sjuk?",
-              "Måste vi göra en bouppteckning, och hur går det till?",
-              "Räcker det med gåvobrev om jag vill ge bort pengar till mitt barn?",
-            ].map((q) => (
-              <li key={q} className="flex items-start gap-2 text-sm text-[#515b73] leading-relaxed">
-                <span className="text-[#d27957] shrink-0 mt-0.5">›</span>
-                {q}
-              </li>
-            ))}
-          </ul>
+        <div className="fade-in fade-in-delay-1 relative h-80 md:h-[540px] rounded-2xl overflow-hidden">
+          <Image
+            src="/images/fride-ai-mobil.webp"
+            alt="Person som ställer en fråga till Fride AI i mobilen"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover"
+          />
         </div>
       </div>
     </section>
