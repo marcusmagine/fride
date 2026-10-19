@@ -12,7 +12,8 @@ const features: Feature[] = [
   },
   {
     title: "Juridiskt korrekt dokument",
-    description: "vår framtidsfullmakt är både juridiskt korrekt och går att använda i praktiken.",
+    description:
+      "vår framtidsfullmakt är bindande enligt lag (2017:310) om framtidsfullmakter, och är också utformad för att kunna tillämpas i praktiken.",
   },
   {
     title: "Trygg betalning via Stripe",
