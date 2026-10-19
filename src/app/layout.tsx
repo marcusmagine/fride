@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Serif, Noto_Sans } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -56,6 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <main className="flex-1">{children}</main>
         <Footer />
         <ScrollAnimationProvider />
+        <Analytics />
 
         {/* Google Analytics */}
         <Script
